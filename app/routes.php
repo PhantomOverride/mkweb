@@ -11,7 +11,18 @@
 |
 */
 
+
 Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+// CRM system for pages
+Route::get('page/{urlname}/{suburlname?}', 'CrmController@show');
+
+//User system and handling
+//Route::get('users', 'UserController@index');
+//Route::get('users/{username}', 'UserController@show');
+
+Route::resource('users','UserController');
