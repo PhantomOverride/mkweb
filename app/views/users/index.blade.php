@@ -1,14 +1,22 @@
-@extends('mktest')
+@extends('v1-wrapper')
 
 @section('title')
-Users
+    Användare
+@stop
+
+@section('contentname')
+    Användare
+@stop
+
+@section('contenttitle')
+    Dessa är med oss
 @stop
 
 @section('content')
 
 <h2>Registred Users</h2>
 
-Want to have a new user? {{link_to_route('users.create','Sign up!')}}
+Bli en av oss? {{link_to_route('users.create','Registrera!')}}
 
 @foreach ($users as $user)
 <li> {{ link_to("/users/{$user->nickname}",$user->nickname) }} </li>

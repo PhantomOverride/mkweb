@@ -1,12 +1,18 @@
-@extends('mktest')
+@extends('v1-wrapper')
 
 @section('title')
-Users
+    Registrera
+@stop
+
+@section('contentname')
+    Registrera
+@stop
+
+@section('contenttitle')
+    Bli en av oss
 @stop
 
 @section('content')
-
-<h2>Register a new user</h2>
 
     {{Form::open(['route' => 'users.store'])}}
     

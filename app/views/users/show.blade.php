@@ -1,23 +1,43 @@
-@extends('mktest')
-
-@section('title')
-Users
-@stop
-
-@section('content')
-
-<h2>Registred Users</h2>
+@extends('v1-wrapper')
 
 @if(isset($user))
 
-@foreach($user->toArray() as $key => $value)
-<div>
-    {{$key}} - {{$value}}
-</div>
-@endforeach
+    @section('title')
+        User {{$user->nickname}}
+    @stop
+
+    @section('contentname')
+        User
+    @stop
+
+    @section('contenttitle')
+        {{$user->nickname}}
+    @stop
+
+    @section('content')
+        @foreach($user->toArray() as $key => $value)
+        <div>
+            {{$key}} - {{$value}}
+        </div>
+        @endforeach
+    @stop
 
 @else
-User not found
-@endif
 
-@stop
+    @section('title')
+        User not found
+    @stop
+
+    @section('contentname')
+        User
+    @stop
+
+    @section('contenttitle')
+        Not found
+    @stop
+
+    @section('content')
+        No such user :C
+    @stop
+    
+@endif

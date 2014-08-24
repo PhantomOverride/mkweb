@@ -1,9 +1,17 @@
-@extends('mktest')
+@extends('v1-wrapper')
 
 @section('title')
-        Error!
+Error404
+@stop
+
+@section('contentname')
+Error404
+@stop
+
+@section('contenttitle')
+Error404
 @stop
 
 @section('content')
-Error 404
+Error404
 @stop
