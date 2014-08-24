@@ -19,29 +19,27 @@ class CreateUsersTable extends Migration {
                         $table->string('forename');
                         $table->string('lastname');
                         $table->string('ssid')->unique();
-                        $table->string('dateofbirth'); //YYYY-MM-DD
                         $table->string('streetaddress');
                         $table->string('postalcode');
                         $table->string('city');
                         $table->string('phone');
                         $table->string('password');
                         $table->string('nickname')->unique();
-                        $table->string('avatarurl'); //url to avatar to use, fully formatted and ready to use in an img tag
-                        $table->string('membertype'); //none or free or paid
-                        $table->string('memberperiod'); //Year, after which the membership expires, i.e. 2015 => 2015-01-01 to 2015-12-31
-                        $table->string('accounttype'); // user or admin or crew
-                        $table->string('status'); //inactive or active or banned
+                        $table->string('avatarurl')->default('/avatars/avatar.png'); //url to avatar to use, fully formatted and ready to use in an img tag
+                        $table->string('membertype')->default('none'); //none or free or paid
+                        $table->string('memberperiod')->default('0000'); //Year, after which the membership expires, i.e. 2015 => 2015-01-01 to 2015-12-31
+                        $table->string('accounttype')->default('user'); // user or admin or crew
+                        $table->string('status')->default('active'); //inactive or active or banned
                         $table->timestamps();
                         
 		});
                 
                 DB::table('users')->insert(
                         array(
-                            'email' => '',
+                            'email' => 'kontakt@mammaskallare.se',
                             'forename' => 'Mammas',
                             'lastname' => 'Källare',
                             'ssid' => '0000000000',
-                            'dateofbirth' => '2015-08-20',
                             'streetaddress' => 'En gata',
                             'postalcode' => '37141',
                             'city' => 'Karlskrona',
@@ -58,11 +56,10 @@ class CreateUsersTable extends Migration {
                 
                 DB::table('users')->insert(
                         array(
-                            'email' => '',
+                            'email' => 'kaka@example.com',
                             'forename' => 'Kalle',
                             'lastname' => 'Karlsson',
                             'ssid' => '1234567890',
-                            'dateofbirth' => '1991-01-01',
                             'streetaddress' => 'Gatan I Blekinge',
                             'postalcode' => '12345',
                             'city' => 'Karlskrona',
@@ -79,11 +76,10 @@ class CreateUsersTable extends Migration {
                 
                 DB::table('users')->insert(
                         array(
-                            'email' => '',
+                            'email' => 'anan@example.com',
                             'forename' => 'Anna',
                             'lastname' => 'Andersson',
                             'ssid' => '9876543210',
-                            'dateofbirth' => '1989-01-01',
                             'streetaddress' => 'Ronnebygatan',
                             'postalcode' => '54321',
                             'city' => 'Karlskrona',

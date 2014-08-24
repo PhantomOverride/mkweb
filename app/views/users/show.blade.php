@@ -8,6 +8,16 @@ Users
 
 <h2>Registred Users</h2>
 
-{{$user->nickname}}
+@if(isset($user))
+
+@foreach($user->toArray() as $key => $value)
+<div>
+    {{$key}} - {{$value}}
+</div>
+@endforeach
+
+@else
+User not found
+@endif
 
 @stop

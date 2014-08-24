@@ -28,7 +28,8 @@ class CrmController extends BaseController {
                 $pageurlname = $suburlname;
                 $parentpageurlname = $urlname;
                 
-                $thispage = Page::whereUrlname($pageurlname)->first();
+                $thispage = Page::whereUrlname($pageurlname)->whereParentname($parentpageurlname)->first();
+                
                 $parentpage = Page::whereUrlname($parentpageurlname)->first();
                 return View::make('page')->with('page',$thispage)->with('parentpage',$parentpage);
             }

@@ -79,3 +79,18 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+App::error(function($exception, $code)
+{
+    switch ($code)
+    {
+        case 404:
+            return Response::view('errors.404', array(), 404);
+
+        default:
+            return Response::view('errors.default', array(), $code);
+    }
+});
+ * 
+ */
