@@ -54,40 +54,26 @@ Doge
 Gooby
 @stop
 @section('v1-navbar-1')
-<li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="index.html">News</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Wonderlan</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Pluton</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Brädspel</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">login/signup</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Profile</a>
-                    </li>
+    @if (isset($nav))
+        @foreach ($nav as $main)
+            @foreach ($main as $sub)
+            <li>
+                {{ link_to($sub['link'],$sub['name']); }}
+            </li>
+            @endforeach
+        @endforeach
+    @endif
 @stop
 @section('v1-navbar-2')
-              <a href="#" class="list-group-item active">Home</a>
-              <a href="#" class="list-group-item ">News</a>
-              <a href="#" class="list-group-item ">Wonderlan</a>
-              <a href="#" class="list-group-item ">Pluton</a>
-              <a href="#" class="list-group-item ">Brädspel</a>
-              <a href="#" class="list-group-item ">Brädspel</a>
-              <a href="#" class="list-group-item ">Brädspel</a>
+    @if (isset($nav))
+        @foreach ($nav as $main)
+            @foreach ($main as $sub)
+                @if (empty($sub['parentname']))
+                    <a href="{{$sub['link']}}" class="list-group-item {{Request::is(substr($sub['link'],1)) ? 'active' : ''}}">{{$sub['name']}}</a>
+                @else    
+                    <a href="{{$sub['link']}}" class="list-group-item {{Request::is(substr($sub['link'],1)) ? 'active' : ''}}">&nbsp;&nbsp;&nbsp;&nbsp;{{$sub['name']}}</a>
+                @endif
+            @endforeach
+        @endforeach
+    @endif
 @stop

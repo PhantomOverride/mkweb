@@ -14,6 +14,13 @@ class CrmController extends BaseController {
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
+    
+        protected $page;
+    
+        public function __construct(Page $page)
+        {
+            $this->page = $page;
+        }
 
 	public function showWelcome()
 	{
@@ -22,6 +29,7 @@ class CrmController extends BaseController {
         
         public function show($urlname,$suburlname=null)
         {
+            $nav = $this->page->navbar();
             //$page = isset($suburlname) ? $suburlname : $urlname;
             if (isset($suburlname))
             {
@@ -31,14 +39,14 @@ class CrmController extends BaseController {
                 $thispage = Page::whereUrlname($pageurlname)->whereParentname($parentpageurlname)->first();
                 
                 $parentpage = Page::whereUrlname($parentpageurlname)->first();
-                return View::make('page')->with('page',$thispage)->with('parentpage',$parentpage);
+                return View::make('page')->with('page',$thispage)->with('parentpage',$parentpage)->with('nav',$nav);
             }
             else
             {
                 $pageurlname = $urlname;
                 
                 $thispage = Page::whereUrlname($pageurlname)->first();
-                return View::make('page')->with('page',$thispage);
+                return View::make('page')->with('page',$thispage)->with('nav',$nav);
             }
             
         }
