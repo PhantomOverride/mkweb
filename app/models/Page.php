@@ -29,7 +29,7 @@ class Page extends Eloquent implements UserInterface, RemindableInterface {
          * 
          */
         
-        public function navbar(){
+        static public function navbar(){
             $pages = Page::orderby('order','asc')->whereparentname(null)->get();
             $main = array();
             

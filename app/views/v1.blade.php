@@ -86,9 +86,7 @@
             <div class="box ztop">
                 <div class="col-lg-12">
                     <ul class="breadcrumb">
-                         <li><a href="#">Home</a> <span class="divider">/</span></li>
-                         <li><a href="#">Library</a> <span class="divider">/</span></li>
-                         <li class="active">Data</li>
+                         @yield('v1-breadcrumbs')
                     </ul>
         </div>
     </div>

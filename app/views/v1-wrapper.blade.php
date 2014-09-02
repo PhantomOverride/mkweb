@@ -11,6 +11,7 @@
     v1-contenttitle     Pagetitle for content
     v1-content          Content of page
     v1-sponsor
+ *  v1-breadcrumbs
 */
 
 /*
@@ -23,11 +24,11 @@
 ?>
 
 @section('v1-title')
-Mammas Källare Titel: @yield('title')
+Mammas Källare: @yield('title')
 @stop
 
 @section('v1-headertext')
-    Mammas Källare Headertext
+    Mammas Källare
 @stop
 
 @section('v1-contentname')
@@ -40,6 +41,7 @@ Mammas Källare Titel: @yield('title')
 
 @section('v1-content')
     @yield('content')
+    <br />
 @stop
 
 @section('v1-headerslider')
@@ -48,18 +50,67 @@ Mammas Källare Titel: @yield('title')
               <li><img src="/img/slide-3.jpg" alt=""></li>
 @stop
 @section('v1-sponsor')
-Somecompany
-Other company
-Doge
-Gooby
+<p>
+    Verksamhet:
+</p>
+<li> Företag A </li>
+<li> Organisation B </li>
+<br />
+
+<p>
+    WonderLAN:
+</p>
+<li> Doge </li>
+<li> Other Doge </li>
+<li> Grumpy Cat </li>
+<br />
+
+<p>
+    Pluton MK:
+</p>
+<li> Företag C </li>
+<li> Organisation D </li>
+<br />
+
+<hr />
+
+{{link_to('users',"Logga in!")}}
+
+<br /><br />
+
 @stop
 @section('v1-navbar-1')
+
+    <?php $p = 2 ?>
     @if (isset($nav))
         @foreach ($nav as $main)
             @foreach ($main as $sub)
+            @if (!isset($sub['parentname']))
+            <?php if($p==0) $p=1; if($p!=2) echo '</ul></li>';  ?>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$sub['name']}} </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>{{ link_to($sub['link'],$sub['name']); }}</li>
+            @else
+            <?php $p = 0 ?>
             <li>
                 {{ link_to($sub['link'],$sub['name']); }}
             </li>
+            @endif
+            @endforeach
+        @endforeach
+        <?php if($p==0) {$p=1;echo '</ul>'; } ?>
+    @endif
+@stop
+@section('v1-navbar-1-old')
+    @if (isset($nav))
+        @foreach ($nav as $main)
+            @foreach ($main as $sub)
+            @if (!isset($sub['parentname']))
+            <li>
+                {{ link_to($sub['link'],$sub['name']); }}
+            </li>
+            @endif
             @endforeach
         @endforeach
     @endif
@@ -76,4 +127,11 @@ Gooby
             @endforeach
         @endforeach
     @endif
+@stop
+@section('v1-breadcrumbs')
+    <?php $last = sizeof(Request::segments());?>
+    <li>Sida</li>
+    @for ($i=2;$i<=$last;$i++)
+        <li <? if($i==$last) echo 'class="active"'; ?> ><a href="#">{{ Request::segment($i) }}</a></li>
+    @endfor
 @stop

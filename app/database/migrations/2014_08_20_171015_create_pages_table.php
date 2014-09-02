@@ -103,7 +103,7 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'om-wonderlan',
                             'name' => 'Om WonderLAN',
-                            'title' => 'Om WonderLAN',
+                            'title' => 'Historian bakom LAN:et',
                             'content' =>
 '
 <p>WonderLAN &auml;r ett LAN-party och spelfest med Alice i Underlandet tema som anordnas terminsvis av Mammas K&auml;llare. Vi har varit ig&aring;ng sedan h&ouml;sten 2010 n&auml;r vi f&ouml;r f&ouml;rsta g&aring;ngen anordnade LANet p&aring; K&aring;rhuset Rotundan i Karlskrona. D&auml;refter har evenemanget bara v&auml;xt och vi har flyttat till st&ouml;rre lokaler f&ouml;r att rymma alla deltagare. Nu har vi i snitt &ouml;ver 100 betalande bes&ouml;kare per lan, med ett rekord h&ouml;sten 2012 p&aring; 150 betalande bes&ouml;kare.</p>
@@ -120,7 +120,7 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'bra-att-veta',
                             'name' => 'Bra att veta',
-                            'title' => 'Bra att veta inför WonderLAN',
+                            'title' => 'Läs detta innan WonderLAN',
                             'content' => 'Text om WonderLAN',
                             'parentname' => 'wonderlan',
                             'order' => 22,
@@ -131,7 +131,7 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'regler',
                             'name' => 'Regler',
-                            'title' => 'Regler på WonderLAN',
+                            'title' => 'Detta gäller när du är med oss',
                             'content' =>
 '
 <p>Reglerna under WonderLAN &auml;r f&ouml;ljande:</p>

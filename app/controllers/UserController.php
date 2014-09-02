@@ -21,7 +21,7 @@ class UserController extends \BaseController {
 	public function index()
 	{
 		$users = $this->user->all();
-                return View::make('users.index', ['users' => $users]);
+                return View::make('users.index', ['users' => $users])->with('nav',Page::navbar());
 	}
 
 
@@ -32,7 +32,7 @@ class UserController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('users.create');
+		return View::make('users.create')->with('nav',Page::navbar());
 	}
 
 
@@ -47,7 +47,7 @@ class UserController extends \BaseController {
             
 		if(!$this->user->fill($input)->isValid())
                 {
-                    return Redirect::back()->withInput()->withErrors($this->user->errors);
+                    return Redirect::back()->withInput()->withErrors($this->user->errors)->with('nav',Page::navbar());
                 }
                 
                 $this->user->save();
@@ -67,7 +67,7 @@ class UserController extends \BaseController {
 	{
 		$user = $this->user->whereNickname($nickname)->first();
                 
-                return View::make('users.show', ['user' => $user]);
+                return View::make('users.show', ['user' => $user])->with('nav',Page::navbar());
 	}
 
 
