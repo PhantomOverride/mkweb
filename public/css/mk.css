@@ -97,6 +97,7 @@ hr {
     text-align: center;
     margin:0 auto;
     padding:auto auto;
+    min-width:750px;
 }
 
 .breadcrumb{
@@ -114,6 +115,7 @@ hr {
 }
 
 .navbar-nav {
+    min-width:750px;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
@@ -191,6 +193,7 @@ hr {
 }
 
 footer {
+    min-width:750px;
     background: #fff;
     background: rgba(255,255,255,0.9);
     width:100%;
@@ -202,8 +205,6 @@ footer p {
 }
 @media screen and (min-width:480px) {
     .brand {
-        width:100%;
-        min-width:1170px;
         display: inherit;
         margin: 0;
         padding: 0px;
@@ -238,8 +239,9 @@ footer p {
     }
 
     .navbar {
+        min-width:750px;
         border-radius: 0;
-	margin-bottom:6px;
+	    margin-bottom:6px;
     }
 
     .navbar-header {
@@ -248,7 +250,6 @@ footer p {
 
     .navbar {
         min-height: 0;
-        min-width:1170px;
     }
 
     .navbar-default {
@@ -265,6 +266,7 @@ footer p {
     }
 
     .navbar-nav {
+	min-width:580px;
         display: table;
         float: none;
         margin: 0 auto;
@@ -275,7 +277,6 @@ footer p {
         background: #fff;
         background: rgba(255,255,255,0.9);
         width:100%;
-        min-width:1170px;
     }
 }
 
