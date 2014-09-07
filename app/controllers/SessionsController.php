@@ -21,7 +21,7 @@ class SessionsController extends BaseController {
         
         Auth::logout();
         
-        return Redirect::to('login')->with('message','<p class="notice">Hejdå! Du är nu utloggad. Om du tycker det är tråkigt att vara utloggad kan du ju alltid logga in igen...</p>');
+        return Redirect::to('login')->with('message','<p class="box-rounded notis">Hejdå! Du är nu utloggad. Om du tycker det är tråkigt att vara utloggad kan du ju alltid logga in igen...</p>');
     }
     
 }

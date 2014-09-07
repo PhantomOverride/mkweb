@@ -3,11 +3,11 @@
 @if(isset($user))
 
     @section('title')
-        User {{$user->nickname}}
+        Profil för {{$user->nickname}}
     @stop
 
     @section('contentname')
-        User
+        Profil
     @stop
 
     @section('contenttitle')
@@ -20,7 +20,11 @@
         @endif
         
         @if(Auth::check() && Auth::user()->nickname == $user->nickname)
-            
+        
+        <img src="{{$user->avatarurl}}" alt="avatar" />
+        
+        {{ link_to_route('users.edit','Redigera din profil',$user->nickname) }}
+        
         <table>
             <tr>
                 <td>Förnamn:</td>

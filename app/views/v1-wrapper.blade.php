@@ -49,6 +49,13 @@ Mammas Källare: @yield('title')
               <li><img src="/img/slide-2.jpg" alt=""></li>
               <li><img src="/img/slide-3.jpg" alt=""></li>
 @stop
+@section('v1-login')
+@if(Auth::guest())
+{{ link_to('login','Logga in') }} &nbsp;-&nbsp; {{ link_to_route('users.create','Registrera') }}
+@else
+Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname) }}! &nbsp;-&nbsp; {{ link_to('logout','Logga ut') }}
+@endif
+@stop
 @section('v1-sponsor')
 <div class="spons-entry">
     <p>

@@ -74,7 +74,7 @@ class UserController extends \BaseController {
                 
                 //If we are logged in and are viewing our own profile, pass more information
                 if(Auth::check() && Auth::user()->nickname == $nickname){
-                    $message = '<p class="notice">Tänk på att det är bara du som kan se dina kontaktuppgifter! Din publika profil visar mindre.</p>';
+                    $message = '<p class="box-rounded notis">Tänk på att det är bara du som kan se dina kontaktuppgifter! Din publika profil visar mindre.</p>';
                     return View::make('users.show', ['user' => $user])->with('message',$message)->with('nav',Page::navbar());
                 }
                 
@@ -99,7 +99,18 @@ class UserController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		if(Auth::guest()) Redirect::to('login');
+                
+                $user = Auth::user();
+                
+                unset($user->id);
+                unset($user->ssid);
+                unset($user->status);
+                unset($user->created_at);
+                unset($user->updated_at);
+                
+                return View::make('users.edit', ['user' => $user])->with('nav',Page::navbar());
+                
 	}
 
 

@@ -91,7 +91,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
-                            <a href="#">Login</a>
+                            @yield('v1-login')
                         </div>
                     <div>
                 </div>

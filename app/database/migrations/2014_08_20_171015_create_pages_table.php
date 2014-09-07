@@ -97,33 +97,35 @@ class CreatePagesTable extends Migration {
 
 <p>Styrelsen för verksamhetsåret 2014 är som följer:</p>
 
-<h2>Ordförande</h2>
+<h3>Ordförande</h3>
 <p>
-Oscar Hjelm oscar.hjelm@mammaskallare.se
+Oscar Hjelm - oscar.hjelm snabel-a mammaskallare.se
 </p>
 
 
-<h2>Kassör</h2>
+<h3>Kassör</h3>
 <p>
-Pontus Franzén
+Pontus Franzén - pontus.franzen snabel-a mammaskallare.se
 </p>
 
 
-<h2>Sekreterare</h2>
+<h3>Sekreterare</h3>
 <p>
-Jakob
+Jakob Lidborn - jakob.lidborn snabel-a mammaskallare.se
 </p>
 
-<h2>Sektionen för brädspel</h2>
+<h3>Sektionen för brädspel</h3>
 <p>
-Christian Burgman<br />
-Otto Remse
+Christian Burgman - christian.burgman snabel-a mammaskallare.se
+<br />
+Otto Remse - otto.remse snabel-a mammaskallare.se
 </p>
 
-<h2>Sektionen för airsoft - Pluton MK</h2>
+<h3>Sektionen för airsoft - Pluton MK</h3>
 <p>
-Erik Bergenholtz<br />
-Johny
+Erik Bergenholtz - erik.bergenholtz snabel-a mammaskallare.se
+<br />
+Johny Löfgren - johny.lofgren snabel-a mammaskallare.se
 </p>   
 ',                        
                             'parentname' => 'mammaskallare',
@@ -143,7 +145,7 @@ Johny
                             'title' => 'Are you ready?',
                             'content' =>
 '
-<p class="notice" >Fram med kofoten och gör dig redo för den kommande instansen av WonderLAN - EValved! Med start fredagen den 10 oktober blir det ett LAN och spelfest utan dess like fram till måndagen den 13. Häng med gemenskapen och tävla i ett av spelen som intreserar dig! Se eventsidan för mer information!</p>
+<p class="box-rounded notis" >Fram med kofoten och gör dig redo för den kommande instansen av WonderLAN - EValved! Med start fredagen den 10 oktober blir det ett LAN och spelfest utan dess like fram till måndagen den 13. Häng med gemenskapen och tävla i ett av spelen som intreserar dig! Se eventsidan för mer information!</p>
 
 <p>WonderLAN är ett LAN-party och spelfest med Alice i Underlandet-tema som anordnas terminsvis av Mammas Källare. Vi har varit igång sedan hösten 2010 när vi för första gången anordnade LAN:et på Kårhuset Rotundan i Karlskrona. Därefter har evenemanget bara växt och vi har flyttat till större lokaler för att rymma alla deltagare. Nu har vi i snitt över 100 betalande besökare per LAN, med ett rekord hösten 2012 på 150 betalande besökare.</p>
 
@@ -217,23 +219,25 @@ Lite växtvärk just nu. Kom tillbaka imorgon!
                             'title' => 'Detta gäller när du är med oss',
                             'content' =>
 '
-<p>Reglerna under WonderLAN &auml;r f&ouml;ljande:</p>
+<p>Reglerna under WonderLAN är följande:</p>
 <ul>
-<li>WonderLAN &auml;r ingen frizon f&ouml;r lagl&ouml;shet. Detta inneb&auml;r att alla former av illegal fildelning &auml;r strikt f&ouml;rbjuden. Fildelning ut mot Internet kommer dessutom medf&ouml;ra risken att v&aring;r Internetf&ouml;rbindelse bryts, vilket st&auml;ller till problem f&ouml;r samtliga av LAN:ets deltagare. Om du som deltagare bryter mot lagen p&aring; WonderLAN r&auml;ds vi inte polisanm&auml;lan.</li>
-<li>WonderLAN &auml;r drogfritt. Varken alkohol eller andra droger till&aring;ts inne i lokalen. Inte heller till&aring;ts drogp&aring;verkade m&auml;nniskor att vistas i WonderLANs lokaler!</li>
-<li>P&aring; grund av att ovve &auml;r starkt f&ouml;rknippat till alkoholrelaterade tillst&auml;llningar s&aring; &auml;r det ett ol&auml;mpligt kl&auml;desplagg att ha p&aring; sig och vi f&ouml;rebeh&aring;ller oss r&auml;tten att avvisa alla personer som har ovve p&aring; sig fr&aring;n eventet.</li>
-<li>Under WonderLAN &auml;r det otill&aring;tet att utan v&aring;r till&aring;telse affischera, g&ouml;ra reklam eller p&aring; annat s&auml;tt skr&auml;pa ned.</li>
-<li>Obeh&ouml;riga f&aring;r inte vistas i CREW-omr&aring;dena.</li>
-<li>Under WonderLAN ansvarar du sj&auml;lv f&ouml;r dina &auml;godelar.</li>
-<li>Utifall du skulle ha s&ouml;nder n&aring;gon utrustning tillh&ouml;rande oss eller v&aring;ra partners kommer vi h&aring;lla dig kostnadsskyldig.</li>
-<li>Det &auml;r inte till&aring;tet att sova i skolans lokaler. Detta ska ske hemma eller i sovsalarna avsedda f&ouml;r &auml;ndam&aring;let.</li>
-<li>Du f&aring;r ej &ouml;verbelasta eln&auml;tet genom att tex koppla in vattenkokare eller liknande utrustning. Endast dator med kringutrustning f&aring;r kopplas in.</li>
-<li>Vi f&ouml;rbeh&aring;ller oss r&auml;tten att st&auml;lla in turneringar och t&auml;vlingar med f&ouml;r f&aring; deltagare.</li>
-<li>Det g&aring;r att betala bokningen p&aring; plats, dock tillkommer en administrationsavgift p&aring; 20 SEK.</li>
-<li>Respektera andra deltagare och CREW. Vid upprepat respektl&ouml;st beteende f&ouml;rbeh&aring;ller vi oss r&auml;tten att avhysa Dig fr&aring;n eventet.</li>
-<li>Vi fr&aring;ns&auml;ger oss ansvar vid h&auml;ndelser utom v&aring;ran kontroll (force majeuer) s&aring;som naturkatastrofer och elavbrott till lokalen.</li>
+<li>Illegal fildelning är förbjudet under svensk lag, och därför inte heller tillåtet under WonderLAN. Illegal fildelning kan medföra risken att vår internetförbindelse bryts, vilket ställer till problem för samtliga av LAN:ets deltagare.</li>
+<li>WonderLAN är drogfritt. Varken alkohol eller andra droger tillåts inne i lokalen. Inte heller tillåts drogpåverkade människor att vistas i WonderLANs lokaler!</li>
+<li>På grund av att ovve är starkt förknippat till alkoholrelaterade tillställningar så är det ett olämpligt klädesplagg att ha på sig under WonderLAN, och vi förebehåller oss rätten att avvisa alla personer som har ovve på sig från eventet.</li>
+<li>All rökning är förbjuden i BTH:s lokaler, därav får rökning ske utomhus. E-cigg tillåts inte i multisalen.
+<li>Under WonderLAN är det otillåtet att utan vår tillåtelse affischera, göra reklam eller på annat sätt skräpa ned.</li>
+<li>Obehöriga får inte vistas i CREW-områdena.</li>
+<li>Under WonderLAN ansvarar du själv för dina ägodelar.</li>
+<li>Utifall du skulle ha sönder någon utrustning tillhörande oss eller våra partners kommer vi hålla dig kostnadsskyldig.</li>
+<li>Det är inte tillåtet att sova i skolans lokaler. Detta ska ske hemma eller i sovsalarna avsedda för ändamålet.</li>
+<li>Du får ej överbelasta elnätet genom att t.ex. koppla in vattenkokare eller liknande utrustning. Endast dator med kringutrustning får kopplas in.</li>
+<li>Vi förbehåller oss rätten att ställa in turneringar och tävlingar med för få deltagare.</li>
+<li>Det går att betala bokningen på plats, dock tillkommer en administrationsavgift på 20 SEK.</li>
+<li>Bokning är bindande om inget annat sägs.</li>
+<li>Respektera andra deltagare och CREW. Vid upprepat respektlöst beteende förbehåller vi oss rätten att avhysa Dig från eventet.</li>
+<li>Vi frånsäger oss ansvar vid händelser utom våran kontroll (force majeuer) såsom naturkatastrofer och elavbrott till lokalen.</li>
 </ul>
-<p>Notera att regler kan tillkomma och &auml;ndras b&aring;de innan och under WonderLAN.</p>
+<p>Notera att regler kan tillkomma och ändras både innan och under WonderLAN.</p>
 ',
                             'parentname' => 'wonderlan',
                             'order' => 24,
