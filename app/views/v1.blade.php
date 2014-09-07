@@ -83,13 +83,20 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="box ztop">
-                <div class="col-lg-12">
-                    <ul class="breadcrumb">
-                         @yield('v1-breadcrumbs')
-                    </ul>
+                <div class="col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="box-rounded bread col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10"> 
+                            <ul class="breadcrumb_trans">
+                                 @yield('v1-breadcrumbs')
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                            <a href="#">Login</a>
+                        </div>
+                    <div>
+                </div>
+            </div>  
         </div>
-    </div>
     </div>
         <div class="row">
         <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">

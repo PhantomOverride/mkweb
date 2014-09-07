@@ -101,8 +101,20 @@ hr {
     min-width:750px;
 }
 
-.breadcrumb{
+.breadcrumb_trans{
 	margin-bottom:0px;
+    padding: 0px;
+    list-style:none outside none;
+
+}
+.breadcrumb_trans > li{
+    display:inline-block;
+    padding:0px;
+}
+
+.breadcrumb_trans > li + li:before{
+    color:#ccc;
+    content:"/  ";
 }
 
 .hidden {
@@ -161,6 +173,16 @@ hr {
 
 .box-rounded.main {
     min-height:500px;
+}
+
+
+.text-right{
+    text-align:right;
+}
+
+.box-rounded.bread {
+    margin:0px;
+    padding:0px 15px;
 }
 
 .box-rounded.sideNavbar {
