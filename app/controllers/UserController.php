@@ -53,7 +53,6 @@ class UserController extends \BaseController {
                 $this->user->save();
                 
                 return Redirect::route('users.index');
-                
 	}
 
 
@@ -67,6 +66,27 @@ class UserController extends \BaseController {
 	{
 		$user = $this->user->whereNickname($nickname)->first();
                 
+                unset($user->id);
+                unset($user->ssid);
+                unset($user->status);
+                unset($user->created_at);
+                unset($user->updated_at);
+                
+                //If we are logged in and are viewing our own profile, pass more information
+                if(Auth::check() && Auth::user()->nickname == $nickname){
+                    $message = '<p class="notice">Tänk på att det är bara du som kan se dina kontaktuppgifter! Din publika profil visar mindre.</p>';
+                    return View::make('users.show', ['user' => $user])->with('message',$message)->with('nav',Page::navbar());
+                }
+                
+                //Else pass less information
+                unset($user->email);
+                unset($user->forename);
+                unset($user->lastname);
+                unset($user->postalcode);
+                unset($user->streetaddress);
+                unset($user->phone);
+                unset($user->membertype);
+                unset($user->memberperiod);
                 return View::make('users.show', ['user' => $user])->with('nav',Page::navbar());
 	}
 

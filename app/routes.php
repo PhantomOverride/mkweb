@@ -4,25 +4,43 @@
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
 */
 
+/*
+ * Main Landing page
+ * This should in the future be
+ *  a dedicated home page.
+ */
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Redirect::to('page/mammaskallare');
 });
 
 
-// CRM system for pages
+/*
+ *  CMS Controller for pages
+ *  This handles most content
+ */
 Route::get('page/{urlname}/{suburlname?}', 'CrmController@show');
 
-//User system and handling
-//Route::get('users', 'UserController@index');
-//Route::get('users/{username}', 'UserController@show');
 
+/*
+ * User handling
+ */
 Route::resource('users','UserController');
+
+/*
+ * Session Handling
+ */
+Route::resource('sessions', 'SessionsController');
+Route::get('login', 'SessionsController@create');
+Route::get('logout', 'SessionsController@destroy');
+
+/*
+ * Management
+ */
+Route::get('crew', function()
+{
+   return 'Crew management interface' ;
+})->before('crew');
