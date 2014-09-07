@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
 body {
@@ -46,7 +46,7 @@ hr {
 
 }
 
-.ztop
+.ztop {
     z-index:99999;
 }
 
@@ -78,8 +78,9 @@ hr {
 .logo{
     width:120px;
     height:120px;
+    margin-left:30px;
     z-index:99999;
-    background-color:#340034;
+    background: url('../img/logo.png');
     position:absolute;
 }
 .banner{
@@ -176,6 +177,7 @@ hr {
 }
 
 .box-rounded.spons{
+    padding:10px 20px;
     min-height:200px;
 }
 
@@ -230,6 +232,12 @@ footer p {
     margin: 0;
     padding: 50px 0;
 }
+@media screen and (min-width:998px) {
+    .box-rounded.spons{
+        min-height:456px;
+    }
+
+}
 @media screen and (min-width:480px) {
     .brand {
         display: inherit;
@@ -244,9 +252,6 @@ footer p {
         color: #fff;
     }
 
-    .box-rounded.spons{
-        min-height:456px;
-    }
 
     .top-divider {
         margin-top: 0;
@@ -333,4 +338,3 @@ footer p {
     border: 1px solid rgba(86,61,124,.2);*/
 }
 
-slider1

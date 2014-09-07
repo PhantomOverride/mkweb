@@ -75,10 +75,10 @@ Mammas Källare: @yield('title')
     <li> Organisation D </li>
 </div>
 
-<hr />
 
-{{link_to('users',"Logga in!")}}
-
+<div class="spons-entry">
+    {{link_to('users',"Logga in!")}}
+</div>
 <br /><br />
 
 @stop

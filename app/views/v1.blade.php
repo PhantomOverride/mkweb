@@ -124,7 +124,7 @@
                 </div>
             <!-- /.input-group -->
             </div>
-            <div class="box-rounded spons">
+            <div class="box-rounded spons col-md-2 col-lg-2 col-sm-12 col-xs-12">
             <!-- Sponsorer -->
                 <h4>Sponsorer</h4>
                     @yield('v1-sponsor')
