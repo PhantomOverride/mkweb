@@ -91,7 +91,7 @@ Mammas Källare: @yield('title')
             @if (!isset($sub['parentname']))
             <?php if($p==0) $p=1; if($p!=2) echo '</ul></li>';  ?>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{$sub['name']}} </a>
+                <a href="#" class="dropdown" >{{$sub['name']}} </a>
                 <ul class="dropdown-menu" role="menu">
                     <li>{{ link_to($sub['link'],$sub['name']); }}</li>
             @else
