@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="col-lg-8 col-md-8">
-            <div class="box-rounded">
+            <div class="box-rounded main">
                 <h1 class="page-header">
                     @yield('v1-contentname')
                     <small>@yield('v1-contenttitle')</small>
@@ -124,7 +124,7 @@
                 </div>
             <!-- /.input-group -->
             </div>
-            <div class="box-rounded">
+            <div class="box-rounded spons">
             <!-- Sponsorer -->
                 <h4>Sponsorer</h4>
                     @yield('v1-sponsor')

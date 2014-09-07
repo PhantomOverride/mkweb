@@ -50,27 +50,30 @@ Mammas Källare: @yield('title')
               <li><img src="/img/slide-3.jpg" alt=""></li>
 @stop
 @section('v1-sponsor')
-<p>
-    Verksamhet:
-</p>
-<li> Företag A </li>
-<li> Organisation B </li>
-<br />
+<div class="spons-entry">
+    <p>
+        Verksamhet:
+    </p>
+    <li> Företag A </li>
+    <li> Organisation B </li>
+</div>
 
-<p>
-    WonderLAN:
-</p>
-<li> Doge </li>
-<li> Other Doge </li>
-<li> Grumpy Cat </li>
-<br />
+<div class="spons-entry">
+    <p>
+        WonderLAN:
+    </p>
+    <li> Doge </li>
+    <li> Other Doge </li>
+    <li> Grumpy Cat </li>
+</div>
 
-<p>
-    Pluton MK:
-</p>
-<li> Företag C </li>
-<li> Organisation D </li>
-<br />
+<div class="spons-entry">
+    <p>
+        Pluton MK:
+    </p>
+    <li> Företag C </li>
+    <li> Organisation D </li>
+</div>
 
 <hr />
 
