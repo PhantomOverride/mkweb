@@ -13,7 +13,15 @@
 @stop
 
 @section('content')
-
+<p>
+    Vad kul att du vill registrera dig hos oss! Det är vanlig vett och etikett som gäller för ditt konto här, så vi känner inte att det är så lönt att skriva någon uppsatts på 200 sidor om vad som gäller.
+</p>
+<p>
+    Du behöver fylla i alla fälten. Tänk på att du INTE blir medlem i Sverok-föreningen genom att skapa ett konto. För att bli medlem och få medlemsförmåner får du kontakta oss på kontakt@mammaskallare.com, eller fånga någon av våra representanter!
+</p>
+<p>
+    Nåväl. Var var vi. Jo! Registrering:
+</p>
     {{Form::open(['route' => 'users.store'])}}
     
     <div>
