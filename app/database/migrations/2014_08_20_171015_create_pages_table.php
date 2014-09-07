@@ -34,13 +34,16 @@ class CreatePagesTable extends Migration {
                         array(
                             'urlname' => 'mammaskallare',
                             'name' => 'Mammas Källare',
-                            'title' => 'Mammas Källare på Internet',
+                            'title' => 'Verkligheten väntar...',
                             'content' =>
 '
-<p>Mammas K&auml;llare grundades av en grupp rollspelare och d&aring;varande f&ouml;rsta&aring;rs-studenter p&aring; BTH &aring;r 2009. Samtliga grundare ans&aring;g att studentlivet i Blekinge hade potential, och att det vore kul om n&aring;gra drivande individer tog tag i saken och organiserade en studentf&ouml;rening dedikerad till spel och verklighetsflykt! Mammas K&auml;llare har sedan dess jobbat med rollspel, filmkv&auml;llar, airsoft-event och LAN &ndash; d&auml;ribland WonderLAN, som arrangeras en g&aring;ng per termin. Vi existerar f&ouml;r att berika studentlivet i Blekinge och f&ouml;ra m&auml;nniskor samman genom galna uppt&aring;g och roliga event.</p>
-<p>Mammas K&auml;llare finns b&aring;de som kvasi och Sverokf&ouml;rening. De b&aring;da delarna &auml;r ekonomiskt skilda fr&aring;n varandra och Sverokf&ouml;reningen &auml;r &ouml;ppen f&ouml;r alla som vill bli medlemmar. Merparten av de aktiviteter vi anordnar faller under Sverok, d&auml;ribland WonderLAN och v&aring;ra popul&auml;ra airsoftspel.</p>
-<p>Om du k&auml;nner dig manad att hj&auml;lpa oss n&aring; v&aring;ra m&aring;l &auml;r det bara att g&aring; fram till n&aring;gon av v&aring;ra representanter, vanligtvis ikl&auml;dda MK-kavaj, eller kontakta oss via <a href="mailto:kontakt@mammaskallare.se">mail</a> eller p&aring; v&aring;r <a href="https://www.facebook.com/MammasKallare">facebooksida</a>.</p>
-<p>V&auml;lkommen till verkligheten!</p>
+<p>Mammas Källare grundades av en grupp rollspelare och dåvarande förstaårs-studenter på BTH år 2009. Samtliga grundare ansåg att studentlivet i Blekinge hade potential, och att det vore kul om några drivande individer tog tag i saken och organiserade en studentförening dedikerad till spel och verklighetsflykt! Mammas Källare har sedan dess jobbat med rollspel, brädspel, filmkvällar, airsoft-event och LAN – däribland WonderLAN, som arrangeras en gång per termin. Vi existerar för att berika studentlivet i Blekinge och föra människor samman genom galna upptåg och roliga event.</p>
+
+<p>Mammas Källare är inte att förväxlas med kvasiföreningen MK. De båda organisationerna är ekonomiskt skilda från varandra, och Sverokföreningen är öppen för alla som vill bli medlemmar. De aktiviteter vi anordnar är alkoholfria och faller under Sverok, däribland WonderLAN och våra populära airsoftspel.</p>
+
+<p>Om du känner dig manad att hjälpa oss nå våra mål är det bara att gå fram till någon av våra representanter i styrelsen, slänga iväg ett mail, eller via vår facebooksida.</p>
+
+<p>Välkommen till verkligheten!</p>
 ',
                             'parentname' => null,
                             'order' => 10,
@@ -54,7 +57,13 @@ class CreatePagesTable extends Migration {
                             'title' => 'Kom i kontakt med oss!',
                             'content' =>
 '
-Här finns info om hur man skickar mejl
+<p>Enklaste sättet att komma i kontakt med oss är att slänga ett mail till <a href="mailto:kontakt@mammaskallare.se">kontakt@mammaskallare.se</a>! Vi har även en sida på Facebook, om det passar bättre.</p>
+
+<p>Är det någon särskild i styrelsen du vill nå så kan du hitta uppgifterna under sidan för Styrelse.</p>
+
+<p>Om ärendet rör WonderLAN kan du kontakta <a href="mailto:kontakt@wonderlan.se">kontakt@wonderlan.se</a>.</p>
+
+<p>Annars är du välkommen att fånga någon av våra representanter eller CREW och ställa dina frågor IRL.</p>
 ',
                             'parentname' => 'mammaskallare',
                             'order' => 15,
@@ -66,7 +75,10 @@ Här finns info om hur man skickar mejl
                             'urlname' => 'om-oss',
                             'name' => 'Om Oss',
                             'title' => 'Så, vad är det vi sysslar med?',
-                            'content' => 'Om oss.',
+                            'content' => 
+'
+<p>Vår nya hemsida har lite fler sidor än vår förra, och vi försöker under veckan fylla de nya bitarna med information. Kika tillbaks lite senare =)!</p>
+',
                             'parentname' => 'mammaskallare',
                             'order' => 11,
                         )
@@ -76,8 +88,44 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'styrelse',
                             'name' => 'Styrelse',
-                            'title' => 'Styrelsen för Mammas Källare',
-                            'content' => 'styrelse.',
+                            'title' => 'All of this, brought to you by...',
+                            'content' => 
+'
+<p>Betalande medlemmar tillsätter på årsmötet i början på varje verksamhetsår styrelsen för Mammas Källare. De förtroendevalda ansvarar för verksamheten under året, och ser till att den verksamhetsplan som ligger i medlemmarnas intresse blir av.</p>
+
+<p>Som gratis medlem är du välkommen att delta på årsmötet och komma med dina förslag, men det är endast betalande medlemmar som har rösträtt.</p>
+
+<p>Styrelsen för verksamhetsåret 2014 är som följer:</p>
+
+<h2>Ordförande</h2>
+<p>
+Oscar Hjelm oscar.hjelm@mammaskallare.se
+</p>
+
+
+<h2>Kassör</h2>
+<p>
+Pontus Franzén
+</p>
+
+
+<h2>Sekreterare</h2>
+<p>
+Jakob
+</p>
+
+<h2>Sektionen för brädspel</h2>
+<p>
+Christian Burgman<br />
+Otto Remse
+</p>
+
+<h2>Sektionen för airsoft - Pluton MK</h2>
+<p>
+Erik Bergenholtz<br />
+Johny
+</p>   
+',                        
                             'parentname' => 'mammaskallare',
                             'order' => 12,
                         )
@@ -92,10 +140,35 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'wonderlan',
                             'name' => 'WonderLAN',
-                            'title' => 'WonderLAN',
-                            'content' => 'Spel och härligt umgänge!',
+                            'title' => 'Are you ready?',
+                            'content' =>
+'
+<p class="notice" >Fram med kofoten och gör dig redo för den kommande instansen av WonderLAN - EValved! Med start fredagen den 10 oktober blir det ett LAN och spelfest utan dess like fram till måndagen den 13. Häng med gemenskapen och tävla i ett av spelen som intreserar dig! Se eventsidan för mer information!</p>
+
+<p>WonderLAN är ett LAN-party och spelfest med Alice i Underlandet-tema som anordnas terminsvis av Mammas Källare. Vi har varit igång sedan hösten 2010 när vi för första gången anordnade LAN:et på Kårhuset Rotundan i Karlskrona. Därefter har evenemanget bara växt och vi har flyttat till större lokaler för att rymma alla deltagare. Nu har vi i snitt över 100 betalande besökare per LAN, med ett rekord hösten 2012 på 150 betalande besökare.</p>
+
+<p>På WonderLAN finns allt för spelfantasten med en blandning av både digitalt och analogt. Vi håller turneringar och tävlingar i populära PC-spel och har en mysig konsolhörna där man kan prova på diverse tv-spel. Utöver detta florerar såväl kort- som roll- och brädspel under evenemanget. Den som vill ta en paus från spelandet kan även koppla av i filmsalen där vi visar en skön blandning av såväl nyare filmer som gamla favoriter.</p>
+
+<p>Den nyfikne besökaren kommer in gratis på evenemanget och för den som vill ha med egen hårdvara kan en datorplats bokas via vår hemsida mot en skälig summa riksdaler.</p>
+
+<p>För att hålla dig uppdaterad, glöm inte bort att gilla WonderLAN på facebook.</p>
+',
                             'parentname' => null,
                             'order' => 20,
+                        )
+                );
+                
+                DB::table('pages')->insert(
+                        array(
+                            'urlname' => 'evalveing',
+                            'name' => 'Kommande LAN',
+                            'title' => '<br />WonderLAN - EValveing',
+                            'content' =>
+'
+<p>Mer information inom (väldigt) kort!</p>
+',
+                            'parentname' => 'wonderlan',
+                            'order' => 21,
                         )
                 );
                 
@@ -106,13 +179,20 @@ Här finns info om hur man skickar mejl
                             'title' => 'Historian bakom LAN:et',
                             'content' =>
 '
-<p>WonderLAN &auml;r ett LAN-party och spelfest med Alice i Underlandet tema som anordnas terminsvis av Mammas K&auml;llare. Vi har varit ig&aring;ng sedan h&ouml;sten 2010 n&auml;r vi f&ouml;r f&ouml;rsta g&aring;ngen anordnade LANet p&aring; K&aring;rhuset Rotundan i Karlskrona. D&auml;refter har evenemanget bara v&auml;xt och vi har flyttat till st&ouml;rre lokaler f&ouml;r att rymma alla deltagare. Nu har vi i snitt &ouml;ver 100 betalande bes&ouml;kare per lan, med ett rekord h&ouml;sten 2012 p&aring; 150 betalande bes&ouml;kare.</p>
-<p>P&aring; WonderLAN finns allt f&ouml;r spelfantasten med en blandning av b&aring;de digitalt och analogt. Vi h&aring;ller turneringar och t&auml;vlingar i popul&auml;ra PC-spel och har en mysig konsolh&ouml;rna d&auml;r man kan prova p&aring; diverse tv-spel. Ut&ouml;ver detta florerar s&aring;v&auml;l kort- som roll- och br&auml;dspel under evenemanget. Den som vill ta en paus fr&aring;n spelandet kan &auml;ven koppla av i filmsalen d&auml;r vi visar en sk&ouml;n blandning av s&aring;v&auml;l nyare filmer som gamla favoriter.</p>
-<p>Den nyfikne bes&ouml;karen kommer in gratis p&aring; evenemanget och f&ouml;r den som vill ha med egen h&aring;rdvara kan en datorplats bokas via v&aring;r hemsida mot en sk&auml;lig summa riksdaler.</p>
-<p>F&ouml;r att h&aring;lla dig uppdaterad, gl&ouml;m inte bort att gilla <a href="https://www.facebook.com/MK.WonderLAN">WonderLAN p&aring; facebook</a>.</p>
+<p>Historien om WonderLAN börjar med Mammas Källare, som tyckte att det var för lite nördiga aktiviteter och bestämde sig för att hålla ett LAN. En av grundarna till MK hade en viss besatthet av Alice in Wonderland (vilket inte hör till ovanligheterna), så temat var satt från början. Men vad skulle det kallas? Genom antingen genialitet eller lathet så kom man på WonderLAN, en simpel och passande förkortning av Wonderland. Och här är vi då, på vårat femte lan!</p>
+
+<p>Lite allmän info om lanet var att det tog plats 1-4 oktober 2010, vårat första höstlan. Vi skröt med våran 100Mbit’s uppkoppling, dansmattor och diverse turneringar (LoL, SC2, DOTA och CS). Skor var inte tillåtet så alla tassade runt med blåa skyddsöverdrag på skorna/fötterna, vilket säkerligen var en syn.</p>
+
+<p>På första lanet vistades vi inte i skolans multisal, utan höll istället till på Rotundan, BTH’s utmärkande kårhus precis vid vattnet. Deltagarskaran var onekligen mindre än den är nu, men redan då var det ungefär 60 deltagare, plus cirka 10 i CREW. Dessa 10 hade lyxen att ha sitt CREWs nest uppe på sjävla scenen, och de myste till det lite extra med blinkande lampor.</p>
+
+<p>Det första lanet beskrivs som varmt, svettigt och händelserikt. Det som alla kommer ihåg är båtbranden. Daniel, som var med i CREW, var rökare och smet då och då ut för att mätta sitt beroende. En gång när han var på väg ut med tändaren i handen så frågades det vad han skulle göra, varpå svaret blev “Tända fyr på något”. Inte långt senare ropas det ut inne på Rotundan att en båt minsann brinner ute vid bryggan! Detta skapade inte speciellt stor uppståndelse bland varken deltagarna eller CREW vid tiden, men vi minns och hedrar denna händelse. Vissa påstår att de kan se båten brinna än…</p>
+
+<p>Andra spännande saker som hände under det här första lanet var bland annat ett elavbrott för hälften av deltagarna, vilket inte CREW visste om förän en halvtimme senare, då det självklart åtgärdades. Läxan lärd så har vi nu professionellt dragen el. CREW minns också väl en viss mikrovågsugn som fick smeknamnet “Ion cannon”. Offret för denna mikro var en Billy’s panpizza, som efter attacken hade ett hål i mitten och var allmänt väldigt smält.</p>
+
+<p>Vi har kommit en lång väg från det första lanet, och vi hoppas på att vårat kärleksbarn, som det nu har blivit, växer ännu mer till nästa gång.</p>
 ',
                             'parentname' => 'wonderlan',
-                            'order' => 21,
+                            'order' => 22,
                         )
                 );
                 
@@ -121,9 +201,12 @@ Här finns info om hur man skickar mejl
                             'urlname' => 'bra-att-veta',
                             'name' => 'Bra att veta',
                             'title' => 'Läs detta innan WonderLAN',
-                            'content' => 'Text om WonderLAN',
+                            'content' =>
+'
+Lite växtvärk just nu. Kom tillbaka imorgon!
+',
                             'parentname' => 'wonderlan',
-                            'order' => 22,
+                            'order' => 23,
                         )
                 );
                 
@@ -153,7 +236,7 @@ Här finns info om hur man skickar mejl
 <p>Notera att regler kan tillkomma och &auml;ndras b&aring;de innan och under WonderLAN.</p>
 ',
                             'parentname' => 'wonderlan',
-                            'order' => 23,
+                            'order' => 24,
                         )
                 );
                 
@@ -165,8 +248,13 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'bradspel',
                             'name' => 'Brädspel',
-                            'title' => 'Bräd-, kort- och rollspel',
-                            'content' => 'Brädspel',
+                            'title' => 'När handkontroller inte är nog',
+                            'content' =>
+'
+<p>Brädspel är en ny del av föreningen, vars syfte är att styra upp verksamheten som berör Bräd-, kort- och rollspel.
+Här kan det röra sig om både större spelkvällar som hålls på Rotundan, men även mindre kvällar hemma hos spelintresserade.</p>
+<p>Intresserad av att hitta spelkamrater? Häng med på våra aktiviteter! Vi ses där!</p>
+',
                             'parentname' => null,
                             'order' => 30,
                         )
@@ -180,8 +268,14 @@ Här finns info om hur man skickar mejl
                         array(
                             'urlname' => 'plutonmk',
                             'name' => 'Pluton MK',
-                            'title' => 'Pluton MK - Skjut plast och träffa nya vänner',
-                            'content' => 'Pluton MK.',
+                            'title' => 'Skjut plast och träffa nya vänner',
+                            'content' =>
+'
+<p>Varför sitta och tjafsa om VR-produkter som Oculus Rift och löjligheter som 7.1-headset och Kinekt
+- när man kan leka krig på riktigt istället?</p>
+<p>Häng med på våra airsoft-aktiviteter och träffa nya vänner (bokstavligen!). Nya och erfarna spelare är lika välkommna!
+Det finns möjlighet för dig som är helt ny att prova på hur det är att spela airsoft genom att låna utrustning.</p>
+',
                             'parentname' => null,
                             'order' => 40,
                         )
