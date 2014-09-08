@@ -3,7 +3,6 @@
 @section('title')
     Logga in
 @stop
-
 @section('contentname')
     Logga in
 @stop
@@ -20,15 +19,19 @@
 
 {{Session::get('message')}}
 
-{{ Form::open(['route'=>'sessions.store']) }}
-<div>
-    {{ Form::label('email','Email:') }}
-    {{ Form::email('email') }}
+
+<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+    {{ Form::open(array('route'=>'sessions.store','class' => 'form-signin')) }}
+        {{ Form::email('email','Email address',array('class' => 'form-control')) }}
+        {{ Form::password('password',array('class' => 'form-control', 'placeholder' => 'Lösenord')) }}
+
+        <label class="checkbox">
+            <input value="remember-me" type="checkbox"> <span>Remember me</span>
+        </label>
+        {{ Form::submit('Logga in',array('class' => 'btn btn-lg btn-primary btn-block')) }}
+    {{ Form::close() }}
 </div>
-<div>
-    {{ Form::label('password','Lösenord:') }}
-    {{ Form::password('password') }}
-</div>
-{{ Form::submit('Logga in') }}
-{{ Form::close() }}
+
+    
+
 @stop

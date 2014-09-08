@@ -361,4 +361,12 @@ footer p {
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
 }
+.form-signin .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    margin-left:0px;
+    padding-left:20px;
 
+}
+
+.form-signin span{
+    margin-left:20px;
+}

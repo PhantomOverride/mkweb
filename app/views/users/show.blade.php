@@ -21,88 +21,84 @@
         
         @if(Auth::check() && Auth::user()->nickname == $user->nickname)
         
-        <img src="{{$user->avatarurl}}" alt="avatar" />
-        
-        {{ link_to_route('users.edit','Redigera din profil',$user->nickname) }}
-        
-        <table>
-            <tr>
-                <td>Förnamn:</td>
-                <td>{{$user->forename}}</td>
-            </tr>
-            <tr>
-                <td>Efternamn:</td>
-                <td>{{$user->lastname}}</td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td>{{$user->email}}</td>
-            </tr>
-            <tr>
-                <td>Stad:</td>
-                <td>{{$user->city}}</td>
-            </tr>
-            <tr>
-                <td>Adress:</td>
-                <td>{{$user->streetaddress}}</td>
-            </tr>
-            <tr>
-                <td>Postnummer:</td>
-                <td>{{$user->postalcode}}</td>
-            </tr>
-            <tr>
-                <td>Telefonnummer:</td>
-                <td>{{$user->phone}}</td>
-            </tr>
-            <tr>
-                <td>Nickname:</td>
-                <td>{{$user->nickname}}</td>
-            </tr>
-            <tr>
-                <td>Medlemsskap:</td>
-                <td>{{($user->memberype=='none') ? 'Ej Medlem' : 'Medlem'}}</td>
-            </tr>
-            <tr>
-                <td>Medlemsperiod:</td>
-                <td>{{$user->memberperiod}}</td>
-            </tr>
-            <tr>
-                <td>Kontotyp:</td>
-                <td>{{$user->accounttype}}</td>
-            </tr>
-        </table>
+        <div>
+            <p><img src="{{$user->avatarurl}}" alt="avatar" height="160" width="160"></p>
+            <h3>{{$user->nickname}}</h3>
+            {{ link_to_route('users.edit','Redigera din profil',$user->nickname) }}
+            <h4>Stauts: {{$user->accounttype}}</h4>
+            <br>
+                <table class="table table-striped">
+                    
+                    <tbody><tr>
+                        <td>Förnamn:</td>
+                        <td><i class="icon-home"></i> {{$user->forename}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Efternamn:</td>
+                        <td><i class=""></i> {{$user->lastname}}</td>
+                    </tr>
+                    <tr>
+                        <td>Emaili:</td>
+                        <td><i class=""></i>{{$user->email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Stad:</td>
+                        <td><i class=""></i>{{$user->city}} </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><i class=""></i>{{$user->streetaddress}}</td>
+                    </tr>
+                    <tr>
+                        <td>Postnummer:</td>
+                        <td><i class=""></i>{{$user->postalcode}}</td>
+                    </tr>
+                    <tr>
+                        <td>Telefonnummer:</td>
+                        <td><i class=""></i>{{$user->phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Medlemskap:</td>
+                        <td><i class=""></i>{{($user->memberype=='none') ? 'Ej Medlem' : 'Medlem'}}</td>
+                    </tr>
+                    <tr>
+                        <td>Medlemsperiod:</td>
+                        <td><i class=""></i>{{$user->memberperiod}}</td>
+                    </tr>
+                </tbody></table>
+            </table>
+        </div>
         
         @else
         
-        <img src="{{$user->avatarurl}}" alt="avatar" />
-        
-        <table>
-            <tr>
-                <td>
-                    Nickname:
-                </td>
-                <td>
-                    {{$user->nickname}}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Status:
-                </td>
-                <td>
-                    {{$user->accounttype}}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Stad:
-                </td>
-                <td>
-                    {{$user->city}}
-                </td>
-            </tr>
-            
-        </table>
+        <div>
+            <p><img src="{{$user->avatarurl}}" alt="avatar" height="160" width="160"></p>
+            <h3>{{$user->nickname}}</h3>
+            <h4>Stauts: {{$user->accounttype}}</h4>
+            <br>
+                <table class="table table-striped">
+                    
+                    <tbody><tr>
+                        <td>Stad:</td>
+                        <td><i class="icon-home"></i> {{$user->city}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Medlem:</td>
+                        <td><i class=""></i> Medlem</td>
+                    </tr>
+                    <tr>
+                        <td>Score:</td>
+                        <td><i class=""></i>over 9000</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook:</td>
+                        <td><i class=""></i> <a href="">www.facebook.se/derp</a></td>
+                    </tr>
+                </tbody></table>
+            </table>
+        </div>
         
         @endif
 
