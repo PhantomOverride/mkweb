@@ -193,8 +193,10 @@ hr {
 }
 
 .box-rounded.notis {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     padding:10px;
-    background-color:#FAFF63;    
+    background-color:rgba(253, 255, 190, 1);    
     font-style: italic;
 }
 
