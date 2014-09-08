@@ -29,6 +29,7 @@ Route::get('page/{urlname}/{suburlname?}', 'CrmController@show');
  * User handling
  */
 Route::resource('users','UserController');
+Route::post('users/{nickname}/update','update@UserController');
 
 /*
  * Session Handling

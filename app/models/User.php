@@ -36,13 +36,31 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             'email'         => 'required|unique:users|email',
             'forename'      => 'required',
             'lastname'      => 'required',
-            'ssid'          => 'required|numeric|unique:users|min:10',
+            'ssid'          => 'required|numeric|min:8',
             'streetaddress' => 'required',
             'postalcode'    => 'required',
             'city'          => 'required',
             'phone'         => 'required',
             'password'      => 'required|min:8',
-            'nickname'      => 'required|min:3',
+            'nickname'      => 'required|min:3|unique:users',
+            'avatarurl'     => '',
+            'membertype'    => '',
+            'memberperiod'  => '',
+            'accounttype'   => '',
+            'status'        => '',
+        ];
+        
+        public static $rulesUpdate = [
+            'email'         => 'required|email',
+            'forename'      => 'required',
+            'lastname'      => 'required',
+            'ssid'          => '',
+            'streetaddress' => 'required',
+            'postalcode'    => 'required',
+            'city'          => 'required',
+            'phone'         => 'required',
+            'password'      => 'required|min:8',
+            'nickname'      => 'required|min:2',
             'avatarurl'     => '',
             'membertype'    => '',
             'memberperiod'  => '',
@@ -76,6 +94,22 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             
             if ($validation->passes()) return true;
 
+            $this->errors = $validation->messages();
+            
+            return false;
+            
+        }
+        
+        public function isValidUpdate()
+        {
+            
+            $ruleset = static::$rulesUpdate;
+            $ruleset['email'].='|unique:users,email,'.$this->id; //Unique to all but this user
+            $ruleset['nickname'].='|unique:users,nickname,'.$this->id; //Unique to all but this user
+            $validation = Validator::make($this->attributes, $ruleset, static::$errorMessages);
+            
+            if ($validation->passes()) return true;
+            
             $this->errors = $validation->messages();
             
             return false;

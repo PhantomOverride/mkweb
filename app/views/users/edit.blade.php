@@ -13,10 +13,15 @@
 @stop
 
 @section('content')
+
+@if(Session::has('message'))
+    {{Session::get('message')}}
+@endif
+
 <p>
     Du kan här uppdatera din profil.
 </p>
-    {{Form::open(['route' => 'users.store'])}}
+    {{Form::open(['route' => ['users.update',$user->nickname],'method'=>'PUT'])}}
     
     <div>
         {{Form::label('forename', 'Förnamn: ')}}
@@ -71,12 +76,12 @@
         {{$errors->first('password', '<span class=error>:message</span>')}}
     </div>
     <div>
-        {{Form::label('password', 'Nuvarande lösenord: ')}}
-        {{Form::password('password')}}
-        {{$errors->first('password', '<span class=error>:message</span>')}}
+        {{Form::label('password', 'Bekräfta med nuvarande lösenord: ')}}
+        {{Form::password('oldpassword')}}
+        {{$errors->first('oldpassword', '<span class=error>:message</span>')}}
     </div>
     
-    <div>{{Form::submit('Registrera dig!')}}</div>
+    <div>{{Form::submit('Uppdatera')}}</div>
     
     {{Form::close()}}
 

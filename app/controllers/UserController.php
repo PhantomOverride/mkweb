@@ -97,20 +97,23 @@ class UserController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($nickname)
 	{
-		if(Auth::guest()) Redirect::to('login');
-                
+            if(Auth::check() && Auth::user()->nickname == $nickname){
+                    
                 $user = Auth::user();
-                
+
                 unset($user->id);
                 unset($user->ssid);
                 unset($user->status);
                 unset($user->created_at);
                 unset($user->updated_at);
-                
+
                 return View::make('users.edit', ['user' => $user])->with('nav',Page::navbar());
-                
+            }
+            else{
+                return Redirect::to('login');
+            }
 	}
 
 
@@ -120,9 +123,45 @@ class UserController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($nickname)
 	{
-		//
+		if(Auth::check() && Auth::user()->nickname == $nickname){
+                    $input = Input::all();
+                    
+                    $this->user = $this->user->whereNickname($nickname)->first();
+                    
+                    
+                    $this->user->forename = $input['forename'];
+                    $this->user->lastname = $input['lastname'];
+                    $this->user->streetaddress = $input['streetaddress'];
+                    $this->user->postalcode = $input['postalcode'];
+                    $this->user->city = $input['city'];
+                    $this->user->phone = $input['phone'];
+                    $this->user->email = $input['email'];
+                    $this->user->nickname = $input['nickname'];
+                    
+                    //Do not set new password if field is empty.
+                    if(!empty($input['password'])) $this->user->password = $input['password'];
+                   
+                   
+                    if(!Hash::check($input['oldpassword'],Auth::user()->password)){
+                        //If password check does not match
+                        $message = '<p class="box-rounded notis">Du måste ange ditt gamla lösenord för att spara.</p>';
+                        return Redirect::back()->withInput()->with('message',$message);
+                    }
+                    elseif(!$this->user->isValidUpdate())
+                    {
+                        return Redirect::back()->withInput()->withErrors($this->user->errors)->with('nav',Page::navbar());
+                    }
+                    else{
+                        $this->user->update();
+                        $message = '<p class="box-rounded notis">Din profil är uppdaterad!</p>';
+                        return Redirect::route('users.show',$nickname)->with('message',$message);
+                    }
+                }
+                else{
+                    return Redirect::to('login');
+                }
 	}
 
 

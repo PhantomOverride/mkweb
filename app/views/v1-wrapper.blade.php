@@ -59,34 +59,21 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
 @section('v1-sponsor')
 <div class="spons-entry">
     <p>
-        Verksamhet:
+        Mammas Källare
     </p>
-    <li> Företag A </li>
-    <li> Organisation B </li>
+    <li> Sverok </li>
 </div>
 
 <div class="spons-entry">
     <p>
-        WonderLAN:
+        WonderLAN
     </p>
-    <li> Doge </li>
-    <li> Other Doge </li>
-    <li> Grumpy Cat </li>
+    <li> BTH </li>
+    <li> Subway </li>
+    <li> AXIS </li>
+    <li> City Network </li>
 </div>
 
-<div class="spons-entry">
-    <p>
-        Pluton MK:
-    </p>
-    <li> Företag C </li>
-    <li> Organisation D </li>
-</div>
-
-
-<div class="spons-entry">
-    {{link_to('users',"Logga in!")}}
-</div>
-<br /><br />
 
 @stop
 @section('v1-navbar-1')
