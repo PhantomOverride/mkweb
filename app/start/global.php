@@ -81,6 +81,35 @@ App::down(function()
 require app_path().'/filters.php';
 
 /*
+ * Validator extension
+ */
+
+Validator::extend('noshit', function($attribute, $value, $parameter)
+{
+    //Horrible workaround below. I deserve punishment.
+    $value='x'.$value; //Since strpos shouldn't return 0 if we find anything.
+    //End of horrible workaround.
+    //Oh... nevermind... more horrible code :C... cover your eyes
+    if (
+            strpos($value,'<') ||
+            strpos($value,'>') ||
+            strpos($value,'=') ||
+            strpos($value,'?') ||
+            strpos($value,'%') ||
+            strpos($value,'\n') ||
+            strpos($value,'\t') ||
+            strpos($value,'/') ||
+            strpos($value,'\\') ||
+            strpos($value,':') ||
+            strpos($value,';') ||
+            strpos($value,'"') ||
+            strpos($value,'\'') ||
+            strpos($value,'\0')
+        ) return false;
+    return true;
+});
+
+/*
 App::error(function($exception, $code)
 {
     switch ($code)

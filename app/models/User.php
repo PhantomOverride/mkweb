@@ -34,38 +34,38 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         
         public static $rules = [
             'email'         => 'required|unique:users|email',
-            'forename'      => 'required',
-            'lastname'      => 'required',
-            'ssid'          => 'required|numeric|min:8',
-            'streetaddress' => 'required',
-            'postalcode'    => 'required',
-            'city'          => 'required',
-            'phone'         => 'required',
-            'password'      => 'required|min:8',
-            'nickname'      => 'required|min:3|unique:users',
+            'forename'      => 'required|noshit',
+            'lastname'      => 'required|noshit',
+            'ssid'          => 'required|numeric|min:8|noshit',
+            'streetaddress' => 'required|noshit',
+            'postalcode'    => 'required|noshit',
+            'city'          => 'required|noshit',
+            'phone'         => 'required|noshit',
+            'password'      => 'required|min:8|noshit',
+            'nickname'      => 'required|min:3|unique:users|noshit',
             'avatarurl'     => '',
-            'membertype'    => '',
-            'memberperiod'  => '',
-            'accounttype'   => '',
-            'status'        => '',
+            'membertype'    => 'noshit',
+            'memberperiod'  => 'noshit',
+            'accounttype'   => 'noshit',
+            'status'        => 'noshit',
         ];
         
         public static $rulesUpdate = [
             'email'         => 'required|email',
-            'forename'      => 'required',
-            'lastname'      => 'required',
-            'ssid'          => '',
-            'streetaddress' => 'required',
-            'postalcode'    => 'required',
-            'city'          => 'required',
-            'phone'         => 'required',
-            'password'      => 'required|min:8',
-            'nickname'      => 'required|min:2',
+            'forename'      => 'required|noshit',
+            'lastname'      => 'required|noshit',
+            'ssid'          => '|noshit',
+            'streetaddress' => 'required|noshit',
+            'postalcode'    => 'required|noshit',
+            'city'          => 'required|noshit',
+            'phone'         => 'required|noshit',
+            'password'      => 'required|min:8|noshit',
+            'nickname'      => 'required|min:2|noshit',
             'avatarurl'     => '',
-            'membertype'    => '',
-            'memberperiod'  => '',
-            'accounttype'   => '',
-            'status'        => '',
+            'membertype'    => 'noshit',
+            'memberperiod'  => 'noshit',
+            'accounttype'   => 'noshit',
+            'status'        => 'noshit',
         ];
         
         public static $errorMessages = [
@@ -75,6 +75,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             'min' => 'Minst :min tecken!',
             'max' => 'Som mest :max tecken!',
             'email' => 'Se till att mata in en giltig epostaddress!',
+            'noshit' => 'Du har tecken som inte är tillåtna. Lista ut vilka och ta bort dem!'
         ];
 
 	/**

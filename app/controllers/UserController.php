@@ -43,6 +43,7 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
+            Input::merge(array_map('trim', Input::all()));
             $input = Input::all();
             
 		if(!$this->user->fill($input)->isValid())
@@ -126,6 +127,7 @@ class UserController extends \BaseController {
 	public function update($nickname)
 	{
 		if(Auth::check() && Auth::user()->nickname == $nickname){
+                    Input::merge(array_map('trim', Input::all(),['<']));
                     $input = Input::all();
                     
                     $this->user = $this->user->whereNickname($nickname)->first();
