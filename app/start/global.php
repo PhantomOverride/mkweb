@@ -109,7 +109,7 @@ Validator::extend('noshit', function($attribute, $value, $parameter)
     return true;
 });
 
-/*
+
 App::error(function($exception, $code)
 {
     switch ($code)
@@ -121,5 +121,3 @@ App::error(function($exception, $code)
             return Response::view('errors.default', array(), $code);
     }
 });
- * 
- */

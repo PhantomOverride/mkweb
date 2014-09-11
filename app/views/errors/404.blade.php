@@ -1,17 +1,17 @@
 @extends('v1-wrapper')
 
 @section('title')
-Error404
+Fel
 @stop
 
 @section('contentname')
-Error404
+Fel
 @stop
 
 @section('contenttitle')
-Error404
+Fel
 @stop
 
 @section('content')
-Error404
+Det du försökte ladda finns inte. Fy! <a href="{{Request::referrer()}}">Gå tillbaka.</a>
 @stop

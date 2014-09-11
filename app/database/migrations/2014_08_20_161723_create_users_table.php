@@ -45,52 +45,12 @@ class CreateUsersTable extends Migration {
                             'postalcode' => '37141',
                             'city' => 'Karlskrona',
                             'phone' => '00000000',
-                            'password' => Hash::make('mammas'),
+                            'password' => Hash::make($_ENV['MK_PASSWORD']),
                             'nickname' => 'mk',
                             'avatarurl' => '/avatars/avatar.png',
                             'membertype' => 'none',
                             'memberperiod' => '2015',
                             'accounttype' => 'admin',
-                            'status' => 'active',
-                        )
-                );
-                
-                DB::table('users')->insert(
-                        array(
-                            'email' => 'kaka@example.com',
-                            'forename' => 'Kalle',
-                            'lastname' => 'Karlsson',
-                            'ssid' => '00000001',
-                            'streetaddress' => 'Gatan i Blekinge',
-                            'postalcode' => '12345',
-                            'city' => 'Karlskrona',
-                            'phone' => '1234567890987',
-                            'password' => Hash::make('kalle'),
-                            'nickname' => 'kalleballe',
-                            'avatarurl' => '/avatars/avatar.png',
-                            'membertype' => 'none',
-                            'memberperiod' => '2015',
-                            'accounttype' => 'user',
-                            'status' => 'active',
-                        )
-                );
-                
-                DB::table('users')->insert(
-                        array(
-                            'email' => 'anna@example.com',
-                            'forename' => 'Anna',
-                            'lastname' => 'Andersson',
-                            'ssid' => '00000003',
-                            'streetaddress' => 'Ronnebygatan',
-                            'postalcode' => '54321',
-                            'city' => 'Karlskrona',
-                            'phone' => '0987654322',
-                            'password' => Hash::make('anna'),
-                            'nickname' => 'annapanna',
-                            'avatarurl' => '/avatars/avatar.png',
-                            'membertype' => 'none',
-                            'memberperiod' => '2015',
-                            'accounttype' => 'user',
                             'status' => 'active',
                         )
                 );

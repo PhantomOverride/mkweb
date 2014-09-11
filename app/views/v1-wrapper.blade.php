@@ -45,6 +45,11 @@ Mammas Källare: @yield('title')
 @stop
 
 @section('v1-headerslider')
+              <li><img src="/img/slide-4.jpg" alt=""></li>
+              <li><img src="/img/slide-5.jpg" alt=""></li>
+              <li><img src="/img/slide-6.jpg" alt=""></li>
+              <li><img src="/img/slide-7.jpg" alt=""></li>
+              <li><img src="/img/slide-8.jpg" alt=""></li>
               <li><img src="/img/slide-1.jpg" alt=""></li>
               <li><img src="/img/slide-2.jpg" alt=""></li>
               <li><img src="/img/slide-3.jpg" alt=""></li>
@@ -127,8 +132,17 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
 @stop
 @section('v1-breadcrumbs')
     <?php $last = sizeof(Request::segments());?>
-    <li>Sida</li>
-    @for ($i=2;$i<=$last;$i++)
-        <li <? if($i==$last) echo 'class="active"'; ?> ><a href="#">{{ Request::segment($i) }}</a></li>
-    @endfor
+    @if($last>1)
+        @if(Request::segment(1)=='page')
+            <li>Sida</li>
+        @elseif(Request::segment(1)=='users')
+            <li>Användare</li>
+        @endif
+        
+        @for ($i=2;$i<=$last;$i++)
+            <li <? if($i==$last) echo 'class="active"'; ?> ><a href="#">{{ Request::segment($i) }}</a></li>
+        @endfor
+    @else
+
+    @endif
 @stop

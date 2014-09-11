@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://mammaskallare.se',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'P7h6hydxpNQqBbQQNjbNzBdOI6IdhanH',
+	'key' => $_ENV['ikey'],
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 

@@ -6,8 +6,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Websida för Mammas Källare">
+        <meta name="author" content="Mammas Källare">
 
     <title>@yield('v1-title')</title>
 
@@ -39,7 +39,7 @@
                 <div class="box">   
                     <div class="headline">
                         <div class="col-lg-2 col-md-2 col-sm-2 text-center">
-                                <div class="logo"></div>
+                            <a href='/'><div class="logo"></div></a>
                         </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 text-center">
                                 <h1> Mammas Källare </h1>

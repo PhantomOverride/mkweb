@@ -37,7 +37,7 @@
     </div>
     
     <div>
-        {{Form::label('ssid', 'Personnummer (YYMMDDXXXX): ')}}
+        {{Form::label('ssid', 'Födelsedatum (YYMMDD): ')}}
         {{Form::text('ssid')}}
         {{$errors->first('ssid', '<span class=error>:message</span>')}}
     </div>

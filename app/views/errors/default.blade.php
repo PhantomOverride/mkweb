@@ -1,17 +1,17 @@
 @extends('v1-wrapper')
 
 @section('title')
-Generic Error
+Fel
 @stop
 
 @section('contentname')
-Generic Error
+Fel
 @stop
 
 @section('contenttitle')
-Generic Error
+Fel
 @stop
 
 @section('content')
-Generic Error
+Hoppsan! Något gick snett här. Testa gå tillbaka och gör inte om det du precis gjorde =).
 @stop
