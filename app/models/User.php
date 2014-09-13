@@ -59,7 +59,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             'postalcode'    => 'required|noshit',
             'city'          => 'required|noshit',
             'phone'         => 'required|noshit',
-            'password'      => 'required|min:8|noshit',
+            'password'      => 'noshit|min:8|required',
             'nickname'      => 'required|min:2|noshit',
             'avatarurl'     => '',
             'membertype'    => 'noshit',
@@ -115,6 +115,18 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             
             return false;
             
+        }
+        
+        public function crew()
+        {
+            if($this->accounttype=='admin' || $this->accounttype=='crew') return true;
+            return false;
+        }
+        
+        public function admin()
+        {
+            if($this->accounttype=='admin') return true;
+            return false;
         }
 
 }

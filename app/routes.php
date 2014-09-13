@@ -25,6 +25,7 @@ Route::get('/', function()
 Route::get('page/{urlname}/{suburlname?}', 'CrmController@show');
 
 
+
 /*
  * User handling
  */
@@ -41,7 +42,7 @@ Route::get('logout', 'SessionsController@destroy');
 /*
  * Management
  */
-Route::get('crew', function()
-{
-   return 'Crew management interface' ;
-})->before('crew');
+Route::get('crew','CrewController@index')->before('crew');
+
+Route::get('crew/pageedit/{urlname}/{suburlname?}', 'CrmController@edit')->before('crew');
+Route::post('crew/pageedit/{urlname}/{suburlname?}', 'CrmController@update')->before('crew');

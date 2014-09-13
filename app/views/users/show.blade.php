@@ -66,8 +66,8 @@
                         <td>Medlemsperiod:</td>
                         <td><i class=""></i>{{{$user->memberperiod}}}</td>
                     </tr>
-                </tbody></table>
-            </table>
+                    </tbody>
+                </table>
         </div>
         
         @else
@@ -83,8 +83,8 @@
                         <td>Stad:</td>
                         <td><i class="icon-home"></i> {{{$user->city}}}</td>
                     </tr>
-                </tbody></table>
-            </table>
+                </tbody>
+                </table>
         </div>
         
         @endif

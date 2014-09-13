@@ -16,6 +16,7 @@ class CrmController extends BaseController {
 	*/
     
         protected $page;
+        
     
         public function __construct(Page $page)
         {
@@ -49,6 +50,39 @@ class CrmController extends BaseController {
                 return View::make('page')->with('page',$thispage)->with('nav',$nav);
             }
             
+        }
+        
+        public function edit($urlname,$suburlname=null){
+            if($suburlname == null){
+                $thispage = $this->page->whereUrlname($urlname)->first();
+            }
+            else{
+                $thispage = $this->page->whereUrlname($suburlname)->whereParentname($urlname)->first();
+            }
+            
+            return View::make('page.edit')->with('page',$thispage)->with('nav',$this->page->navbar());
+            
+        }
+        
+        public function update($urlname,$suburlname=null){
+            if($suburlname == null){
+                $this->page = $this->page->whereUrlname($urlname)->first();
+            }
+            else{
+                $this->page = $this->page->whereUrlname($suburlname)->whereParentname($urlname)->first();
+            }
+            
+            $newpage = Input::only(['urlname','name','title','content','parentname','order','linkto']);
+            
+            foreach($newpage as $field){
+                $field = empty($field) ? null : $field;
+                echo $field;
+            }
+            
+            $this->page->fill($newpage);
+            $this->page->save();
+            $savemsg = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
+            return Redirect::back()->with('message',$savemsg);
         }
 
 }

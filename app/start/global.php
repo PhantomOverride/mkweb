@@ -98,7 +98,7 @@ Validator::extend('noshit', function($attribute, $value, $parameter)
             strpos($value,'%') ||
             strpos($value,'\n') ||
             strpos($value,'\t') ||
-            strpos($value,'/') ||
+            //strpos($value,'/') ||
             strpos($value,'\\') ||
             strpos($value,':') ||
             strpos($value,';') ||
@@ -108,7 +108,6 @@ Validator::extend('noshit', function($attribute, $value, $parameter)
         ) return false;
     return true;
 });
-
 
 App::error(function($exception, $code)
 {

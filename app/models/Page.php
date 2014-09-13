@@ -15,6 +15,8 @@ class Page extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var string
 	 */
 	protected $table = 'pages';
+        
+        protected $fillable = ['urlname','name','title','content','parentname','order','linkto'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -22,6 +24,14 @@ class Page extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var array
 	 */
 	//protected $hidden = array('password', 'remember_token');
+        
+        public function setParentnameAttribute($value){
+            $this->attributes['parentname'] = (empty($value)) ? null : $value;
+        }
+        public function setLinktoAttribute($value){
+            $this->attributes['linkto'] = (empty($value)) ? null : $value;
+        }
+  
         
         /*
          * navbar returns a 3-depth array:
