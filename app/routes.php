@@ -44,5 +44,5 @@ Route::get('logout', 'SessionsController@destroy');
  */
 Route::get('crew','CrewController@index')->before('crew');
 
-Route::get('crew/pageedit/{urlname}/{suburlname?}', 'CrmController@edit')->before('crew');
-Route::post('crew/pageedit/{urlname}/{suburlname?}', 'CrmController@update')->before('crew');
+Route::get('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@edit')->before('crew');
+Route::post('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@update')->before('crew');

@@ -52,9 +52,13 @@ class CrmController extends BaseController {
             
         }
         
-        public function edit($urlname,$suburlname=null){
-            if($suburlname == null){
+        public function edit($urlname=null,$suburlname=null){
+            if($suburlname == null && $urlname != null){
                 $thispage = $this->page->whereUrlname($urlname)->first();
+            }
+            else if($suburlname == null && $urlname == null){
+                $thispage = $this->page; //We will init empty form
+                
             }
             else{
                 $thispage = $this->page->whereUrlname($suburlname)->whereParentname($urlname)->first();
@@ -64,9 +68,14 @@ class CrmController extends BaseController {
             
         }
         
-        public function update($urlname,$suburlname=null){
-            if($suburlname == null){
+        
+        public function update($urlname=null,$suburlname=null){
+            
+            if($suburlname == null && $urlname != null){
                 $this->page = $this->page->whereUrlname($urlname)->first();
+            }
+            else if($suburlname == null && $urlname == null){
+                // Do nothing if new page
             }
             else{
                 $this->page = $this->page->whereUrlname($suburlname)->whereParentname($urlname)->first();
@@ -74,10 +83,13 @@ class CrmController extends BaseController {
             
             $newpage = Input::only(['urlname','name','title','content','parentname','order','linkto']);
             
+            //I think this is debug code which made it into production. I'll just comment it out...
+            /*
             foreach($newpage as $field){
                 $field = empty($field) ? null : $field;
                 echo $field;
             }
+            */
             
             $this->page->fill($newpage);
             $this->page->save();

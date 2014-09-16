@@ -15,6 +15,36 @@
 @section('content')
 <!-- Page edit section -->
 
+
+<div class='panel panel-default panel-body'>
+    <h2 class='page-header'><small>User Management</small></h2>
+<table class="table table-striped">
+<thead>
+    <tr>
+            <td>Forename</td>
+            <td>Lastname</td>
+            <td>Phone</td>
+            <td>Email</td>
+            <td>nickname</td>
+            <td>accounttype</td>
+    </tr>
+</thead><tbody>
+    
+    @foreach($users as $user)
+        <tr>
+            <td>{{$user->forename}}</td>
+            <td>{{$user->lastname}}</td>
+            <td>{{$user->phone}}</td>
+            <td>{{$user->email}}</td>
+            <td>{{link_to('/users/'.$user->nickname,$user->nickname)}}</td>
+            <td>{{$user->accounttype}}</td>
+        </tr>
+    @endforeach
+</tbody>
+</table>
+</div>
+
+
 <div class='panel panel-default panel-body'>
     <h2 class='page-header'><small>Content Management</small></h2>
 <table class="table table-striped">

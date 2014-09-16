@@ -9,7 +9,7 @@ class crewcontroller extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('crew.index')->with('pages',Page::all())->with('nav',Page::navbar());
+		return View::make('crew.index')->with('pages',Page::all())->with('users',User::all())->with('nav',Page::navbar());
 	}
 
 
