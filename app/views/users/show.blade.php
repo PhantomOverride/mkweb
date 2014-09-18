@@ -19,7 +19,7 @@
             {{ $message }}
         @endif
         
-        @if(Auth::check() && Auth::user()->nickname == $user->nickname)
+        @if(Auth::check() && (Auth::user()->nickname == $user->nickname || Auth::user()->crew()))
         
         <div>
             <p><img src="{{$user->avatarurl}}" alt="avatar" height="160" width="160"></p>

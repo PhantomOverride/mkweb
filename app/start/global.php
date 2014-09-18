@@ -109,14 +109,19 @@ Validator::extend('noshit', function($attribute, $value, $parameter)
     return true;
 });
 
-App::error(function($exception, $code)
+if (!App::environment('local'))
 {
-    switch ($code)
-    {
-        case 404:
-            return Response::view('errors.404', array(), 404);
+    // Only use this error handling in prod
 
-        default:
-            return Response::view('errors.default', array(), $code);
-    }
-});
+    App::error(function($exception, $code)
+    {
+        switch ($code)
+        {
+            case 404:
+                return Response::view('errors.404', array(), 404);
+
+            default:
+                return Response::view('errors.default', array(), $code);
+        }
+    });
+}

@@ -66,29 +66,22 @@ class UserController extends \BaseController {
 	public function show($nickname)
 	{
 		$user = $this->user->whereNickname($nickname)->first();
-                
-                unset($user->id);
-                unset($user->ssid);
-                unset($user->status);
-                unset($user->created_at);
-                unset($user->updated_at);
-                
-                //If we are logged in and are viewing our own profile, pass more information
+                        
+                //Message to show to logged in users
                 if(Auth::check() && Auth::user()->nickname == $nickname){
                     $message = '<p class="box-rounded notis">Tänk på att det är bara du som kan se dina kontaktuppgifter! Din publika profil visar mindre.</p>';
-                    return View::make('users.show', ['user' => $user])->with('message',$message)->with('nav',Page::navbar());
                 }
+                //Crew should also get msg
+                else if(Auth::check() && Auth::user()->crew()){
+                    $message = '<p class="box-rounded notis">Som CREW kan du se och ändra användarprofiler. Tänk på att detta är ett produktionssytem.</p>';
+                }
+                else{
+                    $message = null;
+                }
+
+                return View::make('users.show', ['user' => $user])->with('message',$message)->with('nav',Page::navbar());
                 
-                //Else pass less information
-                unset($user->email);
-                unset($user->forename);
-                unset($user->lastname);
-                unset($user->postalcode);
-                unset($user->streetaddress);
-                unset($user->phone);
-                unset($user->membertype);
-                unset($user->memberperiod);
-                return View::make('users.show', ['user' => $user])->with('nav',Page::navbar());
+                //return View::make('users.show', ['user' => $user])->with('nav',Page::navbar());
 	}
 
 
@@ -100,15 +93,11 @@ class UserController extends \BaseController {
 	 */
 	public function edit($nickname)
 	{
-            if(Auth::check() && Auth::user()->nickname == $nickname){
+            if(Auth::check() && (Auth::user()->nickname == $nickname || Auth::user()->crew())){
                     
-                $user = Auth::user();
-
-                unset($user->id);
-                unset($user->ssid);
-                unset($user->status);
-                unset($user->created_at);
-                unset($user->updated_at);
+                //$user = Auth::user();
+                
+                $user = User::whereNickname($nickname)->first();
 
                 return View::make('users.edit', ['user' => $user])->with('nav',Page::navbar());
             }
@@ -126,7 +115,7 @@ class UserController extends \BaseController {
 	 */
 	public function update($nickname)
 	{
-		if(Auth::check() && Auth::user()->nickname == $nickname){
+		if(Auth::check() && (Auth::user()->nickname == $nickname || Auth::user()->crew())){
                     Input::merge(array_map('trim', Input::all(),['<']));
                     $input = Input::all();
                     
@@ -146,9 +135,9 @@ class UserController extends \BaseController {
                     if(!empty($input['password'])) $this->user->password = $input['password'];
                    
                    
-                    if(!Hash::check($input['oldpassword'],Auth::user()->password)){
+                    if(!Hash::check($input['oldpassword'],Auth::user()->password) && !Auth::user()->crew()){
                         //If password check does not match
-                        $message = '<p class="box-rounded notis">Du måste ange ditt gamla lösenord för att spara.</p>';
+                        $message = '<p class="box-rounded notis">Du måste ange ditt nuvarande lösenord för att spara.</p>';
                         return Redirect::back()->withInput()->with('message',$message);
                     }
                     elseif(!$this->user->isValidUpdate())
@@ -158,7 +147,7 @@ class UserController extends \BaseController {
                     else{
                         $this->user->update();
                         $message = '<p class="box-rounded notis">Din profil är uppdaterad!</p>';
-                        return Redirect::route('users.show',$nickname)->with('message',$message);
+                        return Redirect::route('users.show',$this->user->nickname)->with('message',$message);
                     }
                 }
                 else{

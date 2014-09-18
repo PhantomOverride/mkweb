@@ -69,6 +69,14 @@
             <td>{{link_to(($page->parentname==null)?'/crew/pageedit/'.$page->urlname:'/crew/pageedit/'.$page->parentname.'/'.$page->urlname,'Redigera')}}</td>
         </tr>
     @endforeach
+    <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{link_to('/crew/pageedit/','Ny sida')}}</td>
+        </tr>
 </tbody>
 </table>
 </div>
