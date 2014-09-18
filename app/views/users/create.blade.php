@@ -22,70 +22,114 @@
 <p>
     Nåväl. Var var vi. Jo! Registrering:
 </p>
-    {{Form::open(['route' => 'users.store'])}}
-    
-    <div>
-        {{Form::label('forename', 'Förnamn: ')}}
-        {{Form::text('forename')}}
-        {{$errors->first('forename', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('lastname', 'Efternamn: ')}}
-        {{Form::text('lastname')}}
-        {{$errors->first('lastname', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('ssid', 'Födelsedatum (YYMMDD): ')}}
-        {{Form::text('ssid')}}
-        {{$errors->first('ssid', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('streetaddress', 'Adress: ')}}
-        {{Form::text('streetaddress')}}
-        {{$errors->first('streetaddress', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('postalcode', 'Postnummer: ')}}
-        {{Form::text('postalcode')}}
-        {{$errors->first('postalcode', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('city', 'Stad: ')}}
-        {{Form::text('city')}}
-        {{$errors->first('city', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('phone', 'Telefon: ')}}
-        {{Form::text('phone')}}
-        {{$errors->first('phone', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('email', 'E-post: ')}}
-        {{Form::text('email')}}
-        {{$errors->first('email', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('nickname', 'Nickname: ')}}
-        {{Form::text('nickname')}}
-        {{$errors->first('nickname', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>
-        {{Form::label('password', 'Password: ')}}
-        {{Form::password('password')}}
-        {{$errors->first('password', '<span class=error>:message</span>')}}
-    </div>
-    
-    <div>{{Form::submit('Registrera dig!')}}</div>
-    
-    {{Form::close()}}
+
+
+<div class="col-md-12 col-sm-12">
+    {{ Form::open(array('route'=>'users.store','class' => 'form-horizontal')) }}
+        <div class="form-group">
+            {{Form::label('forename', 'Förnamn', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('forename', '<div class="col-sm-4 col-md-4 box-rounded notis warning"></span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('lastname', 'Efternamn', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('lastname',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('lastname', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('ssid', 'Födelsedatum (YYMMDD)', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('ssid',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('ssid', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>    
+        </div>
+        <div class="form-group">
+            {{Form::label('streetaddress', 'Adress', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('streetaddress',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+            {{$errors->first('streetaddress', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('postalcode', 'Postnummer', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('postalcode',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('postalcode', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('city', 'Stad', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('city',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('city', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('phone', 'Telefonnummer', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('phone',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('phone', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('email', 'Email', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('email',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('email', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('city', 'Stad', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('city',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('city', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('nickname', 'Nickname', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('nickname',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+            {{$errors->first('nickname', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('password', 'Lösenord', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('password',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+            {{$errors->first('password', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        {{ Form::submit('Registrera dig',array('class' => 'btn btn-lg btn-primary btn-block')) }}
+    {{ Form::close() }}
+</div>
+<div style="clear:both">
+</div>
+
 
 @stop

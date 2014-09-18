@@ -22,7 +22,7 @@
 
 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
     {{ Form::open(array('route'=>'sessions.store','class' => 'form-signin')) }}
-        {{ Form::email('email','Email address',array('class' => 'form-control')) }}
+        {{ Form::email('email',null,array('class' => 'form-control', 'placeholder' => 'Email address')) }}
         {{ Form::password('password',array('class' => 'form-control', 'placeholder' => 'Lösenord')) }}
 
         <label class="checkbox">
