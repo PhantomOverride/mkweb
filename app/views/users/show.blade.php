@@ -39,7 +39,7 @@
                         <td><i class=""></i> {{{$user->lastname}}}</td>
                     </tr>
                     <tr>
-                        <td>Emaili:</td>
+                        <td>Email:</td>
                         <td><i class=""></i>{{{$user->email}}}</td>
                     </tr>
                     <tr>
