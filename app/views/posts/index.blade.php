@@ -1,11 +1,11 @@
 @extends('v1-wrapper')
 
 @section('title')
-    Bloggposter
+    Bloggarkiv
 @stop
 
 @section('contentname')
-    Blog
+    Bloggarkiv
 @stop
 
 @section('contenttitle')
@@ -17,8 +17,8 @@
 <table class="table table-striped">
 <thead>
     <tr>
-            <td>Title</td>
-            <td>Skribent</td>
+            <td>Artikel</td>
+            <td>Skriven av</td>
             <td>Publicerat</td>
     </tr>
 </thead><tbody>

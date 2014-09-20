@@ -22,6 +22,20 @@
             den här sidan.
         </div>
     @endif
-        <p>{{$post->content}}</p>
-        <p><small>Publicerat {{$post->posted}} av {{$post->author}}.</small></p>
+
+        
+        @if(!empty($post->imageurl))
+                <img class="img-responsive" src="{{ $post->imageurl }}" alt="" />
+                <hr />
+        @endif
+        
+        <p>
+            {{ $post->content }}
+        </p>
+        <!-- <a class="btn btn-primary" href="{{'/posts/'.$post->title}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+        <hr />
+        <p class="lead">
+            <span class="glyphicon glyphicon-time"></span> &nbsp; "{{ $post->title }}" publicerades {{$post->posted}} 
+            av {{ $post->author }}
+        </p>
 @stop

@@ -37,7 +37,7 @@
                     
                     <tr>
                         <td>Content:</td>
-                        <td><i class=""></i> {{ Form::text('content',$post->content) }} {{$errors->first('content', '<span class=error>:message</span>')}}</td>
+                        <td><i class=""></i> {{ Form::textarea('content',$post->content) }} {{$errors->first('content', '<span class=error>:message</span>')}}</td>
                     </tr>
                     <tr>
                         <td>Published/Posted (YYYY-MM-DD):</td>

@@ -17,32 +17,45 @@
 
     <!-- Säg hej och sånt -->
     
+    <h3>Vad sysslar vi med?</h3>
     <p>
-        Hej och välkommen till Mammas Källares krypin på internet!
+        Mammas Källare arrangerar spelrelaterade aktiviteter såsom spelkvällar med roll- och brädspel, airsoft-event och LAN-partyn vid högskolan i Karlskrona.
+        Alla får komma på våra event och vi välkomnar alla som vill hålla spelglädjen vid liv!
     </p>
+    <p>Vårt största event är LAN:et och spelfesten WonderLAN som hålls terminsvis vid Blekinge Tekniska Högskola.</p>
+    <br />
     
     <!-- Bloggposter/Nyhetsflöde -->
     
     @foreach($posts as $post)
-        <br />
         <h3>
             {{ link_to('/posts/'.$post->title,$post->title) }}
         </h3>
-        <p class="lead">
-            <span class="glyphicon glyphicon-time"></span> Publicerad {{$post->posted}} 
-            av {{ $post->author }}
-        </p>
-        <hr />
+        
         @if(!empty($post->imageurl))
                 <img class="img-responsive" src="{{ $post->imageurl }}" alt="" />
-                <hr />
+              <br />
         @endif
         
         <p>
             {{ $post->content }}
         </p>
+        <hr />
+        <p class="lead" style="margin-top:-15px;">
+            <span class="glyphicon glyphicon-time"></span> &nbsp; Publicerad {{$post->posted}} 
+            av {{ $post->author }}
+        </p>
+        
         <!-- <a class="btn btn-primary" href="{{'/posts/'.$post->title}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
         <br />
     @endforeach
+    
+    <br />
+    
+    <hr />
+    
+    <p>
+        Vill du läsa mer? Gamla nyheter finns i {{ link_to('/posts','Bloggarkivet') }}!
+    </p>
     
 @stop

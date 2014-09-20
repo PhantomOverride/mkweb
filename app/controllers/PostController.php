@@ -12,7 +12,7 @@ class PostController extends BaseController {
 
         public function index()
 	{
-		$posts = $this->post->all();
+		$posts = $this->post->orderBy('id','desc')->get();
                 return View::make('posts.index', ['posts' => $posts])->with('nav',Page::navbar());
 	}
         

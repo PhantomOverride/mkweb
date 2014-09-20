@@ -81,4 +81,33 @@
 </table>
 </div>
 
+<div class='panel panel-default panel-body'>
+    <h2 class='page-header'><small>Post Management</small></h2>
+<table class="table table-striped">
+<thead>
+    <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Posted</td>
+            <td>Edit</td>
+    </tr>
+</thead><tbody>
+    @foreach ($posts as $post)
+        <tr>
+            <td>{{ link_to('/posts/'.$post->title,$post->title) }}</td>
+            <td>{{ $post->author }}</td>
+            <td>{{ $post->posted }}</td>
+            <td>{{ link_to('/posts/'.$post->title.'/edit','Redigera') }}</td>
+        </tr>
+    @endforeach
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ link_to('/posts/create','Ny post') }}</td>
+        </tr>
+</tbody>
+</table>
+</div>
+
 @stop
