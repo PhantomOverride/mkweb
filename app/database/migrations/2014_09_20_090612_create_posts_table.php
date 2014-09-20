@@ -15,10 +15,11 @@ class CreatePostsTable extends Migration {
 		Schema::create('posts', function(Blueprint $table)
 		{
 			$table->increments('id');
-                        $table->string('title'); //Title to be displayed above post
+                        $table->string('title')->unique(); //Title to be displayed above post
                         $table->longtext('content'); //Post content
                         $table->string('author'); //Post author
                         $table->string('posted'); //When was it posted?
+                        $table->string('imageurl')->nullable()->default(null); //Embed url of image (if any)
                         $table->timestamps();
 		});
                 

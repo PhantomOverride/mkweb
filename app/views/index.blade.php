@@ -1,17 +1,48 @@
 @extends('v1-wrapper')
 
 @section('title')
-    Index
+    Välkommen Till Verkligheten!
 @stop
 
 @section('contentname')
-    Index
+    Mammas Källare
 @stop
 
 @section('contenttitle')
-    Index
+    Välkommen!
 @stop
 
 @section('content')
-    Index
+    <!-- Kul att du läser källkoden! Har du roligt =)? -->
+
+    <!-- Säg hej och sånt -->
+    
+    <p>
+        Hej och välkommen till Mammas Källares krypin på internet!
+    </p>
+    
+    <!-- Bloggposter/Nyhetsflöde -->
+    
+    @foreach($posts as $post)
+        <br />
+        <h3>
+            {{ link_to('/posts/'.$post->title,$post->title) }}
+        </h3>
+        <p class="lead">
+            <span class="glyphicon glyphicon-time"></span> Publicerad {{$post->posted}} 
+            av {{ $post->author }}
+        </p>
+        <hr />
+        @if(!empty($post->imageurl))
+                <img class="img-responsive" src="{{ $post->imageurl }}" alt="" />
+                <hr />
+        @endif
+        
+        <p>
+            {{ $post->content }}
+        </p>
+        <!-- <a class="btn btn-primary" href="{{'/posts/'.$post->title}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+        <br />
+    @endforeach
+    
 @stop

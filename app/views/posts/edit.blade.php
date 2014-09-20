@@ -32,16 +32,20 @@
                     
                     <tbody><tr>
                         <td>Title:</td>
-                        <td><i class="icon-home"></i> {{ Form::text('title',$post->title) }}</td>
+                        <td><i class="icon-home"></i> {{ Form::text('title',$post->title) }} {{$errors->first('title', '<span class=error>:message</span>')}}</td>
                     </tr>
                     
                     <tr>
                         <td>Content:</td>
-                        <td><i class=""></i> {{ Form::text('content',$post->content) }}</td>
+                        <td><i class=""></i> {{ Form::text('content',$post->content) }} {{$errors->first('content', '<span class=error>:message</span>')}}</td>
                     </tr>
                     <tr>
                         <td>Published/Posted (YYYY-MM-DD):</td>
-                        <td><i class=""></i>{{ Form::text('posted',$post->posted) }}</td>
+                        <td><i class=""></i>{{ Form::text('posted',$post->posted) }} {{$errors->first('posted', '<span class=error>:message</span>')}}</td>
+                    </tr>
+                    <tr>
+                        <td>Image URL (if any):</td>
+                        <td><i class=""></i>{{ Form::text('imageurl',$post->imageurl) }} {{$errors->first('imageurl', '<span class=error>:message</span>')}}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -57,6 +61,7 @@
 <ul>Title: Titlen som visas överallt och i länken. Försök att inte ha specialtecken.</ul>
 <ul>Content: Sidinnehållet. HTML-formattering gäller.</ul>
 <ul>Published/Posted: Datumet som ska visas för publicering.</ul>
+<ul>Imageurl: Länk till bilden som ska användas (om det finns någon, lämna annars blankt).</ul>
     
 </p>
 

@@ -69,7 +69,7 @@ class UserController extends \BaseController {
                         
                 //Message to show to logged in users
                 if(Auth::check() && Auth::user()->nickname == $nickname){
-                    $message = '<p class="box-rounded notis">Tänk på att det är bara du som kan se dina kontaktuppgifter! Din publika profil visar mindre.</p>';
+                    $message = '<p class="box-rounded notis">Tänk på att din publika profil bara visar ditt nickname och i vilken stad du bor!</p>';
                 }
                 //Crew should also get msg
                 else if(Auth::check() && Auth::user()->crew()){

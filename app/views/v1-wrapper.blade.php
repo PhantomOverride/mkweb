@@ -143,7 +143,7 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
         @endif
         
         @for ($i=2;$i<=$last;$i++)
-            <li <? if($i==$last) echo 'class="active"'; ?> ><a href="#">{{ Request::segment($i) }}</a></li>
+            <li <? if($i==$last) echo 'class="active"'; ?> ><a href="#">{{ urldecode(Request::segment($i)) }}</a></li>
         @endfor
     @else
 

@@ -45,15 +45,24 @@ class PostController extends BaseController {
                 // Do nothing if new post
             }
             
-            $newpost = Input::only(['title','content','posted']);
+            $newpost = Input::only(['title','content','posted','imageurl']);
             
             $this->post->fill($newpost);
             
             $this->post->author = Auth::user()->fullname();
-            
-            $this->post->save();
-            $message = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
-            return Redirect::to('posts/'.$this->post->title)->with('message',$message);
+            if($urlname != null && $this->post->isValidUpdate()){
+                $this->post->save();
+                $message = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
+                return Redirect::to('posts/'.$this->post->title)->with('message',$message);
+            }
+            else if($this->post->isValid()){
+                $this->post->save();
+                $message = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
+                return Redirect::to('posts/'.$this->post->title)->with('message',$message);
+            }
+            else{
+                return Redirect::back()->withInput()->withErrors($this->post->errors)->with('nav',Page::navbar());
+            }
         }
 
 }
