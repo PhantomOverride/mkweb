@@ -39,6 +39,15 @@ class Page extends Eloquent implements UserInterface, RemindableInterface {
          * 
          */
         
+        public function urlNames(){
+            if($this->parenturl == null){
+                return $this->urlname;
+            }
+            else{
+                return $this->parenturlname.'/'.$this->urlname;
+            }
+        }
+        
         static public function navbar(){
             $pages = Page::orderby('order','asc')->whereparentname(null)->get();
             $main = array();

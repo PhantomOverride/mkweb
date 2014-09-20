@@ -80,8 +80,9 @@ class CrmController extends BaseController {
             
             $this->page->fill($newpage);
             $this->page->save();
-            $savemsg = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
-            return Redirect::back()->with('message',$savemsg);
+            $message = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
+            //return Redirect::back()->with('message',$savemsg);
+            return Redirect::to('page/'.$this->page->urlNames())->with('message',$message);
         }
 
 }

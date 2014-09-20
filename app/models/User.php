@@ -117,6 +117,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             
         }
         
+        public function fullname()
+        {
+            return $this->forename.' "'.$this->nickname.'" '.$this->lastname;
+        }
+        
         public function crew()
         {
             if($this->accounttype=='admin' || $this->accounttype=='crew') return true;

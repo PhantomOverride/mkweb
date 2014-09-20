@@ -11,12 +11,23 @@
  * This should in the future be
  *  a dedicated home page.
  */
-
+/*
 Route::get('/', function()
 {
 	return Redirect::to('page/mammaskallare');
 });
+ * 
+ */
 
+/*
+ *  Post Controller for Blog
+ */
+Route::get('posts', 'PostController@index');
+Route::get('posts/create', 'PostController@edit')->before('crew');
+Route::get('posts/{urlname}', 'PostController@show');
+Route::get('posts/{urlname}/edit', 'PostController@edit')->before('crew');
+Route::post('posts/{urlname}/update', 'PostController@update')->before('crew');
+Route::post('posts/update', 'PostController@update')->before('crew');
 
 /*
  *  CMS Controller for pages
@@ -46,3 +57,8 @@ Route::get('crew','CrewController@index')->before('crew');
 
 Route::get('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@edit')->before('crew');
 Route::post('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@update')->before('crew');
+
+/*
+ *  Index controller
+ */
+Route::get('/', 'IndexController@index');
