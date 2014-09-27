@@ -37,6 +37,12 @@ hr {
     border-color: #999999;
 }
 
+
+
+a:hover, a:active, a:focus {
+    outline:none;
+}
+
 .page-header{
 	margin-top:20px;
 }
@@ -380,3 +386,83 @@ footer p {
 .form-signin span{
     margin-left:20px;
 }
+
+.collapse-group p{
+    margin-left:20px;
+}
+
+
+
+/* Button elements */
+.btnSection {
+    padding:0px;
+    width:100%;
+    font-size:17px;
+
+}
+.btnSection p{
+    margin-left:60px;
+
+}
+.btnSection > span,
+.btnSection--icon > i {
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: 0.25s all;
+}
+.btnSection > span {
+    border-radius: 0.25em;
+    white-space: nowrap;
+    color: #222;
+    font-weight:bold;
+    background: #ddd;
+    width:94%;
+
+}
+.btnSection:hover > span,
+.btnSection:focus > span {
+    background: #F2F0D5;
+}
+.btnSection:active > span {
+    background: #FFF8A6;
+    transition: none;
+}
+
+
+
+/* Button with an icon */
+.btnSection--icon > i {
+    border-radius: 0.25em 0 0 0.25em;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    background: #222;
+}
+.btnSection--icon > i:after {
+    content: "";
+    border: 0.35em solid;
+    border-color: transparent transparent transparent #222;
+    position: absolute;
+    top: 0.775em;
+    right: -0.65em;
+}
+.btnSection--icon:hover > i,
+.btnSection--icon:focus > i {
+    color: #ddd;
+}
+.btnSection--icon > span {
+    border-radius: 0 0.25em 0.25em 0;
+}
+/* Button custom states */
+.btnSection--0 > span { background: #D5E2F2; }
+.btnSection--1 > span { background: #D5F2EF; }
+
+
+hr.grey {display: block; height: 1px;
+    color:#999999;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0;
+}
+
+
+
