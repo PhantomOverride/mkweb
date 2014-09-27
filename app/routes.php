@@ -41,7 +41,7 @@ Route::get('page/{urlname}/{suburlname?}', 'CrmController@show');
  * User handling
  */
 Route::resource('users','UserController');
-Route::post('users/{nickname}/update','update@UserController');
+//Route::post('users/{nickname}/update','update@UserController')->before('auth');
 
 /*
  * Session Handling
@@ -62,3 +62,14 @@ Route::post('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@update')->b
  *  Index controller
  */
 Route::get('/', 'IndexController@index');
+
+/*
+ * Tournament Controllers
+ */
+//Teams
+Route::get('teams/{name}/addmember','TeamController@addMember')->before('auth');
+Route::get('teams/{name}/addmember/{nickname}','TeamController@addMember')->before('auth');
+Route::get('teams/{name}/removemember','TeamController@removeMember')->before('auth');
+Route::get('teams/{name}/removemember/{nickname}','TeamController@removeMember')->before('auth');
+Route::resource('teams','TeamController');
+//Route::post('teams/{name}/update','TeamController@update')->before('auth');
