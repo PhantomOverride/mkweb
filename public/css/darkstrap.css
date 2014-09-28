@@ -1029,3 +1029,10 @@ a.list-group-item {
 /* Button custom states */
 .btnSection--0 > span { background: none repeat scroll 0% 0% rgba(146, 150, 130, 1);}
 .btnSection--1 > span { background: none repeat scroll 0% 0% rgba(120, 116, 109, 1); }
+
+
+.box-rounded.notis {
+    padding: 10px;
+    background-color: rgba(219, 221, 160, 1);
+    
+}
