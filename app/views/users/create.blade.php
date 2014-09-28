@@ -29,7 +29,7 @@
         <div class="form-group">
             {{Form::label('forename', 'Förnamn', array('class' => 'control-label col-md-2 col-sm-2'))}}
             <div class="col-sm-6 col-md-6">
-                {{ Form::text('',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+                {{ Form::text('forename',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
             </div>
             <div class="col-sm-3 col-md-3">
                 {{$errors->first('forename', '<div class="col-sm-4 col-md-4 box-rounded notis warning"></span>:message</span></div>')}}
@@ -99,15 +99,6 @@
             </div>
         </div>
         <div class="form-group">
-            {{Form::label('city', 'Stad', array('class' => 'control-label col-md-2 col-sm-2'))}}
-            <div class="col-sm-6 col-md-6">
-                {{ Form::text('city',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
-            </div>
-            <div class="col-sm-3 col-md-3">
-                {{$errors->first('city', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
-            </div>
-        </div>
-        <div class="form-group">
             {{Form::label('nickname', 'Nickname', array('class' => 'control-label col-md-2 col-sm-2'))}}
             <div class="col-sm-6 col-md-6">
                 {{ Form::text('nickname',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
@@ -119,7 +110,7 @@
         <div class="form-group">
             {{Form::label('password', 'Lösenord', array('class' => 'control-label col-md-2 col-sm-2'))}}
             <div class="col-sm-6 col-md-6">
-                {{ Form::text('password',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+                {{ Form::password('password',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
             </div>
             <div class="col-sm-3 col-md-3">
             {{$errors->first('password', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}

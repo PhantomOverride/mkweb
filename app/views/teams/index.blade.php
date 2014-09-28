@@ -41,10 +41,14 @@
 </thead><tbody>
     @foreach ($teams as $team)
         <tr>
-            <td><img src='{{$team->imageurl}}' height="50" width="50"/></td>
+            @if(!empty($team->imageurl))
+                <td><img src='{{{$team->imageurl}}}' height="50" width="50"/></td>
+            @else
+                <td><img src='/avatars/team.png' height="50" width="50"/></td>
+            @endif
             <td>{{ link_to("/teams/{$team->name}",$team->name) }}</td>
-            <td>{{ $team->motto }}</td>
-            <td>{{ $team->leader }}</td>
+            <td>{{{ $team->motto }}}</td>
+            <td>{{{ $team->leader }}}</td>
         </tr>
     @endforeach
 </tbody>

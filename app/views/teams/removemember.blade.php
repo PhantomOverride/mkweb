@@ -27,7 +27,7 @@
 </thead><tbody>
     @foreach ($users as $user)
         <tr>
-            <td><img src='{{$user->avatarurl}}' height="50" width="50"/></td>
+            <td><img src='{{{$user->avatarurl}}}' height="50" width="50"/></td>
             <td>{{ link_to("/teams/{$team->name}/removemember/{$user->nickname}",$user->nickname) }}</td>
         </tr>
     @endforeach

@@ -104,6 +104,30 @@ Validator::extend('noshit', function($attribute, $value, $parameter)
             strpos($value,';') ||
             strpos($value,'"') ||
             strpos($value,'\'') ||
+            strpos($value,'/') ||
+            strpos($value,'#') ||
+            strpos($value,'\0')
+        ) return false;
+    return true;
+});
+
+Validator::extend('noshitpwd', function($attribute, $value, $parameter)
+{
+    $value='x'.$value;
+    if (
+            strpos($value,'<') ||
+            strpos($value,'>') ||
+            strpos($value,'=') ||
+            strpos($value,'?') ||
+            strpos($value,'%') ||
+            strpos($value,'\n') ||
+            strpos($value,'\t') ||
+            //strpos($value,'/') ||
+            strpos($value,'\\') ||
+            strpos($value,':') ||
+            strpos($value,';') ||
+            strpos($value,'"') ||
+            strpos($value,'\'') ||
             strpos($value,'\0')
         ) return false;
     return true;

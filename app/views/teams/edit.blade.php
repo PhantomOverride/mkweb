@@ -9,7 +9,7 @@
 @stop
 
 @section('contenttitle')
-    {{$team->name}}
+    {{{$team->name}}}
 @stop
 
 @section('content')
@@ -21,6 +21,9 @@
 <p>
     Dags att ändra laguppgifterna?
 </p>
+
+    {{$errors->first('missingmember', '<span class=error>:message</span>')}}
+
     {{Form::open(['route' => ['teams.update',$team->name],'method'=>'PUT'])}}
     
     <div>
@@ -32,7 +35,7 @@
     <div>
         {{Form::label('motto', 'Lagmotto: ')}}
         {{Form::text('motto',$team->motto)}}
-        {{$errors->first('lastname', '<span class=error>:message</span>')}}
+        {{$errors->first('motto', '<span class=error>:message</span>')}}
     </div>
     
     <div>

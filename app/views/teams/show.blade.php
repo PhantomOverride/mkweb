@@ -3,7 +3,7 @@
 @if(isset($team))
 
     @section('title')
-        Lagsida för {{$team->name}}
+        Lagsida för {{{$team->name}}}
     @stop
 
     @section('contentname')
@@ -11,7 +11,7 @@
     @stop
 
     @section('contenttitle')
-        {{$team->name}}
+        {{{$team->name}}}
         @if(Auth::check() && (Auth::user()->nickname == $team->leader || Auth::user()->crew()))
                 {{ link_to_route('teams.edit',' [Redigera]',$team->name) }}
         @endif
@@ -21,8 +21,8 @@
         {{Session::get('message')}}
         
         <div>
-            <p><img src="{{$team->imageurl}}" alt="avatar" height="160" width="160"></p>
-            <h3>{{$team->name}}</h3>
+            <p><img src="{{{$team->imageurl}}}" alt="avatar" height="160" width="160"></p>
+            <h3>{{{$team->name}}}</h3>
             @if(Auth::check() && (Auth::user()->nickname == $team->leader || Auth::user()->crew()))
                 {{ link_to_route('teams.edit','Redigera ditt lag',$team->name) }}
                 <br />
@@ -48,7 +48,7 @@
                         <td><i class=""></i>
                         @if(!empty($team->members))
                             @foreach($team->members as $member)
-                                {{ $member }}, 
+                                {{{ $member }}}, 
                             @endforeach
                         @else
                             Det finns inga medlemmar!
@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <td>Turneringar:</td>
-                        <td><i class=""></i>TODO</td>
+                        <td><i class=""></i>Kommer Snart!</td>
                     </tr>
                     </tbody>
                 </table>

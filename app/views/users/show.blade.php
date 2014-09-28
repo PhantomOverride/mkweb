@@ -3,7 +3,7 @@
 @if(isset($user))
 
     @section('title')
-        Profil för {{$user->nickname}}
+        Profil för {{{$user->nickname}}}
     @stop
 
     @section('contentname')
@@ -11,7 +11,7 @@
     @stop
 
     @section('contenttitle')
-        {{$user->nickname}}
+        {{{$user->nickname}}}
     @stop
 
     @section('content')
@@ -25,7 +25,7 @@
             <p><img src="{{$user->avatarurl}}" alt="avatar" height="160" width="160"></p>
             <h3>{{$user->nickname}}</h3>
             {{ link_to_route('users.edit','Redigera din profil',$user->nickname) }}
-            <h4>Stauts: {{$user->accounttype}}</h4>
+            <h4>Stauts: {{{$user->accounttype}}}</h4>
             <br>
                 <table class="table table-striped">
                     

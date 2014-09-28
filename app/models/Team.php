@@ -28,26 +28,27 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
         ];
         
         public static $rules = [
-            'name'          => 'required|unique:teams',
-            'motto'         => 'required',
-            'leader'        => 'required',
+            'name'          => 'required|unique:teams|noshit',
+            'motto'         => 'required|noshit',
+            'leader'        => 'required|noshit',
             'members'       => 'required',
-            'tournaments'   => '',
+            'tournaments'   => 'noshit',
             'imageurl'      => '',
         ];
         
         public static $rulesUpdate = [
-            'name'          => 'required',
-            'motto'         => 'required',
-            'leader'        => 'required',
+            'name'          => 'required|noshit',
+            'motto'         => 'required|noshit',
+            'leader'        => 'required|noshit',
             'members'       => 'required',
-            'tournaments'   => '',
+            'tournaments'   => 'noshit',
             'imageurl'      => '',
         ];
         
         public static $errorMessages = [
             'required' => 'Obligatoriskt fält',
             'unique' => 'Detta används redan av någon annan!',
+            'noshit' => 'Ogiltiga tecken!',
         ];
 
 	/**
@@ -98,7 +99,7 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             foreach ($this->members as $member){
                 if(!User::whereNickname($member)->count()){
                     $this->errors = $validation->messages();
-                    $this->errors->add('missingmember','Användare '.$member.' finns inte!');
+                    $this->errors->add('missingmember','<p class="box-rounded notis">Användare '.$member.' finns inte! Ta bort medlemen först!</p>');
                     return false;
                 }
             }

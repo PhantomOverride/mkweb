@@ -67,7 +67,7 @@ class TeamController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($teamname) //TODO
+	public function show($teamname)
 	{
             $this->team = $this->team->whereName($teamname)->first();
             return View::make('teams.show', ['team' => $this->team])->with('nav',Page::navbar());
@@ -120,7 +120,7 @@ class TeamController extends \BaseController {
                     
                     if(!$this->team->isValidUpdate())
                     {
-                        return Redirect::back()->withInput()->withErrors($this->team->errors)->with('nav',Page::navbar());
+                        return Redirect::route('teams.show',$teamname)->withInput()->with('message','<p class="box-rounded notis">Något gick snett.</p>')->with('nav',Page::navbar());
                     }
                     
                     $this->team->update();
@@ -149,7 +149,7 @@ class TeamController extends \BaseController {
                     $this->team->members = $members;
                     if(!$this->team->isValidUpdate())
                     {
-                        return Redirect::back()->withInput()->withErrors($this->team->errors)->with('nav',Page::navbar());
+                        return Redirect::route('teams.show',$teamname)->withInput()->with('message','<p class="box-rounded notis">Något gick snett.</p>')->with('nav',Page::navbar());
                     }
                     
                     $this->team->update();
