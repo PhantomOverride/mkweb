@@ -45,6 +45,12 @@
     </div>
     
     <div>
+        {{Form::label('leadertags', 'Lagledarens IDs: ')}}
+        {{Form::text('leadertags',$team->leadertags)}}
+        {{$errors->first('leadertags', '<span class=error>:message</span>')}}
+    </div>
+    
+    <div>
         {{Form::label('imageurl', 'Länk till logo: ')}}
         {{Form::text('imageurl',$team->imageurl)}}
         {{$errors->first('imageurl', '<span class=error>:message</span>')}}

@@ -44,6 +44,14 @@
                         <td><i class=""></i>{{{$team->leader}}}</td>
                     </tr>
                     <tr>
+                        <td>Lagledarens IDs:</td>
+                        @if(!empty($team->leadertags))
+                            <td><i class=""></i>{{{$team->leadertags}}}</td>
+                        @else
+                            <td><i class=""></i>Inga IDs satta ännu!</td>
+                        @endif
+                    </tr>
+                    <tr>
                         <td>Medlemmar:</td>
                         <td><i class=""></i>
                         @if(!empty($team->members))

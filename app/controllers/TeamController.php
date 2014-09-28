@@ -175,6 +175,7 @@ class TeamController extends \BaseController {
                     $this->team->motto = $input['motto'];
                     $this->team->leader = $input['leader'];
                     $this->team->imageurl = $input['imageurl'];
+                    $this->team->leadertags = $input['leadertags'];
 
                     if(!$this->team->isValidUpdate())
                     {

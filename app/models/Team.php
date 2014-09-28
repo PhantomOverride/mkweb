@@ -25,6 +25,7 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'members',
             'tournaments',
             'imageurl',
+            'leadertags',
         ];
         
         public static $rules = [
@@ -34,6 +35,7 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'members'       => 'required',
             'tournaments'   => 'noshit',
             'imageurl'      => '',
+            'leadertags'    => 'noshit',
         ];
         
         public static $rulesUpdate = [
@@ -43,6 +45,7 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'members'       => 'required',
             'tournaments'   => 'noshit',
             'imageurl'      => '',
+            'leadertags'    => 'noshit',
         ];
         
         public static $errorMessages = [
@@ -67,6 +70,9 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
         public function setMembersAttribute($value){
             //Json encode since this is an array of members we are storing
             $this->attributes['members'] = json_encode($value);
+        }
+        public function setLeadertagsAttribute($value){
+            $this->attributes['leadertags'] = (empty($value)) ? null : $value;
         }
         
         public function getTournamentsAttribute(){

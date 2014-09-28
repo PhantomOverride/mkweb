@@ -75,7 +75,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             'min' => 'Minst :min tecken!',
             'max' => 'Som mest :max tecken!',
             'email' => 'Se till att mata in en giltig epostaddress!',
-            'noshit' => 'Du har tecken som inte är tillåtna. Lista ut vilka och ta bort dem!'
+            'noshit' => 'Du har tecken som inte är tillåtna. Lista ut vilka och ta bort dem!',
+            'noshitpwd' => 'Du har tecken som inte är tillåtna. Lista ut vilka och ta bort dem!',
         ];
 
 	/**

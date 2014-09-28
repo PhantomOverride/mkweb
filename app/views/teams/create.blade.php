@@ -19,6 +19,10 @@
 <p>
     Du kommer att bli satt som lagets ledare automatiskt när du skapar laget. Du kan ändra lagledare senare.
 </p>
+<p>
+    Kom ihåg att lägga till ditt kontonamn under ID så att CREW kan hitta dig i spelet! Är ni med i flera turneringar så markera
+    vilket namn som är för vad.
+</p>
 
     {{Form::open(['route' => 'teams.store'])}}
     
@@ -31,13 +35,19 @@
     <div>
         {{Form::label('motto', 'Lagmotto: ')}}
         {{Form::text('motto')}}
-        {{$errors->first('lastname', '<span class=error>:message</span>')}}
+        {{$errors->first('motto', '<span class=error>:message</span>')}}
     </div>
     
     <div>
         {{Form::label('leader', 'Lagledare: ')}}
         {{Form::text('leader',Auth::user()->nickname,array('readonly'))}}
         {{$errors->first('leader', '<span class=error>:message</span>')}}
+    </div>
+    
+    <div>
+        {{Form::label('leadertags', 'Ledarens IDs: ')}}
+        {{Form::text('leadertags')}}
+        {{$errors->first('leadertags', '<span class=error>:message</span>')}}
     </div>
     
     <div>
