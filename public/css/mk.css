@@ -94,7 +94,10 @@ a:hover, a:active, a:focus {
 }
 
 
+.input-group .form-control {
+    height:34px;
 
+}
 
 .brand{
     background-color:#111111;
