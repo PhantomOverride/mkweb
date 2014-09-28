@@ -14,7 +14,7 @@ class TeamController extends \BaseController {
     
         public function __construct(Team $team)
         {
-            $this->team = $team;
+            $this->team = $team;  
         }
     
     
@@ -32,7 +32,12 @@ class TeamController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('teams.create')->with('nav',Page::navbar());
+            if(Auth::guest()){
+                return Redirect::to('/login')->with('message','<p class="box-rounded notis">Du måste logga in för att skapa ett lag!</p>')->with('nav',Page::navbar());
+            }
+            else{
+                return View::make('teams.create')->with('nav',Page::navbar());
+            }
 	}
 
 
@@ -43,6 +48,11 @@ class TeamController extends \BaseController {
 	 */
 	public function store()
 	{
+            
+            if(Auth::guest()){
+                return Redirect::to('/login')->with('message','<p class="box-rounded notis">Du måste logga in för att skapa ett lag!</p>')->with('nav',Page::navbar());
+            }
+            
             Input::merge(array_map('trim', Input::all()));
             $input = Input::all();
             
@@ -70,7 +80,12 @@ class TeamController extends \BaseController {
 	public function show($teamname)
 	{
             $this->team = $this->team->whereName($teamname)->first();
-            return View::make('teams.show', ['team' => $this->team])->with('nav',Page::navbar());
+            if($this->team == null){
+                return Redirect::to('/teams')->with('message','<p class="box-rounded notis">Kunde inte öppna laget. Förlåt :C!</p>')->with('nav',Page::navbar());
+            }
+            else{
+                return View::make('teams.show', ['team' => $this->team])->with('nav',Page::navbar());
+            }
 	}
 
 

@@ -14,6 +14,8 @@
 
 @section('content')
 
+{{Session::get('message')}}
+
 <p>
     Nedan kan du se alla lag som är föranmälda till WonderLAN! Se till att skapa
     ditt lag med dina lagkamrater redan idag - så ni är redo och kan förbereda er!

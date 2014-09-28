@@ -21,7 +21,11 @@
         {{Session::get('message')}}
         
         <div>
-            <p><img src="{{{$team->imageurl}}}" alt="avatar" height="160" width="160"></p>
+            @if(!empty($team->imageurl))
+                <p><img src="{{{$team->imageurl}}}" alt="avatar" height="160" width="160"></p>
+            @else
+                <p><img src="/avatars/team.png" alt="avatar" height="160" width="160"></p>
+            @endif
             <h3>{{{$team->name}}}</h3>
             @if(Auth::check() && (Auth::user()->nickname == $team->leader || Auth::user()->crew()))
                 {{ link_to_route('teams.edit','Redigera ditt lag',$team->name) }}
