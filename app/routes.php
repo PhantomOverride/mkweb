@@ -71,5 +71,11 @@ Route::get('teams/{name}/addmember','TeamController@addMember')->before('auth');
 Route::get('teams/{name}/addmember/{nickname}','TeamController@addMember')->before('auth');
 Route::get('teams/{name}/removemember','TeamController@removeMember')->before('auth');
 Route::get('teams/{name}/removemember/{nickname}','TeamController@removeMember')->before('auth');
+
+Route::get('teams/{name}/addtournament','TeamController@addTournament')->before('auth');
+Route::get('teams/{name}/addtournament/{tournamentname}','TeamController@addTournament')->before('auth');
+Route::get('teams/{name}/removetournament','TeamController@removeTournament')->before('auth');
+Route::get('teams/{name}/removetournament/{tournamentname}','TeamController@removeTournament')->before('auth');
+
 Route::resource('teams','TeamController');
 //Route::post('teams/{name}/update','TeamController@update')->before('auth');

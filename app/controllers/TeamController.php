@@ -152,8 +152,12 @@ class TeamController extends \BaseController {
             if($teamname!=null && Auth::check() && (Auth::user()->nickname == $this->team->whereName($teamname)->first()->leader || Auth::user()->crew())){
                 
                 $this->team = $this->team->whereName($teamname)->first();
-                
-                    if($membername==null){
+                    
+                    if(empty($this->team->members)){
+                        $message = '<p class="box-rounded notis">Det finns inga medlemar att ta bort!</p>';
+                        return Redirect::route('teams.show',$this->team->name)->with('message',$message);
+                    }
+                    else if($membername==null){
                         return View::make('teams.removemember')->with('users',User::whereIn('nickname',$this->team->members)->get())->with('team',$this->team)->with('nav',Page::navbar());
                     }
 
@@ -177,6 +181,69 @@ class TeamController extends \BaseController {
             }
         }
         
+        public function addTournament($teamname, $tournamentname=null){
+            if($teamname!=null && Auth::check() && (Auth::user()->nickname == $this->team->whereName($teamname)->first()->leader || Auth::user()->crew())){
+                
+                $this->team = $this->team->whereName($teamname)->first();
+                
+                    if($tournamentname==null){
+                        return View::make('teams.addtournament')->with('tournaments',Tournament::all())->with('team',$this->team)->with('nav',Page::navbar());
+                    }
+                    
+                    $tournaments = $this->team->tournaments;
+                    $tournaments[] = $tournamentname;
+                    $tournaments = array_unique($tournaments,SORT_STRING);
+                    
+                    $this->team->tournaments = $tournaments;
+                    
+                    if(!$this->team->isValidUpdate())
+                    {
+                        return Redirect::route('teams.show',$teamname)->withInput()->with('message','<p class="box-rounded notis">Något gick snett vid ändring av turneringar.</p>')->with('nav',Page::navbar());
+                    }
+                    
+                    $this->team->update();
+                    $message = '<p class="box-rounded notis">Ditt lag uppdaterades!</p>';
+                    return Redirect::route('teams.show',$this->team->name)->with('message',$message);
+                    
+            }
+            else{
+                    return Redirect::to('login');
+            }
+        }
+        
+        public function removeTournament($teamname, $tournamentname=null){
+            if($teamname!=null && Auth::check() && (Auth::user()->nickname == $this->team->whereName($teamname)->first()->leader || Auth::user()->crew())){
+                
+                $this->team = $this->team->whereName($teamname)->first();
+                
+                    if(empty($this->team->tournaments)){
+                        $message = '<p class="box-rounded notis">Det finns inga turneringar att ta bort!</p>';
+                        return Redirect::route('teams.show',$this->team->name)->with('message',$message);
+                    }
+                    else if($tournamentname==null){
+                        return View::make('teams.removetournament')->with('tournaments',Tournament::whereIn('name',$this->team->tournaments)->get())->with('team',$this->team)->with('nav',Page::navbar());
+                    }
+
+                    $tournaments = $this->team->tournaments;
+                    $tournaments = array_diff($tournaments, [$tournamentname]);
+                    $tournaments = array_unique($tournaments,SORT_STRING);
+                    
+                    $this->team->tournaments = $tournaments;
+
+                    if(!$this->team->isValidUpdate())
+                    {
+                        return Redirect::route('teams.show',$teamname)->withInput()->with('message','<p class="box-rounded notis">Något gick snett vid borttagningen av en turnering.</p>')->with('nav',Page::navbar());
+                    }
+                    
+                    $this->team->update();
+                    $message = '<p class="box-rounded notis">Ditt lag uppdaterades!</p>';
+                    return Redirect::route('teams.show',$this->team->name)->with('message',$message);
+                    
+            }
+            else{
+                    return Redirect::to('login');
+            }
+        }
         
 	public function update($teamname)
 	{

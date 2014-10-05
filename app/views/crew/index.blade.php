@@ -110,4 +110,60 @@
 </table>
 </div>
 
+<div class='panel panel-default panel-body'>
+    <h2 class='page-header'><small>Tournament Management (Liveredigering #TODO)</small></h2>
+<table class="table table-striped">
+<thead>
+    <tr>
+            <td>Bild</td>
+            <td>Namn</td>
+            <td>Shortname</td>
+            <td></td>
+    </tr>
+</thead><tbody>
+    @foreach ($tournaments as $tournament)
+        <tr>
+            <td><img style="width:25px;" src="{{ $tournament->imageurl }}" /></td>
+            <td>{{ $tournament->name }}</td>
+            <td>{{ $tournament->shortname }}</td>
+            <td></td>
+        </tr>
+    @endforeach
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Ny Turnering (#todo)</td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+<div class='panel panel-default panel-body'>
+    <h2 class='page-header'><small>Tournament Overview</small></h2>
+    @foreach($tournaments as $tournament)
+        <h3>{{$tournament->name}}</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                        <td>Lagnamn</td>
+                        <td>Ledare</td>
+                        <td>Medlemmar</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($teams as $team)
+                        @if(!empty($team->tournaments) && in_array($tournament->name,$team->tournaments))
+                            <tr>
+                                <td>{{ link_to('/teams/'.$team->name,$team->name) }}</td>
+                                <td>{{ $team->leader }}</td>
+                                <td>{{ implode(', ',$team->members) }}</td>
+                            </tr>
+                        @endif
+                    </tbody>
+                    </table>
+                @endforeach
+    @endforeach
+</div>
+
 @stop

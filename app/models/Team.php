@@ -33,7 +33,7 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'motto'         => 'required|noshit',
             'leader'        => 'required|noshit',
             'members'       => 'required',
-            'tournaments'   => 'noshit',
+            'tournaments'   => '',
             'imageurl'      => '',
             'leadertags'    => 'noshit',
         ];
@@ -43,7 +43,7 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'motto'         => 'required|noshit',
             'leader'        => 'required|noshit',
             'members'       => 'required',
-            'tournaments'   => 'noshit',
+            'tournaments'   => '',
             'imageurl'      => '',
             'leadertags'    => 'noshit',
         ];
@@ -110,8 +110,18 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
                 }
             }
             
+            //Validate that all tournaments exist
+            if(!empty($this->tournaments)){
+                foreach ($this->tournaments as $tournament){
+                    if(!Tournament::whereName($tournament)->count()){
+                        $this->errors = $validation->messages();
+                        $this->errors->add('missingtournament','<p class="box-rounded notis">Turneringen '.$member.' finns inte! Ta bort turneringen först!</p>');
+                        return false;
+                    }
+                }
+            }
             if ($validation->passes()) return true;
-            
+
             $this->errors = $validation->messages();
             
             return false;

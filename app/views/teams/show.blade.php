@@ -69,7 +69,15 @@
                     </tr>
                     <tr>
                         <td>Turneringar:</td>
-                        <td><i class=""></i>Kommer Snart!</td>
+                        <td><i class=""></i>
+                        @if(!empty($team->tournaments))
+                            @foreach($team->tournaments as $tournament)
+                                {{{ $tournament }}}, 
+                            @endforeach
+                        @else
+                            Inget deltagande anmält ännu.
+                        @endif
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -78,6 +86,11 @@
                 {{ link_to('/teams/'.$team->name.'/addmember','Lägg till lagkamrater'); }}
                 <br />
                 {{ link_to('/teams/'.$team->name.'/removemember','Ta bort lagkamrater'); }}
+                <br />
+                <br />
+                {{ link_to('/teams/'.$team->name.'/addtournament','Anmäl till turnering eller tävling'); }}
+                <br />
+                {{ link_to('/teams/'.$team->name.'/removetournament','Avanmäl turneringsintresse'); }}
             @endif
             
         </div>

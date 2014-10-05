@@ -60,11 +60,11 @@
                     </tr>
                     <tr>
                         <td>Medlemskap:</td>
-                        <td><i class=""></i>{{{($user->memberype=='none') ? 'Ej Medlem' : 'Medlem'}}}</td>
+                        <td><i class=""></i>{{{($user->membertype=='none') ? 'Ännu inte medlem i föreningen' : 'Medlem'}}}</td>
                     </tr>
                     <tr>
                         <td>Medlemsperiod:</td>
-                        <td><i class=""></i>{{{$user->memberperiod}}}</td>
+                        <td><i class=""></i>{{{($user->memberperiod=='0000') ? 'Ej definierat' : $user->memberperiod}}}</td>
                     </tr>
                     </tbody>
                 </table>
