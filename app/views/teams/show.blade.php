@@ -90,7 +90,7 @@
                 <br />
                 {{ link_to('/teams/'.$team->name.'/addtournament','Anmäl till turnering eller tävling'); }}
                 <br />
-                {{ link_to('/teams/'.$team->name.'/removetournament','Avanmäl turneringsintresse'); }}
+                {{ link_to('/teams/'.$team->name.'/removetournament','Ta bort turneringsintresse'); }}
             @endif
             
         </div>
