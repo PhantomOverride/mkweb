@@ -79,3 +79,13 @@ Route::get('teams/{name}/removetournament/{tournamentname}','TeamController@remo
 
 Route::resource('teams','TeamController');
 //Route::post('teams/{name}/update','TeamController@update')->before('auth');
+
+Route::get('/live', function()
+{
+    return View::make('current')->with('nav',Page::navbar());
+});
+
+Route::get('/subway', function()
+{
+    return Redirect::to('http://example.com/');
+});
