@@ -21,37 +21,37 @@ Route::get('/', function()
 
 Route::get('/subway', function()
 {
-    //return Redirect::to('http://example.com/');
+    //return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
 Route::get('/page/subway', function()
 {
-    //return Redirect::to('http://example.com/');
+    //return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
 Route::get('pages/subway', function()
 {
-    //return Redirect::to('http://example.com/');
+    //return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
 Route::get('wonderlan/subway', function()
 {
-    //return Redirect::to('http://example.com/');
+    //return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
 Route::get('page/wonderlan/subway', function()
 {
-    //return Redirect::to('http://example.com/');
+    //return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
 Route::get('pages/wonderlan/subway', function()
 {
-    //return Redirect::to('http://example.com/');
+    //return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
