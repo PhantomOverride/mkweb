@@ -19,6 +19,42 @@ Route::get('/', function()
  * 
  */
 
+Route::get('/subway', function()
+{
+    //return Redirect::to('http://example.com/');
+    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
+});
+
+Route::get('/page/subway', function()
+{
+    //return Redirect::to('http://example.com/');
+    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
+});
+
+Route::get('pages/subway', function()
+{
+    //return Redirect::to('http://example.com/');
+    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
+});
+
+Route::get('wonderlan/subway', function()
+{
+    //return Redirect::to('http://example.com/');
+    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
+});
+
+Route::get('page/wonderlan/subway', function()
+{
+    //return Redirect::to('http://example.com/');
+    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
+});
+
+Route::get('pages/wonderlan/subway', function()
+{
+    //return Redirect::to('http://example.com/');
+    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
+});
+
 /*
  *  Post Controller for Blog
  */
@@ -83,9 +119,4 @@ Route::resource('teams','TeamController');
 Route::get('/live', function()
 {
     return View::make('current')->with('nav',Page::navbar());
-});
-
-Route::get('/subway', function()
-{
-    return Redirect::to('http://example.com/');
 });

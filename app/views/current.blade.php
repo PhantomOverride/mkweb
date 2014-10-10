@@ -69,6 +69,7 @@
                         <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
                         <ul>15:00 Programmeringstävling slut och redovisning</ul>
                         <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>18:00 Prisutdelning!</ul>
                         <br />
                         </div>
                     </div>
@@ -102,6 +103,10 @@
                             <h3>Counter-Strike: Global Offensive</h3>
                             <ul>Samling och registrering: Lördag 18:00</ul>
                             <ul>Start: Lördag 19:00</ul>
+                            
+                            <br />
+                            
+                            Prisutdelning sker på söndag klockan 18!
                             
                         </div>
                     </div>
@@ -151,6 +156,7 @@
                         <ul>00:00 Sovsalen öppnar!</ul>
                         <h3>Söndag</h3>
                         <ul>15:00 Programmeringstävling slut och redovisning</ul>
+                        <ul>18:00 Prisutdelning!</ul>
                         <br />
                         </div>
                     </div>
@@ -164,7 +170,9 @@
 
                         </a>
                         <p class="collapse">
-                            #TODO
+                            <br />
+                            Här kan aktuell serverinfo visas. Just nu har vi inga servrar igång.
+                            <br />
                         </p>
                     </div>
                 </div>
@@ -193,9 +201,15 @@
                             <i>+</i><span>Sovsal</span>
 
                         </a>
-                        <p class="collapse">
-                            #TODO
-                        </p>
+                        <div class="collapse">
+                            <br />
+                            Sovsalen är öppen mellan 00:00-12:00. Håll utkik kring klockan tolv när skjuts eller vägledning till sovsalen kan komma att ske.
+                            <br/>
+                            Kom ihåg att det är förbjudet att sova i BTH:s lokaler! Sov hemma eller i sovsalen!
+                            <br />
+                            <img src="/img/wl/karta.png" />
+                            <br /><br />
+                        </div>
                     </div>
                 </div>
         <!--stream -->
