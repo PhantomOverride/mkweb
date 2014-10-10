@@ -41,14 +41,14 @@
     <!--GUIDE -->
                 <div class="row">
                     <div class="span4 collapse-group">
-                        <a class="btn btnSection--icon btnSection btnSection--0" href="https://www.dropbox.com/s/i14e236ol6hmh78/WonderLAN3_Print.pdf">
+                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
                             <i>+</i><span>Schema och Survival Guide</span>
 
                         </a>
                         <div class="collapse">
                             <br />
-                            Om du har tappat bort din Survival Guide kan du ladda ner den <a href="#">HÄR</a>!
+                            Om du har tappat bort din Survival Guide kan du ladda ner den <a href="https://www.dropbox.com/s/i14e236ol6hmh78/WonderLAN3_Print.pdf">HÄR</a>!
                             <br />
                         <h3>Fredag</h3>
                         <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
