@@ -122,6 +122,9 @@
                         <div class="collapse">
                             <br />
                             Du hittar Subway-formuläret <a href="http://wonderlan.se/subway">HÄR</a>!
+                            <br /><br />
+                            OBSERVERA att du behöver beställa och BETALA din mat innan den avsatta tiden på schemat. Du lägger in beställningen via formuläret, och sen betalar du den i Entrén.
+                            Betala gärna direkt så du inte glömmer det! Nomnomnom!
                             <br />
                         <h3>Fredag</h3>
                         <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
