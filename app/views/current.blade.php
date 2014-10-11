@@ -93,8 +93,8 @@
                             <ul>Start: Lördag 12:00</ul>
                             
                             <h3>DotA 2</h3>
-                            <ul>Samling och registrering: Lördag 11:00</ul>
-                            <ul>Start: Lördag 12:00</ul>
+                            <ul>Samling och registrering: Söndag 11:00</ul>
+                            <ul>Start: Söndag 12:00</ul>
                             
                             <h3>Hearthstone</h3>
                             <ul>Samling och registrering: Fredag 21:00</ul>
