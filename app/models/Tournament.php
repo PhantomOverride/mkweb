@@ -42,11 +42,13 @@ class Tournament extends Eloquent implements UserInterface, RemindableInterface 
             'noshit' => 'Ogiltiga tecken!',
         ];
 
-	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
+	public function events(){
+            return $this->belongsToMany('Event');
+        }
+        
+        public function teams(){
+            return $this->belongsToMany('Team');
+        }
         
         public function setImageurlAttribute($value){
             $this->attributes['imageurl'] = (empty($value)) ? null : $value;

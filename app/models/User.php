@@ -79,12 +79,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             'noshitpwd' => 'Du har tecken som inte är tillåtna. Lista ut vilka och ta bort dem!',
         ];
 
-	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
 	protected $hidden = array('password', 'remember_token');
+
+        public function events(){
+            return $this->belongsToMany('Event');
+        }
+        
+        public function teams(){
+            return $this->belongsToMany('Team');
+        }
         
         public function setPasswordAttribute($value){
             $this->attributes['password'] = Hash::make($value);

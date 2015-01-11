@@ -53,21 +53,15 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'unique' => 'Detta används redan av någon annan!',
             'noshit' => 'Ogiltiga tecken!',
         ];
-
-	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
         
         public function setImageurlAttribute($value){
             $this->attributes['imageurl'] = (empty($value)) ? null : $value;
         }
-        public function setTournamentsAttribute($value){
+        public function setTournamentsAttribute($value){ //Deprecated
             //Allow null, and automatically json encode if not
             $this->attributes['tournaments'] = (empty($value)) ? null : json_encode($value);
         }
-        public function setMembersAttribute($value){
+        public function setMembersAttribute($value){ //Deprecated
             //Json encode since this is an array of members we are storing
             $this->attributes['members'] = json_encode($value);
         }
@@ -75,11 +69,23 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             $this->attributes['leadertags'] = (empty($value)) ? null : $value;
         }
         
-        public function getTournamentsAttribute(){
+        public function getTournamentsAttribute(){ //Deprecated
             return json_decode($this->attributes['tournaments'],true);
         }
-        public function getMembersAttribute(){
+        public function getMembersAttribute(){ //Deprecated
             return json_decode($this->attributes['members'],true);
+        }
+        
+        public function tournaments(){
+            return $this->belongsToMany('Tournament');
+        }
+        
+        public function events(){
+            return $this->belongsToMany('Event');
+        }
+        
+        public function users(){
+            return $this->belongsToMany('User');
         }
         
         public function isValid()
