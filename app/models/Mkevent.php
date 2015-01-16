@@ -1,6 +1,9 @@
 <?php
 
-class Event extends \Eloquent {
+class Mkevent extends Eloquent {
+    
+    protected $table = 'mkevents';
+    
 	protected $fillable = [];
         
         public function tournaments(){

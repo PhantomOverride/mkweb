@@ -120,3 +120,13 @@ Route::get('/live', function()
 {
     return View::make('current')->with('nav',Page::navbar());
 });
+
+/*
+ *  Routes for Event
+ */
+Route::get('mkevents', 'MkeventController@index');
+Route::get('mkevents/create', 'MkeventController@edit')->before('crew');
+Route::get('mkevents/{name}', 'MkeventController@show');
+Route::get('mkevents/{name}/edit', 'MkeventController@edit')->before('crew');
+Route::post('mkevents/{name}/update', 'MkeventController@update')->before('crew');
+Route::post('mkevents/update', 'MkeventController@update')->before('crew');

@@ -80,8 +80,8 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             return $this->belongsToMany('Tournament');
         }
         
-        public function events(){
-            return $this->belongsToMany('Event');
+        public function mkevents(){
+            return $this->belongsToMany('Mkevent');
         }
         
         public function users(){

@@ -42,8 +42,8 @@ class Tournament extends Eloquent implements UserInterface, RemindableInterface 
             'noshit' => 'Ogiltiga tecken!',
         ];
 
-	public function events(){
-            return $this->belongsToMany('Event');
+	public function mkevents(){
+            return $this->belongsToMany('Mkevent');
         }
         
         public function teams(){

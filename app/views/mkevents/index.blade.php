@@ -1,11 +1,11 @@
 @extends('v1-wrapper')
 
 @section('title')
-    Eventarkiv
+    Mkeventarkiv
 @stop
 
 @section('contentname')
-    Eventarkiv
+    Mkeventarkiv
 @stop
 
 @section('contenttitle')
@@ -17,16 +17,16 @@
 <table class="table table-striped">
 <thead>
     <tr>
-            <td>Eventnamn</td>
+            <td>Mkeventnamn</td>
             <td>År</td>
             <td>Bild</td>
     </tr>
 </thead><tbody>
-    @foreach ($events as $event)
+    @foreach ($mkevents as $mkevent)
         <tr>
-            <td>{{ link_to('/events/'.$event->name,$event->name) }}</td>
-            <td>{{ $event->year }}</td>
-            <td><img src="{{ $event->imageurl }}" /></td>
+            <td>{{ link_to('/mkevents/'.$mkevent->name,$mkevent->name) }}</td>
+            <td>{{ $mkevent->year }}</td>
+            <td><img width=150px src="{{ $mkevent->imageurl }}" /></td>
         </tr>
     @endforeach
 </tbody>
