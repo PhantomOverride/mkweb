@@ -35,6 +35,19 @@ class PostController extends BaseController {
             
         }
         
+        public function remove($urlname=null){
+            if($urlname != null){
+                $this->post = $this->post->whereTitle($urlname)->first();
+                $this->post->delete();
+            }
+            else{
+                //Do nothing
+            }
+            
+            $message = '<p class="box-rounded notis">Posten har raderats!</p>';
+            return Redirect::to('crew/')->with('message',$message);
+            
+        }
         
         public function update($urlname=null){
             

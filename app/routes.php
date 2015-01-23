@@ -64,6 +64,7 @@ Route::get('posts/{urlname}', 'PostController@show');
 Route::get('posts/{urlname}/edit', 'PostController@edit')->before('crew');
 Route::post('posts/{urlname}/update', 'PostController@update')->before('crew');
 Route::post('posts/update', 'PostController@update')->before('crew');
+Route::get('posts/{urlname}/remove', 'PostController@remove')->before('crew');
 
 /*
  *  CMS Controller for pages

@@ -13,6 +13,9 @@
 @stop
 
 @section('content')
+
+{{Session::get('message')}}
+
 <!-- Page edit section -->
 
 
@@ -90,6 +93,7 @@
             <td>Author</td>
             <td>Posted</td>
             <td>Edit</td>
+            <td>Remove</td>
     </tr>
 </thead><tbody>
     @foreach ($posts as $post)
@@ -98,8 +102,10 @@
             <td>{{ $post->author }}</td>
             <td>{{ $post->posted }}</td>
             <td>{{ link_to('/posts/'.$post->title.'/edit','Redigera') }}</td>
+            <td>{{ link_to('/posts/'.$post->title.'/remove','Remove') }}</td>
         </tr>
     @endforeach
+    <tr></tr>
         <tr>
             <td></td>
             <td></td>
