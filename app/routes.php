@@ -124,9 +124,18 @@ Route::get('/live', function()
 /*
  *  Routes for Event
  */
-Route::get('mkevents', 'MkeventController@index');
 Route::get('mkevents/create', 'MkeventController@edit')->before('crew');
+Route::get('mkevents/edit', 'MkeventController@edit')->before('crew');
 Route::get('mkevents/{name}', 'MkeventController@show');
 Route::get('mkevents/{name}/edit', 'MkeventController@edit')->before('crew');
 Route::post('mkevents/{name}/update', 'MkeventController@update')->before('crew');
 Route::post('mkevents/update', 'MkeventController@update')->before('crew');
+Route::get('mkevents', 'MkeventController@index');
+
+Route::get('tournaments/create', 'TournamentController@edit')->before('crew');
+Route::get('tournaments/edit', 'TournamentController@edit')->before('crew');
+Route::get('tournaments/{name}', 'TournamentController@show');
+Route::get('tournaments/{name}/edit', 'TournamentController@edit')->before('crew');
+Route::post('tournaments/{name}/update', 'TournamentController@update')->before('crew');
+Route::post('tournaments/update', 'TournamentController@update')->before('crew');
+Route::get('tournaments', 'TournamentController@index');

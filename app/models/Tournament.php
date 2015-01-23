@@ -70,7 +70,7 @@ class Tournament extends Eloquent implements UserInterface, RemindableInterface 
             
             $ruleset = static::$rulesUpdate;
             $ruleset['name'].='|unique:tournaments,name,'.$this->id; //Unique to all but this tournament
-            $ruleset['shortname'].='|unique:tournaments,shortname,'.$this->id;
+            //$ruleset['shortname'].='|unique:tournaments,shortname,'.$this->id;
             $validation = Validator::make($this->attributes, $ruleset, static::$errorMessages);
             
             if ($validation->passes()) return true;

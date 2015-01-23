@@ -4,7 +4,7 @@ class Mkevent extends Eloquent {
     
     protected $table = 'mkevents';
     
-	protected $fillable = [];
+	protected $fillable = ['title','year','imageurl'];
         
         public function tournaments(){
             return $this->belongsToMany('Tournament');
@@ -14,5 +14,13 @@ class Mkevent extends Eloquent {
         }
         public function users(){
             return $this->belongsToMany('User');
+        }
+        
+        public function isValid(){
+            return (!empty($this->name) && !empty($this->year));
+        }
+        
+        public function isValidUpdate(){
+            return $this->isValid();
         }
 }
