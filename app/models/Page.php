@@ -66,6 +66,7 @@ class Page extends Eloquent implements UserInterface, RemindableInterface {
             $pages = Page::orderby('order','asc')->wherenotnull('parentname')->get();
             
             foreach($pages as $page){
+                if($page->parentname == 'inactive') continue; //Hide all with parent set to 'inactive'
                 $link = ($page->linkto == null) ? '/page/'.$page->parentname.'/'.$page->urlname : $page->linkto;
                 $current = array(
                     'name' => $page->name,
