@@ -30,17 +30,19 @@
         @endif
         
         <p>
-            {{ $mkevent->name }}
+            Evenemang {{ $mkevent->name }}
         </p>
         <p>
+            @if(($mkevent->tournaments()->first()))
+            Turneringar:<br/>
             @foreach($mkevent->tournaments()->get() as $t)
             
             {{{$t->name}}}, 
             
             @endforeach
+            @endif
         </p>
-        <!-- <a class="btn btn-primary" href="{{'/mkevents/'.$mkevent->name}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-        <hr />
+
         <p class="lead">
             <span class="glyphicon glyphicon-time"></span> &nbsp; "{{ $mkevent->year }}"
         </p>

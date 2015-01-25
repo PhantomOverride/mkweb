@@ -30,11 +30,6 @@
         @endif
         
         <p>
-            {{ $tournament->name }}
-        </p>
-        <!-- <a class="btn btn-primary" href="{{'/tournaments/'.$tournament->name}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-        <hr />
-        <p class="lead">
-            <span class="glyphicon glyphicon-time"></span> &nbsp; "{{ $tournament->shortname }}"
+            Turnering {{ $tournament->name }}, förkortat {{ $tournament->shortname }}.
         </p>
 @stop

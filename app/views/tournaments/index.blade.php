@@ -1,15 +1,15 @@
 @extends('v1-wrapper')
 
 @section('title')
-    Tournamentarkiv
+    Kommande Turneringar
 @stop
 
 @section('contentname')
-    Tournamentarkiv
+    Kommande Turneringar
 @stop
 
 @section('contenttitle')
-    Vet du vad som hänt?
+    Dags för förberedelse?
 @stop
 
 @section('content')
@@ -18,7 +18,7 @@
 <thead>
     <tr>
             <td>Tournamentnamn</td>
-            <td>shortname</td>
+            <td>Förkortning</td>
             <td>Bild</td>
     </tr>
 </thead><tbody>

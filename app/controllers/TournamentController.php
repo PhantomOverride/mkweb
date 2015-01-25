@@ -14,9 +14,13 @@ class TournamentController extends BaseController {
 	{
             //We want to display all tournaments which are valid for the latest event
             
-		$tournaments = $this->tournament->orderBy('id','desc')->get();
-                //$tournaments = $this->tournament->all();
-                return View::make('tournaments.index', ['tournaments' => $tournaments])->with('nav',Page::navbar());
+            $e = Mkevent::orderBy('id','desc')->first();
+            
+            $tournaments = $e->tournaments()->get();
+            
+            //$tournaments = $this->tournament->orderBy('id','desc')->get();
+            //$tournaments = $this->tournament->all();
+            return View::make('tournaments.index', ['tournaments' => $tournaments])->with('nav',Page::navbar());
 	}
         
         public function show($name)

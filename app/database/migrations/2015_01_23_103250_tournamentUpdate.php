@@ -30,6 +30,13 @@ class TournamentUpdate extends Migration {
                 );
                 DB::table('tournaments')->insert(
                         array(
+                            'name' => 'WLS15 Heroes of the Storm',
+                            'shortname' => 'HotS',
+                            'imageurl' => '/img/tournament/hots.jpg',
+                        )
+                );
+                DB::table('tournaments')->insert(
+                        array(
                             'name' => 'WLS15 Hearthstone',
                             'shortname' => 'HS',
                             'imageurl' => '/img/tournament/hs.png',
@@ -57,6 +64,9 @@ class TournamentUpdate extends Migration {
                 $e->tournaments()->save($t);
                 
                 $t = Tournament::whereName('WLS15 DotA2')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLS15 Heroes of the Storm')->first();
                 $e->tournaments()->save($t);
                 
                 $t = Tournament::whereName('WLS15 Hearthstone')->first();

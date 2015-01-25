@@ -1,15 +1,15 @@
 @extends('v1-wrapper')
 
 @section('title')
-    Mkeventarkiv
+    Evenemang
 @stop
 
 @section('contentname')
-    Mkeventarkiv
+    Evenemang
 @stop
 
 @section('contenttitle')
-    Vet du vad som hänt?
+    Det som hänt och det som komma skall.
 @stop
 
 @section('content')

@@ -32,8 +32,8 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'name'          => 'required|unique:teams|noshit',
             'motto'         => 'required|noshit',
             'leader'        => 'required|noshit',
-            'members'       => 'required',
-            'tournaments'   => '',
+            //'members'       => 'required',
+            //'tournaments'   => '',
             'imageurl'      => '',
             'leadertags'    => 'noshit',
         ];
@@ -42,8 +42,8 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             'name'          => 'required|noshit',
             'motto'         => 'required|noshit',
             'leader'        => 'required|noshit',
-            'members'       => 'required',
-            'tournaments'   => '',
+            //'members'       => 'required',
+            //'tournaments'   => '',
             'imageurl'      => '',
             'leadertags'    => 'noshit',
         ];

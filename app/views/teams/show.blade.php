@@ -58,9 +58,9 @@
                     <tr>
                         <td>Medlemmar:</td>
                         <td><i class=""></i>
-                        @if(!empty($team->members))
-                            @foreach($team->members as $member)
-                                {{{ $member }}}, 
+                        @if(sizeof($team->users()->get()) > 0)
+                            @foreach($team->users()->get() as $member)
+                                {{{ $member->nickname }}}, 
                             @endforeach
                         @else
                             Det finns inga medlemmar!
@@ -70,9 +70,9 @@
                     <tr>
                         <td>Turneringar:</td>
                         <td><i class=""></i>
-                        @if(!empty($team->tournaments))
-                            @foreach($team->tournaments as $tournament)
-                                {{{ $tournament }}}, 
+                        @if(sizeof($team->tournaments()->get()))
+                            @foreach($team->tournaments()->get() as $tournament)
+                                {{{ $tournament->name }}}, 
                             @endforeach
                         @else
                             Inget deltagande anmält ännu.
