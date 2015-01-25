@@ -12,6 +12,8 @@ class TournamentController extends BaseController {
 
         public function index()
 	{
+            //We want to display all tournaments which are valid for the latest event
+            
 		$tournaments = $this->tournament->orderBy('id','desc')->get();
                 //$tournaments = $this->tournament->all();
                 return View::make('tournaments.index', ['tournaments' => $tournaments])->with('nav',Page::navbar());

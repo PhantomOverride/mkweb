@@ -12,8 +12,8 @@ class MkeventController extends BaseController {
 
         public function index()
 	{
-		//$mkevents = $this->mkevent->orderBy('id','desc')->get();
-                $mkevents = $this->mkevent->all();
+		$mkevents = $this->mkevent->orderBy('id','desc')->get();
+                //$mkevents = $this->mkevent->all();
                 return View::make('mkevents.index', ['mkevents' => $mkevents])->with('nav',Page::navbar());
 	}
         
@@ -21,6 +21,7 @@ class MkeventController extends BaseController {
         {
                 $this->mkevent = Mkevent::whereName($name)->first();
                 if($this->mkevent == null) return Redirect::to('/mkevents');
+                
                 return View::make('mkevents.show')->with('mkevent',$this->mkevent)->with('nav',Page::navbar());
             
         }

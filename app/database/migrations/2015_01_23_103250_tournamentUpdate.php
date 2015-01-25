@@ -49,6 +49,25 @@ class TournamentUpdate extends Migration {
                             'imageurl' => '/img/tournament/sc2.png',
                         )
                 );
+                
+                //Set relation to events right here and now. This should be done via the interface in the future.
+                $e = Mkevent::whereName('WonderLAN Catastrophe')->first();
+                
+                $t = Tournament::whereName('WLS15 League of Legends')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLS15 DotA2')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLS15 Hearthstone')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLS15 Counter-Strike: Global Offensive')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLS15 StarCraft II')->first();
+                $e->tournaments()->save($t);
+                
 	}
 
 	/**

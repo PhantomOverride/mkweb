@@ -107,6 +107,8 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
             $ruleset['name'].='|unique:teams,name,'.$this->id; //Unique to all but this team
             $validation = Validator::make($this->attributes, $ruleset, static::$errorMessages);
             
+            //The folowing is deprecated
+            /*
             //Validate that all user exist
             foreach ($this->members as $member){
                 if(!User::whereNickname($member)->count()){
@@ -126,6 +128,8 @@ class Team extends Eloquent implements UserInterface, RemindableInterface {
                     }
                 }
             }
+            */
+             
             if ($validation->passes()) return true;
 
             $this->errors = $validation->messages();

@@ -32,6 +32,13 @@
         <p>
             {{ $mkevent->name }}
         </p>
+        <p>
+            @foreach($mkevent->tournaments()->get() as $t)
+            
+            {{{$t->name}}}, 
+            
+            @endforeach
+        </p>
         <!-- <a class="btn btn-primary" href="{{'/mkevents/'.$mkevent->name}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
         <hr />
         <p class="lead">

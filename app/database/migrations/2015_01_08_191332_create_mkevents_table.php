@@ -21,46 +21,61 @@ class CreateMkeventsTable extends Migration {
                         $table->timestamps();
 		});
                 
+
                 DB::table('mkevents')->insert(
-                        array(
-                            'name' => 'WonderLAN EValveing',
-                            'year' => 2014,
-                            'imageurl' => '/img/mkevent/wl-evalveing.jpg',
-                        )
-                        );
-                                DB::table('mkevents')->insert(
                 array(
-                            'name' => 'WonderLAN Eastermination',
-                            'year' => 2014,
-                            'imageurl' => '/img/mkevent/wl-eastermination.jpg',
+                            'name' => 'WonderLAN Spring 2012',
+                            'year' => 2012,
+                            'imageurl' => '/img/mkevent/wl-spring2012.jpg',
                         )
                         );
-                                                DB::table('mkevents')->insert(
-                array(
-                            'name' => 'WonderLAN Alpacalypse',
-                            'year' => 2013,
-                            'imageurl' => '/img/mkevent/wl-alpacalypse.jpg',
-                        )
-                        );
-                                                                DB::table('mkevents')->insert(
-                array(
-                            'name' => 'WonderLAN Spring 2013',
-                            'year' => 2013,
-                            'imageurl' => '/img/mkevent/wl-spring2013.jpg',
-                        )
-                        );
-                        DB::table('mkevents')->insert(
+                        
+                DB::table('mkevents')->insert(
                 array(
                             'name' => 'WonderLAN Autumnation 2012',
                             'year' => 2012,
                             'imageurl' => '/img/mkevent/wl-autumnation2012.jpg',
                         )
                         );
-                        DB::table('mkevents')->insert(
+                        
+                DB::table('mkevents')->insert(
                 array(
-                            'name' => 'WonderLAN Spring 2012',
-                            'year' => 2012,
-                            'imageurl' => '/img/mkevent/wl-spring2012.jpg',
+                            'name' => 'WonderLAN Spring 2013',
+                            'year' => 2013,
+                            'imageurl' => '/img/mkevent/wl-spring2013.jpg',
+                        )
+                        );
+                        
+                DB::table('mkevents')->insert(
+                array(
+                            'name' => 'WonderLAN Alpacalypse',
+                            'year' => 2013,
+                            'imageurl' => '/img/mkevent/wl-alpacalypse.jpg',
+                        )
+                        );
+                        
+                        
+                DB::table('mkevents')->insert(
+                array(
+                            'name' => 'WonderLAN Eastermination',
+                            'year' => 2014,
+                            'imageurl' => '/img/mkevent/wl-eastermination.jpg',
+                        )
+                        );
+                        
+                        DB::table('mkevents')->insert(
+                        array(
+                            'name' => 'WonderLAN EValveing',
+                            'year' => 2014,
+                            'imageurl' => '/img/mkevent/wl-evalveing.jpg',
+                        )
+                        );
+                        
+                        DB::table('mkevents')->insert(
+                        array(
+                            'name' => 'WonderLAN Catastrophe',
+                            'year' => 2015,
+                            'imageurl' => '/img/mkevent/wl-catastrophe.jpg',
                         )
                         );
                 

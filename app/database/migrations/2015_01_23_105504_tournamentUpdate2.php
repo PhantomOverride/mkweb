@@ -48,6 +48,26 @@ class TournamentUpdate2 extends Migration {
                         'shortname' => 'SC2',
                         'imageurl' => '/img/tournament/sc2.png',
                         ));
+                
+                
+                $e = Mkevent::whereName('WonderLAN EValveing')->first();
+                
+                $t = Tournament::whereName('WLA14 League of Legends')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLA14 DotA2')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLA14 Hearthstone')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLA14 Counter-Strike: Global Offensive')->first();
+                $e->tournaments()->save($t);
+                
+                $t = Tournament::whereName('WLA14 StarCraft 2')->first();
+                $e->tournaments()->save($t);
+                
+                
 	}
         
 
