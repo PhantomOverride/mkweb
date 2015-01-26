@@ -165,8 +165,7 @@ class TeamController extends \BaseController {
                     
                     $member = User::whereNickname($membername)->first();
                     
-                    
-                    if(empty($member))
+                    if(empty($member) || $this->team->users()->get()->contains($member))
                     {
                         return Redirect::route('teams.show',$teamname)->withInput()->with('message','<p class="box-rounded notis">Något gick snett.</p>')->with('nav',Page::navbar());
                     }
@@ -296,7 +295,7 @@ class TeamController extends \BaseController {
                     
                     $tournament = Tournament::whereName($tournamentname)->first();
                     
-                    if(empty($tournament))
+                    if(empty($tournament) || $this->team->tournaments()->get()->contains($tournament))
                     {
                         return Redirect::route('teams.show',$teamname)->withInput()->with('message','<p class="box-rounded notis">Något gick snett vid ändring av turneringar.</p>')->with('nav',Page::navbar());
                     }
