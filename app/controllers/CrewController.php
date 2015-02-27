@@ -9,6 +9,10 @@ class crewcontroller extends \BaseController {
 	 */
 	public function index()
 	{
+            //$a=Tournament::whereName('WLS15 Heroes of the Storm')->get();
+            //$q=$a[1];
+            //    dd($q->teams);
+            //dd($b->name());
 		return View::make('crew.index')->with('pages',Page::all())->with('users',User::all())->with('posts',Post::all())->with('teams',Team::all())->with('tournaments',Tournament::all())->with('nav',Page::navbar());
 	}
 

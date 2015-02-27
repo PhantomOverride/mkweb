@@ -91,26 +91,32 @@
                             
                             <br />
                             <h3>League of Legends</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015LOL">http://challonge.com/WLCAT2015LOL</a></ul>
                             <ul>Samling och registrering: Lördag 10:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <h3>DotA 2</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015DOTA2">http://challonge.com/WLCAT2015DOTA2</a></ul>
                             <ul>Samling och registrering: Lördag 10:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <h3>Hearthstone</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HS">http://challonge.com/WLCAT2015HS</a></ul>
                             <ul>Samling och registrering: Fredag 21:00</ul>
                             <ul>Start: Fredag 20:00</ul>
                             
                             <h3>StarCraft II</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015SC2">http://challonge.com/WLCAT2015SC2</a></ul>
                             <ul>Samling och registrering: Fredag 18:30</ul>
                             <ul>Start: Fredag 19:30</ul>
                             
                             <h3>Counter-Strike: Global Offensive</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015CSGO">http://challonge.com/WLCAT2015CSGO</a></ul>
                             <ul>Samling och registrering: Lördag 19:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
                             <h3>Heroes of the Storm</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HOTS">http://challonge.com/WLCAT2015HOTS</a></ul>
                             <ul>Samling och registrering: Söndag 10:00</ul>
                             <ul>Start: Söndag 11:00</ul>
                             

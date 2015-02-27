@@ -158,17 +158,22 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($teams as $team)
-                        @if(!empty($team->tournaments) && in_array($tournament->name,$team->tournaments))
+                @foreach($tournament->teams as $team)
+                
                             <tr>
                                 <td>{{ link_to('/teams/'.$team->name,$team->name) }}</td>
                                 <td>{{ $team->leader }}</td>
-                                <td>{{ implode(', ',$team->members) }}</td>
+                                <td>
+                                @foreach($team->users as $member)
+                                {{{$member->nickname}}} 
+                                @endforeach
+                                </td>
                             </tr>
-                        @endif
-                    </tbody>
-                    </table>
+                    
+                    
                 @endforeach
+                </tbody>
+                </table>
     @endforeach
 </div>
 
