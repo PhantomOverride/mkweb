@@ -48,6 +48,8 @@
                         </a>
                         <div class="collapse">
 <br />
+Survivalguiden kan du hitta <a href="https://drive.google.com/open?id=0B_spxJ9x-IaHZFJwNHZ5ckdQa1U&authuser=0"här</a>!
+<br />
 <h3>Fredag</h3>
 <ul>13:00 Incheckning öppnar</ul>
 <ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
