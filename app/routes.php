@@ -31,12 +31,6 @@ Route::get('/page/subway', function()
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
-Route::get('pages/subway', function()
-{
-    return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
-    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
-});
-
 Route::get('wonderlan/subway', function()
 {
     return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
@@ -44,12 +38,6 @@ Route::get('wonderlan/subway', function()
 });
 
 Route::get('page/wonderlan/subway', function()
-{
-    return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
-    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
-});
-
-Route::get('pages/wonderlan/subway', function()
 {
     return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
@@ -140,3 +128,9 @@ Route::get('tournaments/{name}', 'TournamentController@show');
 Route::get('tournaments/{name}/edit', 'TournamentController@edit')->before('crew');
 Route::post('tournaments/{name}/update', 'TournamentController@update')->before('crew');
 Route::post('tournaments/update', 'TournamentController@update')->before('crew');
+
+Route::get('/debug', function()
+{
+    $c = new Challonge($_ENV['challongeKey'],$_ENV['challongeAccount']);
+    return $c->getTournaments();
+});

@@ -47,30 +47,32 @@
 
                         </a>
                         <div class="collapse">
-                            <br />
-                            Om du har tappat bort din Survival Guide kan du ladda ner den <a href="https://www.dropbox.com/s/i14e236ol6hmh78/WonderLAN3_Print.pdf">HÄR</a>!
-                            <br />
-                        <h3>Fredag</h3>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>19:00 Nedsläckning</ul>
-                        <ul>19:05 Kickoff programmeringstävling</ul>
-                        <ul>19:30 StarCraft 2 (börjar spela 20:30)</ul>
-                        <ul>21:00 HearthStone (börjar spela 22:00)</ul>
-                        <ul>00:00 Sovsalen öppnar!</ul>
-                        <h3>Lördag</h3>
-                        <ul>11:00 League of Legends (börjar spela 12:00)</ul>
-                        <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>18:00 Counter-Strike: Global Offensive (börjar spela 19:00)</ul>
-                        <ul>19:00 Mario Kart 64</ul>
-                        <ul>00:00 Sovsalen öppnar!</ul>
-                        <h3>Söndag</h3>
-                        <ul>11:00 DotA 2 (börjar spela 12:00)</ul>
-                        <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>15:00 Programmeringstävling slut och redovisning</ul>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>18:00 Prisutdelning!</ul>
-                        <br />
+<br />
+<h3>Fredag</h3>
+<ul>13:00 Incheckning öppnar</ul>
+<ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
+<ul>19:00 Nedsläckning</ul>
+<ul>19:30 - 22:00 StarCraft 2 (anmäl senast 18:30)</ul>
+<ul>21:00 HearthStone (anmäl senast 20:00)</ul>
+<ul>22:00 Artemis</ul>
+<ul>00:30 Filmvisning</ul>
+
+<h3>Lördag</h3>
+<ul>11:00 - 20:00 League of Legends (anmäl senast 10:00) (matpaus vid 18:00)</ul>
+<ul>11:00 - 20:00 League of Legends (anmäl senast 10:00) (matpaus vid 18:00)</ul>
+<ul>12:00 Subwaybeställning (beställ INNAN 12:00!). Leverans tar 1-2h.</ul>
+<ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
+<ul>19:00 Mario Kart 64</ul>
+<ul>20:00 Counter-Strike: Global Offensive (anmäl senast 19:00)</ul>
+<ul>00:30 Filmvisning</ul>
+
+<h3>Söndag</h3>
+<ul> 11:00 - 18:00 Heroes of the Storm (anmäl senast 10:00)</ul>
+<ul>12:00 Subwaybeställning (beställ INNAN 12:00!). Leverans tar 1-2h.</ul>
+<ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
+<ul>Prisutdelning 18:30</ul>
+<ul>Måndag 00:00 - Försäljningen stänger</ul>
+<br />
                         </div>
                     </div>
                 </div>
@@ -89,24 +91,32 @@
                             
                             <br />
                             <h3>League of Legends</h3>
-                            <ul>Samling och registrering: Lördag 11:00</ul>
-                            <ul>Start: Lördag 12:00</ul>
+                            <ul>Samling och registrering: Lördag 10:00</ul>
+                            <ul>Start: Lördag 11:00</ul>
                             
                             <h3>DotA 2</h3>
-                            <ul>Samling och registrering: Söndag 11:00</ul>
-                            <ul>Start: Söndag 12:00</ul>
+                            <ul>Samling och registrering: Lördag 10:00</ul>
+                            <ul>Start: Lördag 11:00</ul>
                             
                             <h3>Hearthstone</h3>
                             <ul>Samling och registrering: Fredag 21:00</ul>
-                            <ul>Start: Fredag 22:00</ul>
+                            <ul>Start: Fredag 20:00</ul>
+                            
+                            <h3>StarCraft II</h3>
+                            <ul>Samling och registrering: Fredag 18:30</ul>
+                            <ul>Start: Fredag 19:30</ul>
                             
                             <h3>Counter-Strike: Global Offensive</h3>
-                            <ul>Samling och registrering: Lördag 18:00</ul>
-                            <ul>Start: Lördag 19:00</ul>
+                            <ul>Samling och registrering: Lördag 19:00</ul>
+                            <ul>Start: Lördag 20:00</ul>
+                            
+                            <h3>Heroes of the Storm</h3>
+                            <ul>Samling och registrering: Söndag 10:00</ul>
+                            <ul>Start: Söndag 11:00</ul>
                             
                             <br />
                             
-                            Prisutdelning sker på söndag klockan 18!
+                            Prisutdelning sker på söndag klockan 18:30!
                             
                         </div>
                     </div>
@@ -138,32 +148,7 @@
                         </div>
                     </div>
                 </div>
-    <!--Activity -->
-                <div class="row">
-                    <div class="span4 collapse-group">
-                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
-
-                            <i>+</i><span>Activity och events</span>
-
-                        </a>
-                        <div class="collapse">
-                            <br />
-                            Om du har tappat bort din Survival Guide kan du ladda ner den <a href="https://www.dropbox.com/s/i14e236ol6hmh78/WonderLAN3_Print.pdf">HÄR</a>!
-                            <br />
-                        <h3>Fredag</h3>
-                        <ul>19:00 Nedsläckning</ul>
-                        <ul>19:05 Kickoff programmeringstävling</ul>
-                        <ul>00:00 Sovsalen öppnar!</ul>
-                        <h3>Lördag</h3>
-                        <ul>19:00 Mario Kart 64</ul>
-                        <ul>00:00 Sovsalen öppnar!</ul>
-                        <h3>Söndag</h3>
-                        <ul>15:00 Programmeringstävling slut och redovisning</ul>
-                        <ul>18:00 Prisutdelning!</ul>
-                        <br />
-                        </div>
-                    </div>
-                </div>
+   
     <!--Servers -->
                 <div class="row">
                     <div class="span4 collapse-group">
@@ -172,11 +157,11 @@
                             <i>+</i><span>Servers</span>
 
                         </a>
-                        <p class="collapse">
+                        <div class="collapse">
                             <br />
-                            Här kan aktuell serverinfo visas. Just nu har vi inga servrar igång.
-                            <br />
-                        </p>
+                            <ul>Teamspeak: teamspeak.wonderlan.se</ul>
+                            <ul>Mumble: mumble.wonderlan.se</ul>
+                        </div>
                     </div>
                 </div>
     <!--IRC Chatt -->
