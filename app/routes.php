@@ -110,6 +110,11 @@ Route::get('/live', function()
     return View::make('current')->with('nav',Page::navbar());
 });
 
+Route::get('/sverok', function()
+{
+    return View::make('sverok')->with('nav',Page::navbar());
+});
+
 Route::get('/turneringar', function()
 {
     return Redirect::to('http://wonderlan.se/page/wonderlan/turneringar');
