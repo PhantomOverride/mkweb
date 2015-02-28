@@ -38,7 +38,7 @@ class TournamentController extends BaseController {
             else{
                 //We will init empty form
             }
-            return View::make('tournaments.edit')->with('tournament',$this->tournament)->with('nav',Page::navbar());
+            return View::make('tournaments.edit')->with('tournament',$this->tournament)->with('events',Mkevent::all())->with('nav',Page::navbar());
             
         }
         
@@ -57,8 +57,10 @@ class TournamentController extends BaseController {
             $this->tournament->shortname = $newtournament['shortname'];
             $this->tournament->imageurl = $newtournament['imageurl'];
             
-            if($name != null && $this->tournament->isValidUpdate()){
+            $event = Mkevent::whereName($newtournament['mkevent'])->first();
+            if($name != null && $this->tournament->isValidUpdate() && $event){
                 $this->tournament->save();
+                $this->tournament->mkevents()->attach($event);
                 $message = '<p class="box-rounded notis">Ändringarna av sidan har sparats!</p>';
                 return Redirect::to('tournaments/'.$this->tournament->name)->with('message',$message);
             }

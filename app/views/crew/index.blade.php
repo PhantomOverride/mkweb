@@ -21,7 +21,7 @@
 
 <div class='panel panel-default panel-body'>
     <h2 class='page-header'><small>User Management</small></h2>
-<table class="table table-striped">
+<table style="font-size:8pt;" class="table table-striped">
 <thead>
     <tr>
             <td>Forename</td>
@@ -50,7 +50,7 @@
 
 <div class='panel panel-default panel-body'>
     <h2 class='page-header'><small>Content Management</small></h2>
-<table class="table table-striped">
+<table style="font-size:8pt;" class="table table-striped">
 <thead>
     <tr>
             <td>Urlname</td>
@@ -86,7 +86,7 @@
 
 <div class='panel panel-default panel-body'>
     <h2 class='page-header'><small>Post Management</small></h2>
-<table class="table table-striped">
+<table style="font-size:8pt;" class="table table-striped">
 <thead>
     <tr>
             <td>Title</td>
@@ -117,29 +117,33 @@
 </div>
 
 <div class='panel panel-default panel-body'>
-    <h2 class='page-header'><small>Tournament Management (Liveredigering #TODO)</small></h2>
-<table class="table table-striped">
+    <h2 class='page-header'><small>Tournament Management</small></h2>
+<table style="font-size:8pt;" class="table table-striped">
 <thead>
     <tr>
             <td>Bild</td>
             <td>Namn</td>
             <td>Shortname</td>
-            <td></td>
+            <td>Event</td>
     </tr>
 </thead><tbody>
     @foreach ($tournaments as $tournament)
         <tr>
             <td><img style="width:25px;" src="{{ $tournament->imageurl }}" /></td>
-            <td>{{ $tournament->name }}</td>
+            <td>{{ link_to('/tournaments/'.$tournament->name.'/edit',$tournament->name) }}</td>
             <td>{{ $tournament->shortname }}</td>
+            @if(isset($tournament->mkevents[0]))
+            <td>{{ $tournament->mkevents[0]->name }}</td>
+            @else
             <td></td>
+            @endif
         </tr>
     @endforeach
         <tr>
             <td></td>
             <td></td>
             <td></td>
-            <td>Ny Turnering (#todo)</td>
+            <td>{{link_to('tournaments/create','Ny Turnering')}}</td>
         </tr>
 </tbody>
 </table>
@@ -148,8 +152,8 @@
 <div class='panel panel-default panel-body'>
     <h2 class='page-header'><small>Tournament Overview</small></h2>
     @foreach($tournaments as $tournament)
-        <h3>{{$tournament->name}}</h3>
-        <table class="table table-striped">
+        <h4>{{$tournament->name}}</h4>
+        <table style="font-size:8pt;" class="table table-striped">
             <thead>
                 <tr>
                         <td>Lagnamn</td>
@@ -169,11 +173,10 @@
                                 @endforeach
                                 </td>
                             </tr>
-                    
-                    
                 @endforeach
                 </tbody>
                 </table>
+        <br /><br />
     @endforeach
 </div>
 

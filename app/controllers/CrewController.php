@@ -13,7 +13,7 @@ class crewcontroller extends \BaseController {
             //$q=$a[1];
             //    dd($q->teams);
             //dd($b->name());
-		return View::make('crew.index')->with('pages',Page::all())->with('users',User::all())->with('posts',Post::all())->with('teams',Team::all())->with('tournaments',Tournament::all())->with('nav',Page::navbar());
+		return View::make('crew.index')->with('pages',Page::all())->with('users',User::all())->with('posts',Post::all())->with('teams',Team::all())->with('tournaments',Tournament::orderBy('id','desc')->get())->with('nav',Page::navbar());
 	}
 
 

@@ -40,8 +40,17 @@
                         <td><i class=""></i> {{ Form::text('shortname',$tournament->shortname) }} {{$errors->first('shortname', '<span class=error>:message</span>')}}</td>
                     </tr>
                     <tr>
-                        <td>Image URL (if any):</td>
+                        <td>Image URL:</td>
                         <td><i class=""></i>{{ Form::text('imageurl',$tournament->imageurl) }} {{$errors->first('imageurl', '<span class=error>:message</span>')}}</td>
+                    </tr>
+                    <tr>
+                        @if(isset($tournament->mkevents[0]))
+                        <td>Eventname:</td>
+                        <td><i class=""></i>{{ Form::text('mkevent',$tournament->mkevents[0]->name) }} {{$errors->first('mkevents', '<span class=error>:message</span>')}}</td>
+                        @else
+                        <td>Eventname (suggested):</td>
+                        <td><i class=""></i>{{ Form::text('mkevent',$events->last()->name) }} {{$errors->first('mkevents', '<span class=error>:message</span>')}}</td>
+                        @endif
                     </tr>
                     </tbody>
                 </table>

@@ -4,7 +4,7 @@ class Mkevent extends Eloquent {
     
     protected $table = 'mkevents';
     
-	protected $fillable = ['title','year','imageurl'];
+	protected $fillable = ['name','year','imageurl'];
         
         public function tournaments(){
             return $this->belongsToMany('Tournament');
