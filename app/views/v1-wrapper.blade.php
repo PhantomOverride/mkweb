@@ -69,17 +69,18 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
     <p>
         Mammas Källare
     </p>
-    <li> Sverok </li>
+    <li> <a href="http://www.sverok.se">Sverok</a> </li>
 </div>
 
 <div class="spons-entry">
     <p>
         WonderLAN
     </p>
-    <li> BTH </li>
-    <li> Subway </li>
-    <li> AXIS </li>
-    <li> City Network </li>
+    <li> <a href="http://www.bth.se">BTH</a> </li>
+    <li> <a href="http://www.subway.se">Subway</a> </li>
+    <li> <a href="http://www.axis.se">AXIS</a> </li>
+    <li> <a href="http://www.citynetwork.se">City Network</a> </li>
+    <li> <a href="http://www.outpost24.com">Outpost24</a> </li>
 </div>
 
 

@@ -139,8 +139,25 @@ Route::get('tournaments/{name}/edit', 'TournamentController@edit')->before('crew
 Route::post('tournaments/{name}/update', 'TournamentController@update')->before('crew');
 Route::post('tournaments/update', 'TournamentController@update')->before('crew');
 
+/*
+Route::get('products', 'ProductController@index')->before('crew');
+Route::get('products/create', 'ProductController@edit')->before('crew');
+Route::get('products/edit', 'ProductController@edit')->before('crew');
+Route::get('products/{id}', 'ProductController@show')->before('crew');
+Route::get('products/{id}/edit', 'ProductController@edit')->before('crew');
+Route::post('products/{id}/update', 'ProductController@update')->before('crew');
+Route::post('products/update', 'ProductController@update')->before('crew');
+
+
+Route::get('store', 'ProductController@store');
+Route::get('store/add/{id}', 'ProductController@storeAdd');
+Route::get('store/addKassa/{id}', 'ProductController@storeAddKassa')->before('crew');
+Route::get('store/empty', 'ProductController@storeClear');
+Route::get('kassa/empty', 'ProductController@kassaClear')->before('crew');
+Route::get('kassa', 'ProductController@kassa')->before('crew');
+*/
+
 Route::get('/debug', function()
 {
-    $c = new Challonge($_ENV['challongeKey'],$_ENV['challongeAccount']);
-    return $c->getTournaments();
+    return "No.";
 });
