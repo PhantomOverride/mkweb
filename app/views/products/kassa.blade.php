@@ -36,7 +36,7 @@
     <p>
         <?php $sum=0;?>
         @foreach ($cart as $item)
-            <?php $sum+=$item->price; ?>
+            <?php $sum+=$item['price']; ?>
         @endforeach
     <h4>Att betala: {{$sum}} SEK.</h4>
     </p>
@@ -47,7 +47,7 @@
 
     <div class="row">
         @foreach ($cart as $item)
-        <span class="glyphicon glyphicon-shopping-cart"></span> {{$item->name}}<br />
+        <span class="glyphicon glyphicon-shopping-cart"></span> {{$item['name']}}<br />
 
         @endforeach
         </div>

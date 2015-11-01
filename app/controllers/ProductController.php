@@ -60,7 +60,7 @@ class ProductController extends BaseController {
 	{
                 $now = time();
 		$products = $this->product->whereType('kassa')->where('start','<',$now)->where('stop','>',$now)->orderBy('id','desc')->get();
-                return View::make('products.kassa', ['products' => $products])->with('cart',Session::get('cart',null))->with('nav',Page::navbar());
+                return View::make('products.kassa', ['products' => $products])->with('cart',Session::get('cart',Array()))->with('nav',Page::navbar());
 	}
         
         public function show($id)
