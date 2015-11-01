@@ -13,6 +13,9 @@
 @stop
 
 @section('content')
+@if (Session::has("message"))
+<p class="box-rounded notis">{{Session::get("message")}}</p>
+@endif
 <div class="row">
     @foreach ($products as $product)
         
@@ -49,10 +52,11 @@
         @endforeach
         </div>
     <br />
-    <button type="button" class="btn btn-default btn-lg">
+    <button onclick="document.location='/kassa/stage/card';" type="button" class="btn btn-default btn-lg">
         Kort
     </button>
-    <button type="button" class="btn btn-default btn-lg">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="document.location='/kassa/stage/cash';" type="button" class="btn btn-default btn-lg">
         Kontant
     </button>
     

@@ -34,7 +34,31 @@
         {{Form::text('lastname',$user->lastname)}}
         {{$errors->first('lastname', '<span class=error>:message</span>')}}
     </div>
-      
+    
+    <div>
+        {{Form::label('streetaddress', 'Adress: ')}}
+        {{Form::text('streetaddress',$user->streetaddress)}}
+        {{$errors->first('streetaddress', '<span class=error>:message</span>')}}
+    </div>
+    
+    <div>
+        {{Form::label('postalcode', 'Postnummer: ')}}
+        {{Form::text('postalcode',$user->postalcode)}}
+        {{$errors->first('postalcode', '<span class=error>:message</span>')}}
+    </div>
+    
+    <div>
+        {{Form::label('city', 'Stad: ')}}
+        {{Form::text('city',$user->city)}}
+        {{$errors->first('city', '<span class=error>:message</span>')}}
+    </div>
+    
+    <div>
+        {{Form::label('phone', 'Telefon: ')}}
+        {{Form::text('phone',$user->phone)}}
+        {{$errors->first('phone', '<span class=error>:message</span>')}}
+    </div>
+    
     <div>
         {{Form::label('email', 'E-post: ')}}
         {{Form::text('email',$user->email)}}

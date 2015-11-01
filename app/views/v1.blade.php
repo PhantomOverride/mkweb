@@ -153,7 +153,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Mammas Källare 2014</p>
+                    <p>Copyright &copy; Mammas Källare <?php echo date('Y'); ?></p>
                 </div>
             </div>
         </div>

@@ -69,11 +69,11 @@ class UserController extends \BaseController {
                         
                 //Message to show to logged in users
                 if(Auth::check() && Auth::user()->nickname == $nickname){
-                    $message = '<p class="box-rounded notis">Tänk på att din publika profil bara visar ditt nickname och i vilken stad du bor!</p>';
+                    $message = '<p class="box-rounded notis">Det här är din profil.</p>';
                 }
                 //Crew should also get msg
                 else if(Auth::check() && Auth::user()->crew()){
-                    $message = '<p class="box-rounded notis">Som CREW kan du se och ändra användarprofiler. Tänk på att detta är ett produktionssytem.</p>';
+                    $message = '<p class="box-rounded notis">Som CREW kan du ändra användarprofiler. Tänk på att detta är ett produktionssytem.</p>';
                 }
                 else{
                     $message = null;
@@ -81,7 +81,6 @@ class UserController extends \BaseController {
 
                 return View::make('users.show', ['user' => $user])->with('message',$message)->with('nav',Page::navbar());
                 
-                //return View::make('users.show', ['user' => $user])->with('nav',Page::navbar());
 	}
 
 
@@ -124,10 +123,6 @@ class UserController extends \BaseController {
                     
                     $this->user->forename = $input['forename'];
                     $this->user->lastname = $input['lastname'];
-                    $this->user->streetaddress = $input['streetaddress'];
-                    $this->user->postalcode = $input['postalcode'];
-                    $this->user->city = $input['city'];
-                    $this->user->phone = $input['phone'];
                     $this->user->email = $input['email'];
                     $this->user->nickname = $input['nickname'];
                     

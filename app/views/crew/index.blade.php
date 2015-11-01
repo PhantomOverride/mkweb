@@ -16,10 +16,19 @@
 
 {{Session::get('message')}}
 
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#crew-users">User Management</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#crew-content">Content Management</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#crew-post">Post Management</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#crew-tournament">Tournament Management</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#crew-tournamentoverview">Tournament Overview</button>
+
+<a class="btn btn-info" href="/store">Store (not in use)</a>
+<a class="btn btn-info" href="/kassa">Kassa</a>
+<a class="btn btn-info" href="/products">Products</a>
+
 <!-- Page edit section -->
 
-
-<div class='panel panel-default panel-body'>
+<div id="crew-users" class='panel panel-default panel-body collapse'>
     <h2 class='page-header'><small>User Management</small></h2>
 <table style="font-size:8pt;" class="table table-striped">
 <thead>
@@ -48,7 +57,7 @@
 </div>
 
 
-<div class='panel panel-default panel-body'>
+<div id="crew-content" class='panel panel-default panel-body collapse'>
     <h2 class='page-header'><small>Content Management</small></h2>
 <table style="font-size:8pt;" class="table table-striped">
 <thead>
@@ -84,7 +93,8 @@
 </table>
 </div>
 
-<div class='panel panel-default panel-body'>
+
+<div id="crew-post" class='panel panel-default panel-body collapse'>
     <h2 class='page-header'><small>Post Management</small></h2>
 <table style="font-size:8pt;" class="table table-striped">
 <thead>
@@ -116,7 +126,8 @@
 </table>
 </div>
 
-<div class='panel panel-default panel-body'>
+
+<div id="crew-tournament" class='panel panel-default panel-body collapse'>
     <h2 class='page-header'><small>Tournament Management</small></h2>
 <table style="font-size:8pt;" class="table table-striped">
 <thead>
@@ -149,7 +160,8 @@
 </table>
 </div>
 
-<div class='panel panel-default panel-body'>
+
+<div id="crew-tournamentoverview" class='panel panel-default panel-body collapse'>
     <h2 class='page-header'><small>Tournament Overview</small></h2>
     @foreach($tournaments as $tournament)
         <h4>{{$tournament->name}}</h4>

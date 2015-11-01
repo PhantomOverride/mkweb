@@ -42,6 +42,30 @@
                         <td>Email:</td>
                         <td><i class=""></i>{{{$user->email}}}</td>
                     </tr>
+                    <tr>
+                        <td>Stad:</td>
+                        <td><i class=""></i>{{{$user->city}}} </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><i class=""></i>{{{$user->streetaddress}}}</td>
+                    </tr>
+                    <tr>
+                        <td>Postnummer:</td>
+                        <td><i class=""></i>{{{$user->postalcode}}}</td>
+                    </tr>
+                    <tr>
+                        <td>Telefonnummer:</td>
+                        <td><i class=""></i>{{{$user->phone}}}</td>
+                    </tr>
+                    <tr>
+                        <td>Medlemskap:</td>
+                        <td><i class=""></i>{{{($user->membertype=='none') ? 'Ännu inte medlem i föreningen' : 'Medlem'}}}</td>
+                    </tr>
+                    <tr>
+                        <td>Medlemsperiod:</td>
+                        <td><i class=""></i>{{{($user->memberperiod=='0000') ? 'Ej definierat' : $user->memberperiod}}}</td>
+                    </tr>
                     </tbody>
                 </table>
         </div>

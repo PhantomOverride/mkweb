@@ -26,7 +26,7 @@
         {{ Form::password('password',array('class' => 'form-control', 'placeholder' => 'Lösenord')) }}
 
         <label class="checkbox">
-            <input value="remember-me" type="checkbox"> <span>Remember me</span>
+            <input value="remember-me" type="checkbox"> <span>Kom ihåg mig</span>
         </label>
         {{ Form::submit('Logga in',array('class' => 'btn btn-lg btn-primary btn-block')) }}
     {{ Form::close() }}

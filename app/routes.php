@@ -7,41 +7,21 @@
 */
 
 /*
- * Main Landing page
- * This should in the future be
- *  a dedicated home page.
+ * For when people want food and are lazy
  */
 /*
-Route::get('/', function()
-{
-	return Redirect::to('page/mammaskallare');
-});
- * 
- */
-
 Route::get('/subway', function()
 {
-    return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
-    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
-});
-
-Route::get('/page/subway', function()
-{
-    return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
-    return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
-});
-
-Route::get('wonderlan/subway', function()
-{
-    return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
+    return Redirect::to('url');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
 
 Route::get('page/wonderlan/subway', function()
 {
-    return Redirect::to('https://docs.google.com/forms/d/1LQ3k606ySZIGpJEviyelZqiDkZWiiVEOkdd84EHmBXg');
+    return Redirect::to('url');
     return "<p>Subwayformuläret för beställning kommer snart upp!</p>";
 });
+*/
 
 /*
  *  Post Controller for Blog
@@ -59,8 +39,6 @@ Route::get('posts/{urlname}/remove', 'PostController@remove')->before('crew');
  *  This handles most content
  */
 Route::get('page/{urlname}/{suburlname?}', 'CrmController@show');
-
-
 
 /*
  * User handling
@@ -96,6 +74,7 @@ Route::get('teams/{name}/addmember','TeamController@addMember')->before('auth');
 Route::get('teams/{name}/addmember/{nickname}','TeamController@addMember')->before('auth');
 Route::get('teams/{name}/removemember','TeamController@removeMember')->before('auth');
 Route::get('teams/{name}/removemember/{nickname}','TeamController@removeMember')->before('auth');
+Route::get('teams/{name}/delete','TeamController@delete')->before('auth');
 
 Route::get('teams/{name}/addtournament','TeamController@addTournament')->before('auth');
 Route::get('teams/{name}/addtournament/{tournamentname}','TeamController@addTournament')->before('auth');
@@ -140,6 +119,8 @@ Route::post('tournaments/{name}/update', 'TournamentController@update')->before(
 Route::post('tournaments/update', 'TournamentController@update')->before('crew');
 
 /*
+ * Internal cash register system
+ */
 Route::get('products', 'ProductController@index')->before('crew');
 Route::get('products/create', 'ProductController@edit')->before('crew');
 Route::get('products/edit', 'ProductController@edit')->before('crew');
@@ -148,14 +129,15 @@ Route::get('products/{id}/edit', 'ProductController@edit')->before('crew');
 Route::post('products/{id}/update', 'ProductController@update')->before('crew');
 Route::post('products/update', 'ProductController@update')->before('crew');
 
-
-Route::get('store', 'ProductController@store');
-Route::get('store/add/{id}', 'ProductController@storeAdd');
+Route::get('store', 'ProductController@store')->before('crew');
+Route::get('store/add/{id}', 'ProductController@storeAdd')->before('crew');
 Route::get('store/addKassa/{id}', 'ProductController@storeAddKassa')->before('crew');
 Route::get('store/empty', 'ProductController@storeClear');
 Route::get('kassa/empty', 'ProductController@kassaClear')->before('crew');
 Route::get('kassa', 'ProductController@kassa')->before('crew');
-*/
+
+Route::get('kassa/stage/{paymentMethod}', 'ProductController@kassastage')->before('crew');
+Route::get('kassa/purchase', 'ProductController@kassapurchase')->before('crew');
 
 Route::get('/debug', function()
 {

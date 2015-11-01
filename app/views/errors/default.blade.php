@@ -13,5 +13,5 @@ Fel
 @stop
 
 @section('content')
-Hoppsan! Något gick snett här. Testa gå tillbaka och gör inte om det du precis gjorde =).
+Hoppsan! Nu var det allt något som gick snett!
 @stop

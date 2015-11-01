@@ -38,6 +38,7 @@
 @stop
 
 @section('content')
+<h2>Denna sida är inte uppdaterad! Lita inte på det som står här!!!</h2>
     <!--GUIDE -->
                 <div class="row">
                     <div class="span4 collapse-group">

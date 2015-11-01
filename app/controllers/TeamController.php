@@ -378,6 +378,16 @@ class TeamController extends \BaseController {
             }
         }
         
+        public function delete($teamname){
+            if(Auth::check() && (Auth::user()->nickname == $this->team->whereName($teamname)->first()->leader || Auth::user()->crew())){
+                    $this->team = $this->team->whereName($teamname)->first();
+                    $this->team->delete();
+                    return Redirect::to('/teams');
+                }
+                else{
+                    return Redirect::to('login');
+                }
+        }
         
 	public function update($teamname)
 	{

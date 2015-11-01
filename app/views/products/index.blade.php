@@ -35,6 +35,14 @@
             <td>{{ $product->type }}</td>
         </tr>
     @endforeach
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="/products/edit">New</a></td>
+    </tr>
 </tbody>
 </table>
 

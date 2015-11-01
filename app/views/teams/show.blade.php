@@ -91,6 +91,10 @@
                 {{ link_to('/teams/'.$team->name.'/addtournament','Anmäl till turnering eller tävling'); }}
                 <br />
                 {{ link_to('/teams/'.$team->name.'/removetournament','Ta bort turneringsintresse'); }}
+                <br />
+                <br />
+                <a href="#" onclick="if(window.confirm('Är du säker?')){window.location='/teams/{{$team->name}}/delete'}">Ta bort laget helt och hållet!</a>
+                <!--{{ link_to('/teams/'.$team->name.'/delete','Ta bort laget helt och hållet'); }}-->
             @endif
             
         </div>

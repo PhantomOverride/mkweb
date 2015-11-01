@@ -80,7 +80,6 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
     <li> <a href="http://www.subway.se">Subway</a> </li>
     <li> <a href="http://www.axis.se">AXIS</a> </li>
     <li> <a href="http://www.citynetwork.se">City Network</a> </li>
-    <li> <a href="http://www.outpost24.com">Outpost24</a> </li>
 </div>
 
 

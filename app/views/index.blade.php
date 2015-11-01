@@ -13,7 +13,7 @@
 @stop
 
 @section('content')
-    <!-- Kul att du läser källkoden! Har du roligt =)? -->
+    <!-- Kul att du läser källkoden! Vill du hjälpa till med utvecklingen? Kontakta oss! -->
 
     <!-- Säg hej och sånt -->
     
@@ -46,7 +46,6 @@
             av {{ $post->author }}
         </p>
         
-        <!-- <a class="btn btn-primary" href="{{'/posts/'.$post->title}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
         <br />
     @endforeach
     

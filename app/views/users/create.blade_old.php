@@ -45,6 +45,51 @@
             </div>
         </div>
         <div class="form-group">
+            {{Form::label('ssid', 'Födelsedatum (YYMMDD)', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('ssid',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('ssid', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>    
+        </div>
+        <div class="form-group">
+            {{Form::label('streetaddress', 'Adress', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('streetaddress',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+            {{$errors->first('streetaddress', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('postalcode', 'Postnummer', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('postalcode',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('postalcode', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('city', 'Stad', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('city',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('city', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
+            {{Form::label('phone', 'Telefonnummer', array('class' => 'control-label col-md-2 col-sm-2'))}}
+            <div class="col-sm-6 col-md-6">
+                {{ Form::text('phone',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}
+            </div>
+            <div class="col-sm-3 col-md-3">
+                {{$errors->first('phone', '<div class="col-sm-4 col-md-4 box-rounded notis warning"><span>:message</span></div>')}}
+            </div>
+        </div>
+        <div class="form-group">
             {{Form::label('email', 'Email', array('class' => 'control-label col-md-2 col-sm-2'))}}
             <div class="col-sm-6 col-md-6">
                 {{ Form::text('email',null,array('class' => 'form-control col-sm-6 col-md-6', 'placeholder' => '')) }}

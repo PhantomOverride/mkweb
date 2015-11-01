@@ -17,7 +17,8 @@ class ProductController extends BaseController {
         
         public function store()
 	{
-		$products = $this->product->whereType('store')->orderBy('id','desc')->get();
+                $now = time();
+		$products = $this->product->whereType('store')->where('start','<',$now)->where('stop','>',$now)->orderBy('id','desc')->get();
                 return View::make('products.store', ['products' => $products])->with('cart',Session::get('cart',Array()))->with('nav',Page::navbar());
 	}
         
@@ -51,12 +52,14 @@ class ProductController extends BaseController {
         public function kassaClear()
 	{
 		Session::pull('cart');
+                Session::pull('paymentMethod');
                 return Redirect::to('/kassa');
 	}
         
         public function kassa()
 	{
-		$products = $this->product->whereType('kassa')->orderBy('id','desc')->get();
+                $now = time();
+		$products = $this->product->whereType('kassa')->where('start','<',$now)->where('stop','>',$now)->orderBy('id','desc')->get();
                 return View::make('products.kassa', ['products' => $products])->with('cart',Session::get('cart',Array()))->with('nav',Page::navbar());
 	}
         
@@ -100,7 +103,7 @@ class ProductController extends BaseController {
             }
             else{
                 // Do nothing if new product
-                dd("new");
+                //dd("new");
             }
             
             $newproduct = Input::only(['name','price','imageurl','start','stop','type']);
@@ -120,6 +123,52 @@ class ProductController extends BaseController {
             else{
                 return Redirect::back()->withInput()->withErrors($this->product->errors)->with('nav',Page::navbar());
             }
+        }
+        
+        public function kassaStage($paymentMethod){
+            if( !empty($paymentMethod) && ($paymentMethod == "cash" || $paymentMethod == "card") ){
+                Session::put('paymentMethod',$paymentMethod);
+            }
+            if( Session::get('paymentMethod','default') != 'default' ){
+                $method = ( $paymentMethod == 'card' ) ? 'Kort' : 'Kontant';
+                return View::make('products.kassastage')->with('cart',Session::get('cart',Array()))->with('method',$method)->with('nav',Page::navbar());
+            }
+            else {
+                return Redirect::to('/kassa');
+            }
+        }
+        
+        public function kassaPurchase(){
+            //Verify cart
+                $cart = Session::get('cart',Array());
+                if(sizeof($cart) < 1){
+                    die("Cart incomplete");
+                }
+            //Verify method
+                $paymentMehod = Session::get('paymentMethod',"default");
+                if($paymentMehod == "default"){
+                    die("Cart incomplete");
+                }
+                
+            //Calculate sum and product list
+                $sum=0;
+                $products = "";
+                foreach ($cart as $item){
+                    $sum+=$item->price;
+                    $products.=$item->name.'|';
+                }
+                
+            //Place purchase
+            $orderData = Array('paymentType'=>$paymentMehod,'paid'=>$sum,'products'=>$products);
+            $order = new Purchase();
+            $order->fill($orderData);
+            $order->save();
+                    
+                
+            //Clean up
+            Session::pull('cart');
+            Session::pull('paymentMethod');
+            return Redirect::to('/kassa')->with('message','Köpet genomfördes!');
         }
 
 }
