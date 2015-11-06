@@ -38,7 +38,6 @@
 @stop
 
 @section('content')
-<h2>Denna sida är inte uppdaterad! Lita inte på det som står här!!!</h2>
     <!--GUIDE -->
                 <div class="row">
                     <div class="span4 collapse-group">
@@ -49,33 +48,34 @@
                         </a>
                         <div class="collapse">
 <br />
-Survivalguiden kan du hitta <a href="https://drive.google.com/open?id=0B_spxJ9x-IaHZFJwNHZ5ckdQa1U&authuser=0">här</a>!
+Survivalguiden kan du hitta <a href="https://drive.google.com/file/d/0Bwgqtg2huTqINWJsQTF2SVhabUk/view">här</a>!
 <br />
 <h3>Fredag</h3>
-<ul>13:00 Incheckning öppnar</ul>
-<ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
-<ul>19:00 Nedsläckning</ul>
-<ul>19:30 - 22:00 StarCraft 2 (anmäl senast 18:30)</ul>
-<ul>21:00 HearthStone (anmäl senast 20:00)</ul>
-<ul>22:00 Artemis</ul>
-<ul>00:30 Filmvisning</ul>
+<ul>13:00 Incheckning öppnar!</ul>
+<ul>16:00 Nedsläckning</ul>
+<ul>16:00 StarCraft 2 (anmälning direkt i entré)</ul>
+<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+<ul>18:00 HearthStone (anmäl innan 18:00)</ul>
+<ul>21:00 Heroes of the Storm (anmäl innan 21:00)</ul>
+
 
 <h3>Lördag</h3>
-<ul>11:00 - 20:00 League of Legends (anmäl senast 10:00) (matpaus vid 18:00)</ul>
-<ul>11:00 - 20:00 League of Legends (anmäl senast 10:00) (matpaus vid 18:00)</ul>
-<ul>12:00 Subwaybeställning (beställ INNAN 12:00!). Leverans tar 1-2h.</ul>
-<ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
-<ul>19:00 Mario Kart 64</ul>
-<ul>20:00 Counter-Strike: Global Offensive (anmäl senast 19:00)</ul>
-<ul>00:30 Filmvisning</ul>
+<ul>00:30 Film</ul>
+<ul>11:00 League of Legends (anmäl innan 11:00)</ul>
+<ul>11:00 DotA2 (anmäl innan 11:00)</ul>
+<ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
+<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+<ul>20:00 CS:GO (anmäl innan 20:00)</ul>
+
 
 <h3>Söndag</h3>
-<ul> 11:00 - 18:00 Heroes of the Storm (anmäl senast 10:00)</ul>
-<ul>12:00 Subwaybeställning (beställ INNAN 12:00!). Leverans tar 1-2h.</ul>
-<ul>17:00 Subwaybeställning (beställ INNAN 17:00!). Leverans tar 1-2h.</ul>
-<ul>Prisutdelning 18:30</ul>
-<ul>Måndag 00:00 - Försäljningen stänger</ul>
-<br />
+<ul>00:30 Film</ul>
+<ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
+<ul>13:00 MarioKart</ul>
+<ul>18:00 Super Smash Bros</ul>
+<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+<ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
+<ul>02:00 WonderLAN är över!</ul>
                         </div>
                     </div>
                 </div>
@@ -90,42 +90,42 @@ Survivalguiden kan du hitta <a href="https://drive.google.com/open?id=0B_spxJ9x-
                         <div class="collapse">
                             <br />
                             
-                            Tänk på att ditt lag (eller bara lagledaren) behöver närvara under registreringen. Detta gäller även om du redan anmält intresse via hemsidan. Vid frågor kontakta CREW!
+                            Du kan som lagledare anmäla ditt lag på webben eller i Entré. Vid frågor kontakta CREW!
                             
                             <br />
                             <h3>League of Legends</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015LOL">http://challonge.com/WLCAT2015LOL</a></ul>
-                            <ul>Samling och registrering: Lördag 10:00</ul>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015LOL">http://challonge.com/WLLLAMA2015LOL</a></ul>
+                            <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <h3>DotA 2</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015DOTA2">http://challonge.com/WLCAT2015DOTA2</a></ul>
-                            <ul>Samling och registrering: Lördag 10:00</ul>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015DOTA2">http://challonge.com/WLLLAMA2015DOTA2</a></ul>
+                            <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
-                            <h3>Hearthstone</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HS">http://challonge.com/WLCAT2015HS</a></ul>
-                            <ul>Samling och registrering: Fredag 21:00</ul>
-                            <ul>Start: Fredag 20:00</ul>
+                            <h3>HearthStone</h3>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HS">http://challonge.com/WLLLAMA2015HS</a></ul>
+                            <ul>Samling och registrering: Fredag 18:00</ul>
+                            <ul>Start: Fredag 18:00</ul>
                             
                             <h3>StarCraft II</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015SC2">http://challonge.com/WLCAT2015SC2</a></ul>
-                            <ul>Samling och registrering: Fredag 18:30</ul>
-                            <ul>Start: Fredag 19:30</ul>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015SC2">http://challonge.com/WLLLAMA2015SC2</a></ul>
+                            <ul>Samling och registrering: Fredag 16:00</ul>
+                            <ul>Start: Fredag 16:00</ul>
                             
                             <h3>Counter-Strike: Global Offensive</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015CSGO">http://challonge.com/WLCAT2015CSGO</a></ul>
-                            <ul>Samling och registrering: Lördag 19:00</ul>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015CSGO">http://challonge.com/WLLLAMA2015CSGO</a></ul>
+                            <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
                             <h3>Heroes of the Storm</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HOTS">http://challonge.com/WLCAT2015HOTS</a></ul>
-                            <ul>Samling och registrering: Söndag 10:00</ul>
-                            <ul>Start: Söndag 11:00</ul>
+                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HOTS">http://challonge.com/WLLLAMA2015HOTS</a></ul>
+                            <ul>Samling och registrering: Lördag 21:00</ul>
+                            <ul>Start: Lördag 21:00</ul>
                             
                             <br />
                             
-                            Prisutdelning sker på söndag klockan 18:30!
+                            Prisutdelning sker på söndag klockan 16:00!
                             
                         </div>
                     </div>
@@ -200,7 +200,7 @@ Survivalguiden kan du hitta <a href="https://drive.google.com/open?id=0B_spxJ9x-
                         </a>
                         <div class="collapse">
                             <br />
-                            Sovsalen är öppen mellan 00:00-12:00. Håll utkik kring klockan tolv när skjuts eller vägledning till sovsalen kan komma att ske.
+                            Sovsalen är öppen mellan 00:00-12:00. Håll utkik kring klockan tolv när skjuts eller vägledning till sovsalen kan komma att ske. Vid frågor kontakta Entré.
                             <br/>
                             Kom ihåg att det är förbjudet att sova i BTH:s lokaler! Sov hemma eller i sovsalen!
                             <br />
