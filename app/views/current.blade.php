@@ -245,7 +245,10 @@
                         </a>
                         <div class="collapse">
                             <br />
-
+                             <br />
+                            <ul> För de som vill ta en paus från spelandet och slappna av med lite analog underhållning så är det fullt möjligt att låna brädspel från entrén 
+                            (pantsätt med BTH-kort, körkort eller liknande). </ul>
+                            <br /><br />
                             <br /><br />
                         </div>
                     </div>
@@ -260,12 +263,14 @@
                         </a>
                         <div class="collapse">
                             <br />
-                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch. Därefter så går man till Netlogon 
-                            (man slussas dit automatiskt när man försöker nå en hemsida). Man loggar därefter in med sitt BTH-kort 
-                            (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla). Många eventuella problem löses genom att tömma nätverksinställningar 
-                            (google DNS brukar vara ett problem) och sedan starta om datorn. Vid fortsatta problem, kontakta crew.
-                                Glömt din nätverkskabel, eller var den du tog med dig inte lång nog? Vi lånar ut nätverkskablar för 50kr i pant i entrén.</ul>
-                            <br /><br />
+                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch. 
+                            Därefter så går man till Netlogon (man slussas dit automatiskt när man försöker nå en hemsida). 
+                            Man loggar därefter in med sitt BTH-kort (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla). 
+                            Många eventuella problem löses genom att tömma nätverksinställningar (google DNS brukar vara ett problem) och sedan starta om datorn. 
+                            Vid fortsatta problem, kontakta crew.
+                        
+                        Glömt din nätverkskabel, eller var den du tog med dig inte lång nog? Vi lånar ut nätverkskablar för 50kr i pant i entrén.</ul>
+                            <br />
                         </div>
                     </div>
                 </div>
@@ -282,6 +287,73 @@
                             Du kan se vår livestream på <a href="http://www.twitch.tv/mk_wonderlan">http://www.twitch.tv/mk_wonderlan</a>.
                             <br />
                             <iframe src="http://www.twitch.tv/mk_wonderlan/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/mk_wonderlan?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from mk_wonderlan on www.twitch.tv</a>
+                            <br />
+                        </div>
+                    </div>
+                    
+                </div>
+        <!--Activity -->
+                <div class="row">
+                    <div class="span4 collapse-group">
+                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
+
+                            <i>+</i><span>Aktiviteter</span>
+
+                        </a>
+                        <div class="collapse">
+                            <br />
+                        
+                        
+                        <ul>För de personer som vill ta en liten paus från spelandet och kanske sträcka lite på benen så kommer vi i CREW att anordna några events under lanets gång. 
+                        Dessa events består av en skattjakt, nerf gun krig, frågesport och en paint tävling.</ul>
+                        
+                        <h3>Frågesporten:</h3>  
+                        
+                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som wonderlans frågesmästare?
+                        Då ska du dyka upp i sal **insert salnummer här** klockan 20:00 på lördagkväll för att bevisa detta! 
+                        
+                        OBS! ***Frågor om kor kan förekomma!***</ul>
+                        
+                        <h3>Nerf Gun krig:</h3>  
+                        
+                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna så är nerf gun krig något för dig! Nerf gun
+                        krig kommer att anordnas natten mellan fredag och lördag klockan 01:00 - 04:00 på
+                        rotundan. Varje match spelas med upp till 5 personer i varje lag och vapen tillhandahålls av
+                        CREW. Du behöver inte ha ett eget lag utan det är bara att dyka upp så delas lag in på plats. Det
+                        kommer att spelas både capture the flag och team deathmatch.</ul>
+                        
+                        <h3>Paint tävlingen:</h3> 
+                        
+                        <ul>Är du en Picasso i paint eller bara gillar att måla ändå? 
+                        Då ska du vara med i paint tävlingen som kommer att hållas söndag klockan 16:00. 
+                        Temat på tävlingen kommer att avslöjas på plats och deltagarna har sedan en timme på sig att rita en bild i paint som passar till temat. </ul>
+                        
+                        <h3>Skattjakten</h3> 
+                        
+                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet. Första ledtråden är följande:</ul>
+                        
+                        <h2>A:</h2>
+                        
+                        <ul>5 - 3 = B
+                        5 + 3 = H
+                        5 + 5 = ?</ul>
+                        
+                        <h2>B:</h2>
+                        
+                        <ul></ul>
+                        
+                        <h2>C:</h2>
+                        
+                        <ul></ul>
+                        
+                        <h2>D:</h2>
+                        
+                        <ul></ul>
+                        
+                        <h2>E:</h2>
+                        
+                        <ul></ul>
+                        
                             <br />
                         </div>
                     </div>
