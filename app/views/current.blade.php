@@ -43,37 +43,36 @@
                     <div class="span4 collapse-group">
                         <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
-                            <i>+</i><span>Schema och Survival Guide</span>
+                            <i>+</i><span>Schema</span>
 
                         </a>
                         <div class="collapse">
 <br />
-Survivalguiden kan du hitta <a href="https://drive.google.com/file/d/0Bwgqtg2huTqINWJsQTF2SVhabUk/view">här</a>!
 <br />
 <h3>Fredag</h3>
-<ul>13:00 Incheckning öppnar!</ul>
-<ul>16:00 Nedsläckning</ul>
-<ul>16:00 StarCraft 2 (anmälning direkt i entré)</ul>
-<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
-<ul>18:00 HearthStone (anmäl innan 18:00)</ul>
-<ul>21:00 Heroes of the Storm (anmäl innan 21:00)</ul>
+<ul>17:00 Incheckning öppnar!</ul>
+<ul>19:00 Nedsläckning</ul>
+<ul>19:00 Subwaybeställning (beställ innan 19:00!). Leverans tar 1-2h.</ul>
+<ul>19:30 StarCraft 2 (anmäl innan 19:30)</ul>
+<ul>20:00 CS:GO (anmäl innan 20:00)</ul>
 
 
 <h3>Lördag</h3>
-<ul>00:30 Film</ul>
+<ul>01:00 - 04:00 Nerfgun Battle</ul>
 <ul>11:00 League of Legends (anmäl innan 11:00)</ul>
 <ul>11:00 DotA2 (anmäl innan 11:00)</ul>
 <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
 <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
-<ul>20:00 CS:GO (anmäl innan 20:00)</ul>
-
+<ul>20:00 Rocket League (anmäl innan 20:00)</ul>
+<ul>20:00 Frågesport </ul>
 
 <h3>Söndag</h3>
-<ul>00:30 Film</ul>
+<ul>11:00 Speed Run (anmäl innan 11:00)</ul>
 <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
-<ul>13:00 MarioKart</ul>
-<ul>18:00 Super Smash Bros</ul>
+<ul>13:00 Hearthstone</ul>
+<ul>16:00 Paint tävling</ul>
 <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+<ul>17:00 Gang Beasts</ul>
 <ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
 <ul>02:00 WonderLAN är över!</ul>
                         </div>
@@ -93,39 +92,56 @@ Survivalguiden kan du hitta <a href="https://drive.google.com/file/d/0Bwgqtg2huT
                             Du kan som lagledare anmäla ditt lag på webben eller i Entré. Vid frågor kontakta CREW!
                             
                             <br />
+                            <h3>Starcraft 2</h3>
+                            <ul>Resultat: 
+                            <ul>Samling och registrering: Fredag 19:30</ul>
+                            <ul>Start: Fredag 19:30</ul>
+                            
+                            <br />
+                            <h3>Counter Strike Global Offensive</h3>
+                            <ul>Resultat: 
+                            <ul>Samling och registrering: Fredag 20:00</ul>
+                            <ul>Start: Fredag 20:00</ul>
+                            
+                            <br />
                             <h3>League of Legends</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015LOL">http://challonge.com/WLLLAMA2015LOL</a></ul>
+                            <ul>Resultat: 
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
-                            <h3>DotA 2</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015DOTA2">http://challonge.com/WLLLAMA2015DOTA2</a></ul>
+                            <br />
+                            <h3>Dota</h3>
+                            <ul>Resultat: 
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
-                            <h3>HearthStone</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HS">http://challonge.com/WLLLAMA2015HS</a></ul>
-                            <ul>Samling och registrering: Fredag 18:00</ul>
-                            <ul>Start: Fredag 18:00</ul>
-                            
-                            <h3>StarCraft II</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015SC2">http://challonge.com/WLLLAMA2015SC2</a></ul>
-                            <ul>Samling och registrering: Fredag 16:00</ul>
-                            <ul>Start: Fredag 16:00</ul>
-                            
-                            <h3>Counter-Strike: Global Offensive</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015CSGO">http://challonge.com/WLLLAMA2015CSGO</a></ul>
+                            <br />
+                            <h3>Rocket League</h3>
+                            <ul>Resultat: 
                             <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
-                            <h3>Heroes of the Storm</h3>
-                            <ul>Resultat: <a href="http://challonge.com/WLCAT2015HOTS">http://challonge.com/WLLLAMA2015HOTS</a></ul>
-                            <ul>Samling och registrering: Lördag 21:00</ul>
-                            <ul>Start: Lördag 21:00</ul>
+                            <br />
+                            <h3>Speed Run</h3>
+                            <ul>Resultat: 
+                            <ul>Samling och registrering: Söndag 11:00</ul>
+                            <ul>Start: Söndag 11:00</ul>
+                            
+                            <br />
+                            <h3>Hearthstone</h3>
+                            <ul>Resultat: 
+                            <ul>Samling och registrering: Söndag 13:00</ul>
+                            <ul>Start: Söndag 13:00</ul>
+                            
+                            <br />
+                            <h3>Gang Beasts</h3>
+                            <ul>Resultat: 
+                            <ul>Samling och registrering: Söndag 17:00</ul>
+                            <ul>Start: Söndag 17:00</ul>
                             
                             <br />
                             
-                            Prisutdelning sker på söndag klockan 16:00!
+                            Prisutdelning sker på söndag klockan 17:00!
                             
                         </div>
                     </div>
@@ -141,12 +157,15 @@ Survivalguiden kan du hitta <a href="https://drive.google.com/file/d/0Bwgqtg2huT
                         <div class="collapse">
                             <br />
                             Du hittar Subway-formuläret <a href="http://wonderlan.se/subway">HÄR</a>!
-                            <br /><br />
+                            <br />
+                            <br />
                             OBSERVERA att du behöver beställa och BETALA din mat innan den avsatta tiden på schemat. Du lägger in beställningen via formuläret, och sen betalar du den i Entrén.
+                            Vi kommer att ha 2 tillfällen per dag (1 under fredag) där man kan beställa en kall Subway-macka som sedan levereras och kan hämtas i entrén. 
+                            Tiderna i tabellen nedan är deadline för att ha beställt och betalat sin sub (betalning sker i entrén). Leverans beräknas ta 1.5-2h. Ordinare priser gäller.
                             Betala gärna direkt så du inte glömmer det! Nomnomnom!
                             <br />
                         <h3>Fredag</h3>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>19:00 Foodrun - Subway (beställ innan denna tid)</ul>
                         <h3>Lördag</h3>
                         <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
                         <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
@@ -157,54 +176,95 @@ Survivalguiden kan du hitta <a href="https://drive.google.com/file/d/0Bwgqtg2huT
                         </div>
                     </div>
                 </div>
-   
-    <!--Servers -->
+    <!--Pratprogram och Serverar -->
                 <div class="row">
                     <div class="span4 collapse-group">
                         <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
-                            <i>+</i><span>Servers</span>
-
-                        </a>
-                        <div class="collapse">
-                            <br />
-                            <ul>Teamspeak: teamspeak.wonderlan.se</ul>
-                            <ul>Mumble: mumble.wonderlan.se</ul>
-                        </div>
-                    </div>
-                </div>
-    <!--IRC Chatt -->
-                <div class="row">
-                    <div class="span4 collapse-group">
-                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
-
-                            <i>+</i><span>Chatt & IRC</span>
+                            <i>+</i><span>Ko-mmunikation och Serverar</span>
                         </a>
                         
                         <p class="collapse">
                             
-                            Du kan hoppa in i #wonderlan på irc.bthstudent.se, eller använda klienten nedan:
-                        <span id='inserthere'></span>
+                        <ul>På WonderLAN så tillhandahålls ett antal kommunikationstjänster. 
+                        Ifall du vill ha en bra platform att använda för att prata med dina vänner på, 
+                        eller vill ställa frågor till crew eller allmänt få information, 
+                        så finns nedanstående servrar och kommunikationsvägar öppna.</ul>
+                        
+                        <h3>Discord</h3>  
+                        
+                        <ul><a href="https://discord.gg/0whjY97Dr994eifR">Här är länken</a></ul>
+                        
+                        <h3>Teamspeak3</h3>  
+                        
+                        <ul>IP: teamspeak.wonderlan.se</ul>
+                        
+                        <h3>Facebook</h3>  
+                        
+                        <ul><a href="https://www.facebook.com/MK.WonderLAN/">Här är länken till MK.WonderLAN</a></ul>
+                        
+                        <ul><a href="https://www.facebook.com/MammasKallare">Här är länken till MammasKallare</a></ul>
+                        
+                        <ul><a href="https://goo.gl/I5tsGk">Här är länken till eventet</a></ul>
+                        
+                        <h3>Twitter</h3> 
+                        
+                        <ul>@MammasKallare</ul>
+                        
+                        <h3>Minecraft</h3> 
+                        
+                        <ul>IP: kommer strax</ul>
+                        
                             
-                                
+                         
                         </p>
                     </div>
                 </div>
-    <!--Sovsal -->
+    <!--Proviant -->
                 <div class="row">
                     <div class="span4 collapse-group">
                         <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
-                            <i>+</i><span>Sovsal</span>
+                            <i>+</i><span>Proviant</span>
 
                         </a>
                         <div class="collapse">
                             <br />
-                            Sovsalen är öppen mellan 00:00-12:00. Håll utkik kring klockan tolv när skjuts eller vägledning till sovsalen kan komma att ske. Vid frågor kontakta Entré.
-                            <br/>
-                            Kom ihåg att det är förbjudet att sova i BTH:s lokaler! Sov hemma eller i sovsalen!
+
+                            <br /><br />
+                        </div>
+                    </div>
+                </div>
+    <!--Brädspel -->
+                <div class="row">
+                    <div class="span4 collapse-group">
+                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
+
+                            <i>+</i><span>Brädspel</span>
+
+                        </a>
+                        <div class="collapse">
                             <br />
-                            <img src="/img/wl/karta.png" />
+
+                            <br /><br />
+                        </div>
+                    </div>
+                </div>
+    <!--Uppkoppling till internet -->
+                <div class="row">
+                    <div class="span4 collapse-group">
+                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
+
+                            <i>+</i><span>Uppkoppling till internet</span>
+                            
+                        </a>
+                        <div class="collapse">
+                            <br />
+                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch. Därefter så går man till Netlogon 
+                            (man slussas dit automatiskt när man försöker nå en hemsida). Man loggar därefter in med sitt BTH-kort 
+                            (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla). Många eventuella problem löses genom att tömma nätverksinställningar 
+                            (google DNS brukar vara ett problem) och sedan starta om datorn. Vid fortsatta problem, kontakta crew.
+                                Glömt din nätverkskabel, eller var den du tog med dig inte lång nog? Vi lånar ut nätverkskablar för 50kr i pant i entrén.</ul>
                             <br /><br />
                         </div>
                     </div>
