@@ -173,7 +173,7 @@
                             
                             <br />
                             
-                            Prisutdelning sker på söndag klockan 17:00!
+                            Prisutdelning sker ????!
                             
                         </div>
                     </div>
