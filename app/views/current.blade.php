@@ -193,7 +193,7 @@
                         
                         <h3>Discord</h3>  
                         
-                        <ul><a href="https://discord.gg/0whjY97Dr994eifR">Här är länken</a></ul>
+                        <ul><a href="https://discord.gg/0whjY97Dr994eifR">https://discord.gg/0whjY97Dr994eifR</a></ul>
                         
                         <h3>Teamspeak3</h3>  
                         
@@ -201,11 +201,11 @@
                         
                         <h3>Facebook</h3>  
                         
-                        <ul><a href="https://www.facebook.com/MK.WonderLAN/">Här är länken till MK.WonderLAN</a></ul>
+                        <ul><a href="https://www.facebook.com/MK.WonderLAN/">https://www.facebook.com/MK.WonderLAN/</a></ul>
                         
-                        <ul><a href="https://www.facebook.com/MammasKallare">Här är länken till MammasKallare</a></ul>
+                        <ul><a href="https://www.facebook.com/MammasKallare">https://www.facebook.com/MammasKallare</a></ul>
                         
-                        <ul><a href="https://goo.gl/I5tsGk">Här är länken till eventet</a></ul>
+                        <ul><a href="https://goo.gl/I5tsGk">https://goo.gl/I5tsGk</a></ul>
                         
                         <h3>Twitter</h3> 
                         
