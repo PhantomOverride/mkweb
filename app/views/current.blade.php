@@ -299,7 +299,7 @@
                         
                         
                         <ul>För de personer som vill ta en liten paus från spelandet och kanske sträcka lite på benen så kommer vi i CREW att anordna några events under lanets gång. 
-                        Dessa events består av en skattjakt, nerf gun krig, frågesport och en paint tävling.</ul>
+                        Dessa events består av en skattjakt, nerf gun-krig, frågesport och en paint tävling.</ul>
                         
                         <h3>Frågesporten:</h3>  
                         
@@ -308,19 +308,19 @@
                         
                         OBS! ***Frågor om kor kan förekomma!***</ul>
                         
-                        <h3>Nerf Gun krig:</h3>  
+                        <h3>Nerf Gun-krig:</h3>  
                         
-                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna så är nerf gun krig något för dig! Nerf gun
-                        krig kommer att anordnas natten mellan fredag och lördag klockan 01:00 - 04:00 på
+                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna så är nerf gun-krig något för dig! Nerf gun-krig kommer att anordnas natten mellan fredag och lördag klockan 01:00 - 04:00 på
                         rotundan. Varje match spelas med upp till 5 personer i varje lag och vapen tillhandahålls av
                         CREW. Du behöver inte ha ett eget lag utan det är bara att dyka upp så delas lag in på plats. Det
                         kommer att spelas både capture the flag och team deathmatch.</ul>
-                        
-                         <a href="http://mammaskallare.se/img/wl/fantastic.jpg"> <img style="width:50%" src="http://mammaskallare.se/img/wl/fantastic.jpg" /> </a><p style="font-size:small;"<p>Klicka på bilden för förstoring</p>
-                        
-                         <a href="http://mammaskallare.se/img/wl/nerfmap.png"> <img style="width:50%" src="http://mammaskallare.se/img/wl/nerfmap.png" /> </a><p style="font-size:small;"<p>Klicka på kartan för förstoring</p>
-                        
-                        <h3>Paint-tävling:</h3> 
+                        <div style="float:left;width:55%;">
+                         <a href="http://mammaskallare.se/img/wl/fantastic.jpg"> <img style="width:100%" src="http://mammaskallare.se/img/wl/fantastic.jpg" /> </a>
+                        </div>
+                        <div style="float:right;width:40%">
+                         <a href="http://mammaskallare.se/img/wl/nerfmap.png"> <img style="width:100%" src="http://mammaskallare.se/img/wl/nerfmap.png" /> </a><p style="font-size:small;">Klicka på kartan för förstoring</p>
+                        </div>
+                        <h3 style="clear:both;">Paint-tävling:</h3> 
                         
                         <ul>Är du en Picasso i paint eller bara gillar att måla ändå? 
                         Då ska du vara med i Paint-tävlingen som kommer att hållas söndag klockan 16:00. 
