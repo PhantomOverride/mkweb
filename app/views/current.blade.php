@@ -125,49 +125,49 @@
                             
                             <br />
                             <h3>Starcraft 2</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Fredag 19:30</ul>
                             <ul>Start: Fredag 19:30</ul>
                             
                             <br />
                             <h3>Counter Strike Global Offensive</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Fredag 20:00</ul>
                             <ul>Start: Fredag 20:00</ul>
                             
                             <br />
                             <h3>League of Legends</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <br />
                             <h3>Dota</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <br />
                             <h3>Rocket League</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
                             <br />
                             <h3>Speed Run</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 11:00</ul>
                             <ul>Start: Söndag 11:00</ul>
                             
                             <br />
                             <h3>Hearthstone</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 13:00</ul>
                             <ul>Start: Söndag 13:00</ul>
                             
                             <br />
                             <h3>Gang Beasts</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 17:00</ul>
                             <ul>Start: Söndag 17:00</ul>
                             
