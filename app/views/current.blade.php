@@ -316,6 +316,10 @@
                         CREW. Du behöver inte ha ett eget lag utan det är bara att dyka upp så delas lag in på plats. Det
                         kommer att spelas både capture the flag och team deathmatch.</ul>
                         
+                         <a href="http://mammaskallare.se/img/wl/fantastic.jpg"> <img style="width:50%" src="http://mammaskallare.se/img/wl/fantastic.jpg" /> </a><p style="font-size:small;"<p>Klicka på kartan för förstoring</p>
+                        
+                         <a href="http://mammaskallare.se/img/wl/nerfmap.png"> <img style="width:50%" src="http://mammaskallare.se/img/wl/nerfmap.png" /> </a><p style="font-size:small;"<p>Klicka på kartan för förstoring</p>
+                        
                         <h3>Paint-tävling:</h3> 
                         
                         <ul>Är du en Picasso i paint eller bara gillar att måla ändå? 
