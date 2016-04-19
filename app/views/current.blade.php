@@ -70,7 +70,7 @@
 <ul>11:00 Speed Run (anmäl innan 11:00)</ul>
 <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
 <ul>13:00 Hearthstone</ul>
-<ul>16:00 Paint tävling</ul>
+<ul>16:00 Paint-tävling</ul>
 <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
 <ul>17:00 Gang Beasts</ul>
 <ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
@@ -322,10 +322,10 @@
                         CREW. Du behöver inte ha ett eget lag utan det är bara att dyka upp så delas lag in på plats. Det
                         kommer att spelas både capture the flag och team deathmatch.</ul>
                         
-                        <h3>Paint tävlingen:</h3> 
+                        <h3>Paint-tävling:</h3> 
                         
                         <ul>Är du en Picasso i paint eller bara gillar att måla ändå? 
-                        Då ska du vara med i paint tävlingen som kommer att hållas söndag klockan 16:00. 
+                        Då ska du vara med i Paint-tävlingen som kommer att hållas söndag klockan 16:00. 
                         Temat på tävlingen kommer att avslöjas på plats och deltagarna har sedan en timme på sig att rita en bild i paint som passar till temat. </ul>
                         
                         <h3>Skattjakten</h3> 
