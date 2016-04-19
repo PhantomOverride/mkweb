@@ -38,6 +38,17 @@
 @stop
 
 @section('content')
+        <!--stream -->
+
+                        <h3>Live Stream</h3>
+
+
+                            <br />
+                            <ul>Du kan se vår livestream på <a href="http://www.twitch.tv/mk_wonderlan">http://www.twitch.tv/mk_wonderlan</a>.</ul>
+                            <br />
+                            <iframe src="http://www.twitch.tv/mk_wonderlan/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/mk_wonderlan?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from mk_wonderlan on www.twitch.tv</a>
+                            <br />
+
     <!--GUIDE -->
                 <div class="row">
                     <div class="span4 collapse-group">
@@ -47,34 +58,55 @@
 
                         </a>
                         <div class="collapse">
-<br />
-<br />
-<h3>Fredag</h3>
-<ul>17:00 Incheckning öppnar!</ul>
-<ul>19:00 Nedsläckning</ul>
-<ul>19:00 Subwaybeställning (beställ innan 19:00!). Leverans tar 1-2h.</ul>
-<ul>19:30 StarCraft 2 (anmäl innan 19:30)</ul>
-<ul>20:00 CS:GO (anmäl innan 20:00)</ul>
+                        <br />
+                        <br />
+                        <h3>Fredag</h3>
+                        <ul>17:00 Incheckning öppnar!</ul>
+                        <ul>19:00 Nedsläckning</ul>
+                        <ul>19:00 Subwaybeställning (beställ innan 19:00!). Leverans tar 1-2h.</ul>
+                        <ul>19:30 StarCraft 2 (anmäl innan 19:30)</ul>
+                        <ul>20:00 CS:GO (anmäl innan 20:00)</ul>
 
 
-<h3>Lördag</h3>
-<ul>01:00 - 04:00 Nerfgun Battle</ul>
-<ul>11:00 League of Legends (anmäl innan 11:00)</ul>
-<ul>11:00 DotA2 (anmäl innan 11:00)</ul>
-<ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
-<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
-<ul>20:00 Rocket League (anmäl innan 20:00)</ul>
-<ul>20:00 Frågesport </ul>
+                        <h3>Lördag</h3>
+                        <ul>01:00 - 04:00 Nerfgun Battle</ul>
+                        <ul>11:00 League of Legends (anmäl innan 11:00)</ul>
+                        <ul>11:00 DotA2 (anmäl innan 11:00)</ul>
+                        <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
+                        <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+                        <ul>20:00 Rocket League (anmäl innan 20:00)</ul>
+                        <ul>20:00 Frågesport </ul>
 
-<h3>Söndag</h3>
-<ul>11:00 Speed Run (anmäl innan 11:00)</ul>
-<ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
-<ul>13:00 Hearthstone</ul>
-<ul>16:00 Paint-tävling</ul>
-<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
-<ul>17:00 Gang Beasts</ul>
-<ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
-<ul>02:00 WonderLAN är över!</ul>
+                        <h3>Söndag</h3>
+                        <ul>11:00 Speed Run (anmäl innan 11:00)</ul>
+                        <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
+                        <ul>13:00 Hearthstone</ul>
+                        <ul>16:00 Paint-tävling</ul>
+                        <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+                        <ul>17:00 Gang Beasts</ul>
+                        <ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
+                        <ul>02:00 WonderLAN är över!</ul>
+                        </div>
+                    </div>
+                </div>
+    <!--Uppkoppling till internet -->
+                <div class="row">
+                    <div class="span4 collapse-group">
+                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
+
+                            <i>+</i><span>Uppkoppling till internet</span>
+                            
+                        </a>
+                        <div class="collapse">
+                            <br />
+                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch. 
+                            Därefter så går man till Netlogon (man slussas dit automatiskt när man försöker nå en hemsida). 
+                            Man loggar därefter in med sitt BTH-kort (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla). 
+                            Många eventuella problem löses genom att tömma nätverksinställningar (google DNS brukar vara ett problem) och sedan starta om datorn. 
+                            Vid fortsatta problem, kontakta crew.
+                        
+                            Glömt din nätverkskabel, eller var den du tog med dig inte lång nog? Vi lånar ut nätverkskablar för 50kr i pant i entrén.</ul>
+                            <br />
                         </div>
                     </div>
                 </div>
@@ -93,55 +125,55 @@
                             
                             <br />
                             <h3>Starcraft 2</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Fredag 19:30</ul>
                             <ul>Start: Fredag 19:30</ul>
                             
                             <br />
                             <h3>Counter Strike Global Offensive</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Fredag 20:00</ul>
                             <ul>Start: Fredag 20:00</ul>
                             
                             <br />
                             <h3>League of Legends</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <br />
                             <h3>Dota</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <br />
                             <h3>Rocket League</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
                             <br />
                             <h3>Speed Run</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 11:00</ul>
                             <ul>Start: Söndag 11:00</ul>
                             
                             <br />
                             <h3>Hearthstone</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 13:00</ul>
                             <ul>Start: Söndag 13:00</ul>
                             
                             <br />
                             <h3>Gang Beasts</h3>
-                            <ul>Resultat: 
+                            <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 17:00</ul>
                             <ul>Start: Söndag 17:00</ul>
                             
                             <br />
                             
-                            Prisutdelning sker på söndag klockan 17:00!
+                            Prisutdelning sker ????!
                             
                         </div>
                     </div>
@@ -165,13 +197,13 @@
                             Betala gärna direkt så du inte glömmer det! Nomnomnom!
                             <br />
                         <h3>Fredag</h3>
-                        <ul>19:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>19:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
                         <h3>Lördag</h3>
-                        <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>12:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
+                        <ul>17:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
                         <h3>Söndag</h3>
-                        <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>12:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
+                        <ul>17:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
                         <br />
                         </div>
                     </div>
@@ -182,9 +214,10 @@
                         <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
                             <i>+</i><span>Ko-mmunikation och Serverar</span>
+
                         </a>
-                        
-                        <p class="collapse">
+                        <div class="collapse">
+                            <br />
                             
                         <ul>På WonderLAN så tillhandahålls ett antal kommunikationstjänster. 
                         Ifall du vill ha en bra platform att använda för att prata med dina vänner på, 
@@ -205,7 +238,7 @@
                         
                         <ul><a href="https://www.facebook.com/MammasKallare">https://www.facebook.com/MammasKallare</a></ul>
                         
-                        <ul><a href="https://goo.gl/I5tsGk">https://goo.gl/I5tsGk</a></ul>
+                        <ul><a href="https://www.facebook.com/events/1732555520323945/">https://goo.gl/I5tsGk</a></ul>
                         
                         <h3>Twitter</h3> 
                         
@@ -216,8 +249,8 @@
                         <ul>IP: kommer strax</ul>
                         
                             
-                         
-                        </p>
+                        <br />
+                        </div>
                     </div>
                 </div>
     <!--Proviant -->
@@ -252,45 +285,6 @@
                             <br /><br />
                         </div>
                     </div>
-                </div>
-    <!--Uppkoppling till internet -->
-                <div class="row">
-                    <div class="span4 collapse-group">
-                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
-
-                            <i>+</i><span>Uppkoppling till internet</span>
-                            
-                        </a>
-                        <div class="collapse">
-                            <br />
-                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch. 
-                            Därefter så går man till Netlogon (man slussas dit automatiskt när man försöker nå en hemsida). 
-                            Man loggar därefter in med sitt BTH-kort (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla). 
-                            Många eventuella problem löses genom att tömma nätverksinställningar (google DNS brukar vara ett problem) och sedan starta om datorn. 
-                            Vid fortsatta problem, kontakta crew.
-                        
-                            Glömt din nätverkskabel, eller var den du tog med dig inte lång nog? Vi lånar ut nätverkskablar för 50kr i pant i entrén.</ul>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-        <!--stream -->
-                <div class="row">
-                    <div class="span4 collapse-group">
-                        <a class="btn btnSection--icon btnSection btnSection--0" href="#">
-
-                            <i>+</i><span>Live Stream</span>
-
-                        </a>
-                        <div class="collapse">
-                            <br />
-                            Du kan se vår livestream på <a href="http://www.twitch.tv/mk_wonderlan">http://www.twitch.tv/mk_wonderlan</a>.
-                            <br />
-                            <iframe src="http://www.twitch.tv/mk_wonderlan/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/mk_wonderlan?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from mk_wonderlan on www.twitch.tv</a>
-                            <br />
-                        </div>
-                    </div>
-                    
                 </div>
         <!--Activity -->
                 <div class="row">
@@ -334,9 +328,9 @@
                         
                         <h2>A:</h2>
                         
-                        <ul>5 - 3 = B
-                        5 + 3 = H
-                        5 + 5 = ?</ul>
+                        <ul>5 - 3 = B</ul>
+                        <ul>5 + 3 = H</ul>
+                        <ul>5 + 5 = ?</ul>
                         
                         <h2>B:</h2>
                         
