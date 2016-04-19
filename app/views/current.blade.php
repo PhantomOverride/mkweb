@@ -238,7 +238,7 @@
                         
                         <ul><a href="https://www.facebook.com/MammasKallare">https://www.facebook.com/MammasKallare</a></ul>
                         
-                        <ul><a href="https://goo.gl/I5tsGk">https://goo.gl/I5tsGk</a></ul>
+                        <ul><a href="https://www.facebook.com/events/1732555520323945/">https://goo.gl/I5tsGk</a></ul>
                         
                         <h3>Twitter</h3> 
                         
