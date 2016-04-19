@@ -47,34 +47,34 @@
 
                         </a>
                         <div class="collapse">
-<br />
-<br />
-<h3>Fredag</h3>
-<ul>17:00 Incheckning öppnar!</ul>
-<ul>19:00 Nedsläckning</ul>
-<ul>19:00 Subwaybeställning (beställ innan 19:00!). Leverans tar 1-2h.</ul>
-<ul>19:30 StarCraft 2 (anmäl innan 19:30)</ul>
-<ul>20:00 CS:GO (anmäl innan 20:00)</ul>
+                        <br />
+                        <br />
+                        <h3>Fredag</h3>
+                        <ul>17:00 Incheckning öppnar!</ul>
+                        <ul>19:00 Nedsläckning</ul>
+                        <ul>19:00 Subwaybeställning (beställ innan 19:00!). Leverans tar 1-2h.</ul>
+                        <ul>19:30 StarCraft 2 (anmäl innan 19:30)</ul>
+                        <ul>20:00 CS:GO (anmäl innan 20:00)</ul>
 
 
-<h3>Lördag</h3>
-<ul>01:00 - 04:00 Nerfgun Battle</ul>
-<ul>11:00 League of Legends (anmäl innan 11:00)</ul>
-<ul>11:00 DotA2 (anmäl innan 11:00)</ul>
-<ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
-<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
-<ul>20:00 Rocket League (anmäl innan 20:00)</ul>
-<ul>20:00 Frågesport </ul>
+                        <h3>Lördag</h3>
+                        <ul>01:00 - 04:00 Nerfgun Battle</ul>
+                        <ul>11:00 League of Legends (anmäl innan 11:00)</ul>
+                        <ul>11:00 DotA2 (anmäl innan 11:00)</ul>
+                        <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
+                        <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+                        <ul>20:00 Rocket League (anmäl innan 20:00)</ul>
+                        <ul>20:00 Frågesport </ul>
 
-<h3>Söndag</h3>
-<ul>11:00 Speed Run (anmäl innan 11:00)</ul>
-<ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
-<ul>13:00 Hearthstone</ul>
-<ul>16:00 Paint-tävling</ul>
-<ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
-<ul>17:00 Gang Beasts</ul>
-<ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
-<ul>02:00 WonderLAN är över!</ul>
+                        <h3>Söndag</h3>
+                        <ul>11:00 Speed Run (anmäl innan 11:00)</ul>
+                        <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
+                        <ul>13:00 Hearthstone</ul>
+                        <ul>16:00 Paint-tävling</ul>
+                        <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
+                        <ul>17:00 Gang Beasts</ul>
+                        <ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
+                        <ul>02:00 WonderLAN är över!</ul>
                         </div>
                     </div>
                 </div>
@@ -182,9 +182,10 @@
                         <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
                             <i>+</i><span>Ko-mmunikation och Serverar</span>
+
                         </a>
-                        
-                        <p class="collapse">
+                        <div class="collapse">
+                            <br />
                             
                         <ul>På WonderLAN så tillhandahålls ett antal kommunikationstjänster. 
                         Ifall du vill ha en bra platform att använda för att prata med dina vänner på, 
@@ -216,8 +217,8 @@
                         <ul>IP: kommer strax</ul>
                         
                             
-                         
-                        </p>
+                        <br />
+                        </div>
                     </div>
                 </div>
     <!--Proviant -->
