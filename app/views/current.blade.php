@@ -197,13 +197,13 @@
                             Betala gärna direkt så du inte glömmer det! Nomnomnom!
                             <br />
                         <h3>Fredag</h3>
-                        <ul>19:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>19:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
                         <h3>Lördag</h3>
-                        <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>12:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
+                        <ul>17:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
                         <h3>Söndag</h3>
-                        <ul>12:00 Foodrun - Subway (beställ innan denna tid)</ul>
-                        <ul>17:00 Foodrun - Subway (beställ innan denna tid)</ul>
+                        <ul>12:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
+                        <ul>17:00 Foodrun - Subway (beställ och betala innan denna tid)</ul>
                         <br />
                         </div>
                     </div>
