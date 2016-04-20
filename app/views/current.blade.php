@@ -78,7 +78,7 @@
                         <ul>20:00 Frågesport </ul>
 
                         <h3>Söndag</h3>
-                        <ul>11:00 Speed Run (anmäl innan 11:00)</ul>
+                        <ul>11:00 Speed Runners (anmäl innan 11:00)</ul>
                         <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
                         <ul>13:00 Hearthstone</ul>
                         <ul>16:00 Paint-tävling</ul>
@@ -154,7 +154,7 @@
                             <ul>Start: Lördag 20:00</ul>
                             
                             <br />
-                            <h3>Speed Run</h3>
+                            <h3>Speed Runners</h3>
                             <ul>Resultat: </ul>
                             <ul>Samling och registrering: Söndag 11:00</ul>
                             <ul>Start: Söndag 11:00</ul>
