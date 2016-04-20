@@ -303,17 +303,19 @@
                         
                         <h3>Frågesporten:</h3>  
                         
-                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som wonderlans frågesmästare?
-                        Då ska du dyka upp i sal **insert salnummer här** klockan 20:00 på lördagkväll för att bevisa detta! 
+                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som WonderLANs mästare i spel trivia? 
+                        Då ska du dyka upp i sal J1620 klockan 20:00 på lördagkväll för att bevisa detta!  
                         
                         OBS! ***Frågor om kor kan förekomma!***</ul>
                         
                         <h3>Nerf Gun-krig:</h3>  
                         
-                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna så är nerf gun-krig något för dig! Nerf gun-krig kommer att anordnas natten mellan fredag och lördag klockan 01:00 - 04:00 på
-                        rotundan. Varje match spelas med upp till 5 personer i varje lag och vapen tillhandahålls av
-                        CREW. Du behöver inte ha ett eget lag utan det är bara att dyka upp så delas lag in på plats. Det
-                        kommer att spelas både capture the flag och team deathmatch.</ul>
+                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna samtidigt som du skjuter folk med
+                        plastvapen, då är nerf gun-krig något för dig! Nerf gun krig kommer att anordnas natten mellan
+                        fredag och lördag klockan 01:00 - 04:00 på rotundan. Varje match spelas med upp till 5 personer i
+                        varje lag och vapen tillhandahålls av CREW. Du behöver inte ha ett eget lag utan det är bara att
+                        dyka upp så delas lag in på plats. Det kommer att spelas både capture the flag och team
+                        deathmatch.</ul>
                         <div style="float:left;width:55%;">
                          <a href="http://mammaskallare.se/img/wl/fantastic.jpg"> <img style="width:100%" src="http://mammaskallare.se/img/wl/fantastic.jpg" /> </a>
                         </div>
@@ -328,30 +330,11 @@
                         
                         <h3>Skattjakten</h3> 
                         
-                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet. Första ledtråden är följande:</ul>
+                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet. 
+                        Första ledtråden finns någonstans på denna hemsida!
+                        </ul>
                         
-                        <h2>A:</h2>
-                        
-                        <ul>5 - 3 = B</ul>
-                        <ul>5 + 3 = H</ul>
-                        <ul>5 + 5 = ?</ul>
-                        
-                        <h2>B:</h2>
-                        
-                        <ul></ul>
-                        
-                        <h2>C:</h2>
-                        
-                        <ul></ul>
-                        
-                        <h2>D:</h2>
-                        
-                        <ul></ul>
-                        
-                        <h2>E:</h2>
-                        
-                        <ul></ul>
-                        
+
                             <br />
                         </div>
                     </div>
