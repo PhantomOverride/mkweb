@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('homestead','mkweb','webdev'),
+	'local' => array('homestead','mkweb','webdev','Iwasawa'),
         'production' => array('fluffy'),
 
 ));
