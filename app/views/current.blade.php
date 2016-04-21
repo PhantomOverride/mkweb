@@ -84,6 +84,7 @@
                         <ul>16:00 Paint-tävling</ul>
                         <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
                         <ul>17:00 Gang Beasts</ul>
+                        <ul>19:00 Prisutdelning sker</ul>
                         <ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
                         <ul>02:00 WonderLAN är över!</ul>
                         </div>
@@ -121,7 +122,7 @@
                         <div class="collapse">
                             <br />
                             
-                            Du kan som lagledare anmäla ditt lag på webben eller i Entré. Vid frågor kontakta CREW!
+                            Du kan som lagledare anmäla ditt lag i Entré. Vid frågor kontakta CREW!
                             
                             <br />
                             <h3>Starcraft 2</h3>
@@ -173,7 +174,7 @@
                             
                             <br />
                             
-                            Prisutdelning sker ????!
+                            Prisutdelning sker 19:00 på Söndagen.
                             
                         </div>
                     </div>
