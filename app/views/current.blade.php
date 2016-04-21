@@ -126,49 +126,49 @@
                             
                             <br />
                             <h3>Starcraft 2</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016SC ">http://challonge.com/WLCow2016SC </a> </ul>
                             <ul>Samling och registrering: Fredag 19:30</ul>
                             <ul>Start: Fredag 19:30</ul>
                             
                             <br />
                             <h3>Counter Strike Global Offensive</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016CSGO  ">http://challonge.com/WLCow2016CSGO  </a> </ul>
                             <ul>Samling och registrering: Fredag 20:00</ul>
                             <ul>Start: Fredag 20:00</ul>
                             
                             <br />
                             <h3>League of Legends</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016LOL ">http://challonge.com/WLCow2016LOL </a> </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <br />
                             <h3>Dota</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016DOTA2 ">http://challonge.com/WLCow2016DOTA2 </a> </ul>
                             <ul>Samling och registrering: Lördag 11:15</ul>
                             <ul>Start: Lördag 11:15</ul>
                             
                             <br />
                             <h3>Rocket League</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016RL ">http://challonge.com/WLCow2016RL </a> </ul>
                             <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
                             <br />
                             <h3>Speed Runners</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016SR ">http://challonge.com/WLCow2016SR </a> </ul>
                             <ul>Samling och registrering: Söndag 11:00</ul>
                             <ul>Start: Söndag 11:00</ul>
                             
                             <br />
                             <h3>Hearthstone</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016HS ">http://challonge.com/WLCow2016HS </a> </ul>
                             <ul>Samling och registrering: Söndag 13:00</ul>
                             <ul>Start: Söndag 13:00</ul>
                             
                             <br />
                             <h3>Gang Beasts</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016GB">http://challonge.com/WLCow2016GB</a> </ul>
                             <ul>Samling och registrering: Söndag 17:00</ul>
                             <ul>Start: Söndag 17:00</ul>
                             
