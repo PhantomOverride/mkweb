@@ -71,7 +71,7 @@
                         <h3>Lördag</h3>
                         <ul>01:00 - 04:00 Nerfgun Battle</ul>
                         <ul>11:00 League of Legends (anmäl innan 11:00)</ul>
-                        <ul>11:00 DotA2 (anmäl innan 11:00)</ul>
+                        <ul>11:15 DotA2 (anmäl innan 11:15)</ul>
                         <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
                         <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
                         <ul>20:00 Rocket League (anmäl innan 20:00)</ul>
@@ -145,8 +145,8 @@
                             <br />
                             <h3>Dota</h3>
                             <ul>Resultat: </ul>
-                            <ul>Samling och registrering: Lördag 11:00</ul>
-                            <ul>Start: Lördag 11:00</ul>
+                            <ul>Samling och registrering: Lördag 11:15</ul>
+                            <ul>Start: Lördag 11:15</ul>
                             
                             <br />
                             <h3>Rocket League</h3>
