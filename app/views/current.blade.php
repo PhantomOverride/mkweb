@@ -71,19 +71,20 @@
                         <h3>Lördag</h3>
                         <ul>01:00 - 04:00 Nerfgun Battle</ul>
                         <ul>11:00 League of Legends (anmäl innan 11:00)</ul>
-                        <ul>11:00 DotA2 (anmäl innan 11:00)</ul>
+                        <ul>11:15 DotA2 (anmäl innan 11:15)</ul>
                         <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
                         <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
                         <ul>20:00 Rocket League (anmäl innan 20:00)</ul>
                         <ul>20:00 Frågesport </ul>
 
                         <h3>Söndag</h3>
-                        <ul>11:00 Speed Run (anmäl innan 11:00)</ul>
+                        <ul>11:00 Speed Runners (anmäl innan 11:00)</ul>
                         <ul>12:00 Subwaybeställning (beställ innan 12:00!). Leverans tar 1-2h.</ul>
                         <ul>13:00 Hearthstone</ul>
                         <ul>16:00 Paint-tävling</ul>
                         <ul>17:00 Subwaybeställning (beställ innan 17:00!). Leverans tar 1-2h.</ul>
                         <ul>17:00 Gang Beasts</ul>
+                        <ul>19:00 Prisutdelning sker</ul>
                         <ul>01:00 Tack för denna gång! Dags att börja packa ihop!</ul>
                         <ul>02:00 WonderLAN är över!</ul>
                         </div>
@@ -121,59 +122,59 @@
                         <div class="collapse">
                             <br />
                             
-                            Du kan som lagledare anmäla ditt lag på webben eller i Entré. Vid frågor kontakta CREW!
+                            Du kan som lagledare anmäla ditt lag i Entré. Vid frågor kontakta CREW!
                             
                             <br />
                             <h3>Starcraft 2</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016SC ">http://challonge.com/WLCow2016SC </a> </ul>
                             <ul>Samling och registrering: Fredag 19:30</ul>
                             <ul>Start: Fredag 19:30</ul>
                             
                             <br />
                             <h3>Counter Strike Global Offensive</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016CSGO  ">http://challonge.com/WLCow2016CSGO  </a> </ul>
                             <ul>Samling och registrering: Fredag 20:00</ul>
                             <ul>Start: Fredag 20:00</ul>
                             
                             <br />
                             <h3>League of Legends</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016LOL ">http://challonge.com/WLCow2016LOL </a> </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
                             
                             <br />
                             <h3>Dota</h3>
-                            <ul>Resultat: </ul>
-                            <ul>Samling och registrering: Lördag 11:00</ul>
-                            <ul>Start: Lördag 11:00</ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016DOTA2 ">http://challonge.com/WLCow2016DOTA2 </a> </ul>
+                            <ul>Samling och registrering: Lördag 11:15</ul>
+                            <ul>Start: Lördag 11:15</ul>
                             
                             <br />
                             <h3>Rocket League</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016RL ">http://challonge.com/WLCow2016RL </a> </ul>
                             <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
                             
                             <br />
-                            <h3>Speed Run</h3>
-                            <ul>Resultat: </ul>
+                            <h3>Speed Runners</h3>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016SR ">http://challonge.com/WLCow2016SR </a> </ul>
                             <ul>Samling och registrering: Söndag 11:00</ul>
                             <ul>Start: Söndag 11:00</ul>
                             
                             <br />
                             <h3>Hearthstone</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016HS ">http://challonge.com/WLCow2016HS </a> </ul>
                             <ul>Samling och registrering: Söndag 13:00</ul>
                             <ul>Start: Söndag 13:00</ul>
                             
                             <br />
                             <h3>Gang Beasts</h3>
-                            <ul>Resultat: </ul>
+                            <ul>Resultat:<a href="http://challonge.com/WLCow2016GB">http://challonge.com/WLCow2016GB</a> </ul>
                             <ul>Samling och registrering: Söndag 17:00</ul>
                             <ul>Start: Söndag 17:00</ul>
                             
                             <br />
                             
-                            Prisutdelning sker ????!
+                            Prisutdelning sker 19:00 på Söndagen.
                             
                         </div>
                     </div>
@@ -188,7 +189,7 @@
                         </a>
                         <div class="collapse">
                             <br />
-                            Du hittar Subway-formuläret <a href="http://wonderlan.se/subway">HÄR</a>!
+                            Du hittar Subway-formuläret <a href="https://docs.google.com/forms/d/1mLPJHxk1q5tfi-n5zAlhaBFTMtfVC4LQx6JSsKOHAEU/viewform">HÄR</a>!
                             <br />
                             <br />
                             OBSERVERA att du behöver beställa och BETALA din mat innan den avsatta tiden på schemat. Du lägger in beställningen via formuläret, och sen betalar du den i Entrén.
@@ -303,17 +304,19 @@
                         
                         <h3>Frågesporten:</h3>  
                         
-                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som wonderlans frågesmästare?
-                        Då ska du dyka upp i sal **insert salnummer här** klockan 20:00 på lördagkväll för att bevisa detta! 
+                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som WonderLANs mästare i spel trivia? 
+                        Då ska du dyka upp i sal J1620 klockan 20:00 på lördagkväll för att bevisa detta!  
                         
                         OBS! ***Frågor om kor kan förekomma!***</ul>
                         
                         <h3>Nerf Gun-krig:</h3>  
                         
-                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna så är nerf gun-krig något för dig! Nerf gun-krig kommer att anordnas natten mellan fredag och lördag klockan 01:00 - 04:00 på
-                        rotundan. Varje match spelas med upp till 5 personer i varje lag och vapen tillhandahålls av
-                        CREW. Du behöver inte ha ett eget lag utan det är bara att dyka upp så delas lag in på plats. Det
-                        kommer att spelas både capture the flag och team deathmatch.</ul>
+                        <ul>Om du vill få adrenalinet att flöda och svetten att rinna samtidigt som du skjuter folk med
+                        plastvapen, då är nerf gun-krig något för dig! Nerf gun krig kommer att anordnas natten mellan
+                        fredag och lördag klockan 01:00 - 04:00 på rotundan. Varje match spelas med upp till 5 personer i
+                        varje lag och vapen tillhandahålls av CREW. Du behöver inte ha ett eget lag utan det är bara att
+                        dyka upp så delas lag in på plats. Det kommer att spelas både capture the flag och team
+                        deathmatch.</ul>
                         <div style="float:left;width:55%;">
                          <a href="http://mammaskallare.se/img/wl/fantastic.jpg"> <img style="width:100%" src="http://mammaskallare.se/img/wl/fantastic.jpg" /> </a>
                         </div>
@@ -328,30 +331,11 @@
                         
                         <h3>Skattjakten</h3> 
                         
-                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet. Första ledtråden är följande:</ul>
+                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet. 
+                        Första ledtråden finns någonstans på denna hemsida!
+                        </ul>
                         
-                        <h2>A:</h2>
-                        
-                        <ul>5 - 3 = B</ul>
-                        <ul>5 + 3 = H</ul>
-                        <ul>5 + 5 = ?</ul>
-                        
-                        <h2>B:</h2>
-                        
-                        <ul></ul>
-                        
-                        <h2>C:</h2>
-                        
-                        <ul></ul>
-                        
-                        <h2>D:</h2>
-                        
-                        <ul></ul>
-                        
-                        <h2>E:</h2>
-                        
-                        <ul></ul>
-                        
+
                             <br />
                         </div>
                     </div>
