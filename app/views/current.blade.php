@@ -270,7 +270,103 @@
                         </a>
                         <div class="collapse">
                             <br />
-
+                            
+                            <ul>För att hålla alla deltagare vakna och pigga under lanet så är entrén öppen alla tider under dygnet. 
+                            I entréen säljs både mat och dryck av olika slag och man kan även köpa märken.</ul>
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Vara:</th>
+                                        <th>Pris:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dryckeskort</td>
+                                        <td>50:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Läsk/Ramlösa</td>
+                                        <td>10:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Power King</td>
+                                        <td>15:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kaffe/Te/Varm choklad</td>
+                                        <td>10:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mjölk</td>
+                                        <td>10:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Toast  </td>
+                                        <td>20:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Billy’s</td>
+                                        <td>20:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gorby’s</td>
+                                        <td>15:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Äpple</td>
+                                        <td>5:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kexchoklad</td>
+                                        <td>10:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Snickers</td>
+                                        <td>10:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cookies</td>
+                                        <td>10:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Banana skids</td>
+                                        <td>2:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gott & Blandat</td>
+                                        <td>15:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kick</td>
+                                        <td>5:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jenka</td>
+                                        <td>1:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Märke</td>
+                                        <td>25:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Äldre märke</td>
+                                        <td>20:-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Klistermärke</td>
+                                        <td>5:-</td>
+                                    </tr>
+                                    
+                                
+                                </tbody>
+                            </table>
+                            
                             <br /><br />
                         </div>
                     </div>
