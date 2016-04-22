@@ -171,6 +171,8 @@
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016HS ">http://challonge.com/WLCow2016HS </a> </ul>
                             <ul>Samling och registrering: Söndag 13:00</ul>
                             <ul>Start: Söndag 13:00</ul>
+                            <img style="float:right;width:30px" src="/img/wl/hint.png" />
+                            <br style="clear:both;" />
                             
                             <br />
                             <h3>Gang Beasts</h3>
