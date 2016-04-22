@@ -32,22 +32,28 @@
                     console.log("poop");
                 }
             },50)
-            
+
         });
     </script>
+<script>
+    $.getJSON('https://api.twitch.tv/kraken/streams/mk_wonderlan', function(channel){
+        if(channel["stream"] == null){
+            $("#stream").css("display","none");
+        }
+        else{
+            $("#stream").css("display","block");
+        }
+    });
+</script>
 @stop
 
 @section('content')
         <!--stream -->
-
-                        <h3>Live Stream</h3>
-
-
-                            <br />
-                            <ul>Du kan se vår livestream på <a href="http://www.twitch.tv/mk_wonderlan">http://www.twitch.tv/mk_wonderlan</a>.</ul>
-                            <br />
-                            <iframe src="http://www.twitch.tv/mk_wonderlan/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/mk_wonderlan?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from mk_wonderlan on www.twitch.tv</a>
-                            <br />
+    <section id="stream" style="margin-bottom: 20px;">
+        <h3>Live Stream</h3>
+        <br />
+        <iframe src="http://www.twitch.tv/mk_wonderlan/embed" frameborder="0" scrolling="no" height="378" width="620" style="display:block; margin: 0px auto;"></iframe>
+    </section>
 
     <!--GUIDE -->
                 <div class="row">
