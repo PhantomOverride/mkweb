@@ -25,12 +25,12 @@
 {{ Form::open(['url'=>'/crew/pageedit/'.$page->urlname.$page->suburlname]) }}
 
 <table class="table table-striped">
-                    
+
                     <tbody><tr>
                         <td>Urlname:</td>
-                        <td><i class="icon-home"></i> {{ Form::text('urlname',$page->urlname) }}</td>
+                        <td><i class="icon-home"></i> {{ Form::text('urlname',$page->urlname) }} </td>
                     </tr>
-                    
+
                     <tr>
                         <td>Name:</td>
                         <td><i class=""></i> {{ Form::text('name',$page->name) }}</td>
@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <td>Content:</td>
-                        <td><i class=""></i>{{ Form::textarea('content',$page->content) }}</td>
+                        <td><i class=""></i>{{ Form::textarea('content',$page->content, array('class' => 'wysiwyg')) }}</td>
                     </tr>
                     <tr>
                         <td>Parentname:</td>
@@ -58,7 +58,7 @@
                     </tbody>
                 </table>
             {{Form::submit()}}
-        
+
 {{ Form::close() }}
 
 <br />
@@ -73,7 +73,7 @@
 <ul>Parentname: urlname för huvudsidan. Så ex.vis har "Bra att veta" "wonderlan" som parentname, eftersom det är en undersida för WonderLAN.</ul>
 <ul>Order: bestämmer ordningen i navbars. Först sorteras huvudsidor på order, sen sorteras undersidor på order. Lägst först.</ul>
 <ul>Linkto: Om linkto är satt kommer navmenyerna att länka hit istället för till sidan för urlname. Så detta används för externa länkar, eller länkar till sidor som CRMController inte styr.</ul>
-    
+
 </p>
 
 @stop
