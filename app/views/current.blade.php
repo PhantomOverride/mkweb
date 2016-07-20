@@ -1,4 +1,3 @@
-<!--- Just a placeholder -->
 @extends('v1-wrapper')
 
 @section('v1-custom-css')
