@@ -1,3 +1,4 @@
+<!--- Just a placeholder -->
 @extends('v1-wrapper')
 
 @section('v1-custom-css')
@@ -102,16 +103,16 @@
                         <a class="btn btnSection--icon btnSection btnSection--0" href="#">
 
                             <i>+</i><span>Uppkoppling till internet</span>
-                            
+
                         </a>
                         <div class="collapse">
                             <br />
-                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch. 
-                            Därefter så går man till Netlogon (man slussas dit automatiskt när man försöker nå en hemsida). 
-                            Man loggar därefter in med sitt BTH-kort (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla). 
-                            Många eventuella problem löses genom att tömma nätverksinställningar (google DNS brukar vara ett problem) och sedan starta om datorn. 
+                            <ul>För att få tillgång till internet så kopplar man först in sin dator till närmaste switch.
+                            Därefter så går man till Netlogon (man slussas dit automatiskt när man försöker nå en hemsida).
+                            Man loggar därefter in med sitt BTH-kort (gäster utan BTH-kord hänvisas till entrén där gäst-login går att erhålla).
+                            Många eventuella problem löses genom att tömma nätverksinställningar (google DNS brukar vara ett problem) och sedan starta om datorn.
                             Vid fortsatta problem, kontakta crew.
-                        
+
                             Glömt din nätverkskabel, eller var den du tog med dig inte lång nog? Vi lånar ut nätverkskablar för 50kr i pant i entrén.</ul>
                             <br />
                         </div>
@@ -127,45 +128,45 @@
                         </a>
                         <div class="collapse">
                             <br />
-                            
+
                             Du kan som lagledare anmäla ditt lag i Entré. Vid frågor kontakta CREW!
-                            
+
                             <br />
                             <h3>Starcraft 2</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016SC ">http://challonge.com/WLCow2016SC </a> </ul>
                             <ul>Samling och registrering: Fredag 19:30</ul>
                             <ul>Start: Fredag 19:30</ul>
-                            
+
                             <br />
                             <h3>Counter Strike Global Offensive</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016CSGO  ">http://challonge.com/WLCow2016CSGO  </a> </ul>
                             <ul>Samling och registrering: Fredag 20:00</ul>
                             <ul>Start: Fredag 20:00</ul>
-                            
+
                             <br />
                             <h3>League of Legends</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016LOL ">http://challonge.com/WLCow2016LOL </a> </ul>
                             <ul>Samling och registrering: Lördag 11:00</ul>
                             <ul>Start: Lördag 11:00</ul>
-                            
+
                             <br />
                             <h3>Dota</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016DOTA2 ">http://challonge.com/WLCow2016DOTA2 </a> </ul>
                             <ul>Samling och registrering: Lördag 11:15</ul>
                             <ul>Start: Lördag 11:15</ul>
-                            
+
                             <br />
                             <h3>Rocket League</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016RL ">http://challonge.com/WLCow2016RL </a> </ul>
                             <ul>Samling och registrering: Lördag 20:00</ul>
                             <ul>Start: Lördag 20:00</ul>
-                            
+
                             <br />
                             <h3>Speed Runners</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016SR ">http://challonge.com/WLCow2016SR </a> </ul>
                             <ul>Samling och registrering: Söndag 11:00</ul>
                             <ul>Start: Söndag 11:00</ul>
-                            
+
                             <br />
                             <h3>Hearthstone</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016HS ">http://challonge.com/WLCow2016HS </a> </ul>
@@ -173,17 +174,17 @@
                             <ul>Start: Söndag 13:00</ul>
                             <img style="float:right;width:70px" src="/img/wl/hint.png" />
                             <br style="clear:both;" />
-                            
+
                             <br />
                             <h3>Gang Beasts</h3>
                             <ul>Resultat:<a href="http://challonge.com/WLCow2016GB">http://challonge.com/WLCow2016GB</a> </ul>
                             <ul>Samling och registrering: Söndag 17:00</ul>
                             <ul>Start: Söndag 17:00</ul>
-                            
+
                             <br />
-                            
+
                             Prisutdelning sker 19:00 på Söndagen.
-                            
+
                         </div>
                     </div>
                 </div>
@@ -201,7 +202,7 @@
                             <br />
                             <br />
                             OBSERVERA att du behöver beställa och BETALA din mat innan den avsatta tiden på schemat. Du lägger in beställningen via formuläret, och sen betalar du den i Entrén.
-                            Vi kommer att ha 2 tillfällen per dag (1 under fredag) där man kan beställa en kall Subway-macka som sedan levereras och kan hämtas i entrén. 
+                            Vi kommer att ha 2 tillfällen per dag (1 under fredag) där man kan beställa en kall Subway-macka som sedan levereras och kan hämtas i entrén.
                             Tiderna i tabellen nedan är deadline för att ha beställt och betalat sin sub (betalning sker i entrén). Leverans beräknas ta 1.5-2h. Ordinare priser gäller.
                             Betala gärna direkt så du inte glömmer det! Nomnomnom!
                             <br />
@@ -227,37 +228,37 @@
                         </a>
                         <div class="collapse">
                             <br />
-                            
-                        <ul>På WonderLAN så tillhandahålls ett antal kommunikationstjänster. 
-                        Ifall du vill ha en bra platform att använda för att prata med dina vänner på, 
-                        eller vill ställa frågor till crew eller allmänt få information, 
+
+                        <ul>På WonderLAN så tillhandahålls ett antal kommunikationstjänster.
+                        Ifall du vill ha en bra platform att använda för att prata med dina vänner på,
+                        eller vill ställa frågor till crew eller allmänt få information,
                         så finns nedanstående servrar och kommunikationsvägar öppna.</ul>
-                        
-                        <h3>Discord</h3>  
-                        
+
+                        <h3>Discord</h3>
+
                         <ul><a href="https://discord.gg/0whjY97Dr994eifR">https://discord.gg/0whjY97Dr994eifR</a></ul>
-                        
-                        <h3>Teamspeak3</h3>  
-                        
+
+                        <h3>Teamspeak3</h3>
+
                         <ul>IP: teamspeak.wonderlan.se</ul>
-                        
-                        <h3>Facebook</h3>  
-                        
+
+                        <h3>Facebook</h3>
+
                         <ul><a href="https://www.facebook.com/MK.WonderLAN/">https://www.facebook.com/MK.WonderLAN/</a></ul>
-                        
+
                         <ul><a href="https://www.facebook.com/MammasKallare">https://www.facebook.com/MammasKallare</a></ul>
-                        
+
                         <ul><a href="https://www.facebook.com/events/1732555520323945/">https://goo.gl/I5tsGk</a></ul>
-                        
-                        <h3>Twitter</h3> 
-                        
+
+                        <h3>Twitter</h3>
+
                         <ul>@MammasKallare</ul>
-                        
-                        <h3>Minecraft</h3> 
-                        
+
+                        <h3>Minecraft</h3>
+
                         <ul>IP: kommer strax</ul>
-                        
-                            
+
+
                         <br />
                         </div>
                     </div>
@@ -272,10 +273,10 @@
                         </a>
                         <div class="collapse">
                             <br />
-                            
-                            <ul>För att hålla alla deltagare vakna och pigga under lanet så är entrén öppen alla tider under dygnet. 
+
+                            <ul>För att hålla alla deltagare vakna och pigga under lanet så är entrén öppen alla tider under dygnet.
                             I entréen säljs både mat och dryck av olika slag och man kan även köpa märken.</ul>
-                            
+
                             <table>
                                 <thead>
                                     <tr>
@@ -364,11 +365,11 @@
                                         <td>Klistermärke</td>
                                         <td>5:-</td>
                                     </tr>
-                                    
-                                
+
+
                                 </tbody>
                             </table>
-                            
+
                             <br /><br />
                         </div>
                     </div>
@@ -384,7 +385,7 @@
                         <div class="collapse">
                             <br />
                              <br />
-                            <ul> För de som vill ta en paus från spelandet och slappna av med lite analog underhållning så är det fullt möjligt att låna brädspel från entrén 
+                            <ul> För de som vill ta en paus från spelandet och slappna av med lite analog underhållning så är det fullt möjligt att låna brädspel från entrén
                             (pantsätt med BTH-kort, körkort eller liknande). </ul>
                             <br /><br />
                             <br /><br />
@@ -401,20 +402,20 @@
                         </a>
                         <div class="collapse">
                             <br />
-                        
-                        
-                        <ul>För de personer som vill ta en liten paus från spelandet och kanske sträcka lite på benen så kommer vi i CREW att anordna några events under lanets gång. 
+
+
+                        <ul>För de personer som vill ta en liten paus från spelandet och kanske sträcka lite på benen så kommer vi i CREW att anordna några events under lanets gång.
                         Dessa events består av en skattjakt, nerf gun-krig, frågesport och en paint tävling.</ul>
-                        
-                        <h3>Frågesporten:</h3>  
-                        
-                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som WonderLANs mästare i spel trivia? 
-                        Då ska du dyka upp i sal J1620 klockan 20:00 på lördagkväll för att bevisa detta!  
-                        
+
+                        <h3>Frågesporten:</h3>
+
+                        <ul>Har du bra koll på spelvärlden och känner att du kan ta hem priset som WonderLANs mästare i spel trivia?
+                        Då ska du dyka upp i sal J1620 klockan 20:00 på lördagkväll för att bevisa detta!
+
                         OBS! ***Frågor om kor kan förekomma!***</ul>
-                        
-                        <h3>Nerf Gun-krig:</h3>  
-                        
+
+                        <h3>Nerf Gun-krig:</h3>
+
                         <ul>Om du vill få adrenalinet att flöda och svetten att rinna samtidigt som du skjuter folk med
                         plastvapen, då är nerf gun-krig något för dig! Nerf gun krig kommer att anordnas natten mellan
                         fredag och lördag klockan 01:00 - 04:00 på rotundan. Varje match spelas med upp till 5 personer i
@@ -427,22 +428,22 @@
                         <div style="float:right;width:40%">
                          <a href="http://mammaskallare.se/img/wl/nerfmap.png"> <img style="width:100%" src="http://mammaskallare.se/img/wl/nerfmap.png" /> </a><p style="font-size:small;">Klicka på kartan för förstoring</p>
                         </div>
-                        <h3 style="clear:both;">Paint-tävling:</h3> 
-                        
-                        <ul>Är du en Picasso i paint eller bara gillar att måla ändå? 
-                        Då ska du vara med i Paint-tävlingen som kommer att hållas söndag klockan 16:00. 
+                        <h3 style="clear:both;">Paint-tävling:</h3>
+
+                        <ul>Är du en Picasso i paint eller bara gillar att måla ändå?
+                        Då ska du vara med i Paint-tävlingen som kommer att hållas söndag klockan 16:00.
                         Temat på tävlingen kommer att avslöjas på plats och deltagarna har sedan en timme på sig att rita en bild i paint som passar till temat. </ul>
-                        
-                        <h3>Skattjakten</h3> 
-                        
-                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet. 
+
+                        <h3>Skattjakten</h3>
+
+                        <ul>Om du gillar att lösa gåtor och följa ledtrådar så finns det en skattjakt som pågår under hela lanet.
                         Första ledtråden finns någonstans på denna hemsida!
                         </ul>
-                        
+
 
                             <br />
                         </div>
                     </div>
-                    
+
                 </div>
 @stop
