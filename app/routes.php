@@ -92,6 +92,10 @@ Route::get('/live_cms', function()
 {
     return View::make('current_cms')->with('nav',Page::navbar());
 })->before('crew');
+Route::post('/live_cms', function()
+{
+    return View::make('current_cms')->with('nav',Page::navbar());
+})->before('crew');
 
 Route::get('/sverok', function()
 {
