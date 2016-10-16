@@ -36,14 +36,15 @@
         });
     </script>
 <script>
-    $.getJSON('https://api.twitch.tv/kraken/streams/mk_wonderlan', function(channel){
+    <!-- Twitch changed their api. TODO: Create a "client id" -->
+    <!--$.getJSON('https://api.twitch.tv/kraken/streams/mk_wonderlan', function(channel){
         if(channel["stream"] == null){
             $("#stream").css("display","none");
         }
         else{
             $("#stream").css("display","block");
         }
-    });
+    });-->
 </script>
 @stop
 
