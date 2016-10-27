@@ -84,10 +84,23 @@ Route::get('teams/{name}/removetournament/{tournamentname}','TeamController@remo
 Route::resource('teams','TeamController');
 //Route::post('teams/{name}/update','TeamController@update')->before('auth');
 
-Route::get('/live', function()
+Route::get('/live', 'LivepostController@index');
+
+/*Route::get('/live', function()
 {
-    return View::make('current')->with('nav',Page::navbar());
-});
+    //return View::make('current')->with('nav',Page::navbar());
+});*/
+
+/*
+ *  Livepost Controller
+ */
+Route::get('liveposts', 'LivepostController@index')->before('crew');
+Route::get('liveposts/create', 'LivepostController@edit')->before('crew');
+Route::get('liveposts/{id}', 'LivepostController@show');
+Route::get('liveposts/{id}/edit', 'LivepostController@edit')->before('crew');
+Route::post('liveposts/{id}/update', 'LivepostController@update')->before('crew');
+Route::post('liveposts/update', 'LivepostController@update')->before('crew');
+Route::get('liveposts/{id}/remove', 'LivepostController@remove')->before('crew');
 
 Route::get('/sverok', function()
 {
