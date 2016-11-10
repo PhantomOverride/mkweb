@@ -1,29 +1,29 @@
 <?php
 
 class LivepostController extends BaseController {
-    
+
         protected $livepost;
-        
-    
+
+
         public function __construct(Livepost $livepost)
         {
             $this->livepost = $livepost;
         }
-        
+
         public function index()
 	{
-		$liveposts = $this->livepost->where('order', '!=', 0)->orderBy('id','desc')->get();
+		$liveposts = $this->livepost->where('order', '!=', 0)->orderBy('id','asc')->get();
                 return View::make('liveposts.index', ['liveposts' => $liveposts])->with('nav',Page::navbar());
 	}
-        
+
         public function show($id)
         {
                 $this->livepost = Livepost::whereId($id)->first();
                 return View::make('liveposts.show')->with('livepost',$this->livepost)->with('nav',Page::navbar());
-            
+
         }
-        
-        
+
+
         public function edit($id=null){
             if($id != null){
                 $this->livepost = $this->livepost->whereId($id)->first();
