@@ -57,8 +57,8 @@
 <div id="twitch_stream"></div>
 <script type="text/javascript">
     var options = {
-        width: 854,
-        height: 480,
+        width: 700,
+        height: 500,
         channel: "mk_wonderlan",
         //video: "test"
     };
