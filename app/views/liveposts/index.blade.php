@@ -62,7 +62,7 @@
         channel: "mk_wonderlan", 
         //video: "test"       
     };
-    var player = new Twitch.Player("{PLAYER_DIV_ID}", options);
+    var player = new Twitch.Player("TEST", options);
     player.setVolume(0.5);
     player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
 </script>
