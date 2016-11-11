@@ -54,15 +54,15 @@
         <h3>Live Stream</h3>
         <br />
         <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-<div id="TEST"></div>
+<div id="twitch_stream"></div>
 <script type="text/javascript">
     var options = {
         width: 854,
         height: 480,
-        channel: "mk_wonderlan", 
-        //video: "test"       
+        channel: "mk_wonderlan",
+        //video: "test"
     };
-    var player = new Twitch.Player("{PLAYER_DIV_ID}", options);
+    var player = new Twitch.Player("twitch_stream", options);
     player.setVolume(0.5);
     player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
 </script>
