@@ -64,7 +64,8 @@ Route::post('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@update')->b
 /*
  *  Index controller
  */
-Route::get('/', 'IndexController@index');
+//Route::get('/', 'LivepostController@index'); // Use during WonderLAN
+Route::get('/', 'IndexController@index'); // Use on all the other dates
 
 /*
  * Tournament Controllers
