@@ -35,9 +35,9 @@
     <link href="/css/mk.css" rel="stylesheet">
 
     <link href="/css/resslides.css" rel="stylesheet">
-    
+
     @yield('v1-custom-css')
-    
+
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -55,7 +55,7 @@
     <div class="brand hidden-xs">
         <div class="row" >
             <div class="banner container">
-                <div class="box">   
+                <div class="box">
                     <div class="headline">
                         <div class="col-lg-2 col-md-2 col-sm-2 text-center">
                             <a href='/'><div class="logo"></div></a>
@@ -65,7 +65,7 @@
                         </div>
                                 <div class="col-lg-2 col-md-2 col-sm-2 text-center">
                         </div>
-                            
+
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
         <div class="row">
                 <div class="col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="box-rounded bread col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs"> 
+                        <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
                             <ul class="breadcrumb_trans">
                                  @yield('v1-breadcrumbs')
                             </ul>
@@ -114,7 +114,7 @@
                         </div>
                     <div>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
         <div class="row">

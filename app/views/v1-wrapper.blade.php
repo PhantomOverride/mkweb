@@ -136,7 +136,7 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
             @foreach ($main as $sub)
                 @if (empty($sub['parentname']))
                     <a href="{{$sub['link']}}" class="list-group-item {{Request::is(substr($sub['link'],1)) ? 'active' : ''}}">{{$sub['name']}}</a>
-                @else    
+                @else
                     <a href="{{$sub['link']}}" class="list-group-item {{Request::is(substr($sub['link'],1)) ? 'active' : ''}}">&nbsp;&nbsp;&nbsp;&nbsp;{{$sub['name']}}</a>
                 @endif
             @endforeach
@@ -151,7 +151,7 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
         @elseif(Request::segment(1)=='users')
             <li>Användare</li>
         @endif
-        
+
         @for ($i=2;$i<=$last;$i++)
             <li <? if($i==$last) echo 'class="active"'; ?> ><a href="#">{{ urldecode(Request::segment($i)) }}</a></li>
         @endfor
