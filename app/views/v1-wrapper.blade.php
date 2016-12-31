@@ -21,6 +21,16 @@
     contenttitle    Title of content
     content         The actual content
 */
+
+/*
+    Twitter card and OG metadata fields
+    v1-title                    Same title as the page has max 70 characters
+    meta-description            Information om about the post or website
+    meta-twitter-image          Image to use when linking to twitter
+    meta-twitter-image-fail     Text to use if twitter fails to show image
+    meta-og-image               Image to use when linking to facebook
+    meta-url                    URL to website or a post on the website
+*/
 ?>
 
 @section('v1-title')
@@ -149,3 +159,29 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
 
     @endif
 @stop
+
+<?php
+/*************************************
+ *** Twitter cards and og metadata ***
+ *************************************/
+?>
+@section('meta-description')
+Vad sysslar vi med?
+<br />
+Mammas Källare arrangerar spelrelaterade aktiviteter såsom spelkvällar med roll- och brädspel och LAN-partyn vid högskolan i Karlskrona. Alla får komma på våra event och vi välkomnar alla som vill hålla spelglädjen vid liv!
+<br />
+Vårt största event är LAN:et och spelfesten WonderLAN som hålls terminsvis vid Blekinge Tekniska Högskola.
+@stop
+@section('meta-twitter-image', '')
+@section('meta-twitter-image-fail','Välkommen till värkligheten')
+@section('meta-url')
+<?php
+    if(isset($_SERVER['REDIRECT_URL'])){
+        echo $_SERVER['REDIRECT_URL'];
+    }
+    else{
+        echo $_SERVER['SERVER_ADDR'];
+    }
+?>
+@stop
+@section('meta-og-image', '')

@@ -9,6 +9,23 @@
         <meta name="description" content="Websida för Mammas Källare">
         <meta name="author" content="Mammas Källare">
 
+        <!--Twitter cards -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@MammasKallare" />
+        <meta name="twitter:title" content="@yield('v1-title')" /> <!-- max 70 characters -->
+        <meta name="twitter:description" content="@yield('meta-description')" />
+        <meta name="twitter:image" content="@yield('meta-twitter-image')" />
+        <meta name="twitter:image:alt" content="@yield('meta-twitter-image-fail')" />
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="@yield('v1-title')" />
+        <meta property="og:url" content="@yield('meta-url')" />
+        <meta property="og:image" content="@yield('meta-og-image')" />
+        <meta property="og:description" content="@yield('meta-description')" />
+        <meta property="og:locale" content="sv_SE" />
+        <meta property="og:site_name" content="Mammas Källare" />
+
+
     <title>@yield('v1-title')</title>
 
     <!-- Bootstrap Core CSS -->
