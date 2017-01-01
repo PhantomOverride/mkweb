@@ -19,7 +19,7 @@
     
     <h3>Vad sysslar vi med?</h3>
     <p>
-        Mammas Källare arrangerar spelrelaterade aktiviteter såsom spelkvällar med roll- och brädspel, airsoft-event och LAN-partyn vid högskolan i Karlskrona.
+        Mammas Källare arrangerar spelrelaterade aktiviteter såsom spelkvällar med roll- och brädspel och LAN-partyn vid högskolan i Karlskrona.
         Alla får komma på våra event och vi välkomnar alla som vill hålla spelglädjen vid liv!
     </p>
     <p>Vårt största event är LAN:et och spelfesten WonderLAN som hålls terminsvis vid Blekinge Tekniska Högskola.</p>
