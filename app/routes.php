@@ -105,6 +105,11 @@ Route::post('liveposts/{id}/update', 'LivepostController@update')->before('crew'
 Route::post('liveposts/update', 'LivepostController@update')->before('crew');
 Route::get('liveposts/{id}/remove', 'LivepostController@remove')->before('crew');
 
+/*
+ *  Gallery Controller
+ */
+Route::get('gallery', 'GalleryController@index');
+
 Route::get('/sverok', function()
 {
     return View::make('sverok')->with('nav',Page::navbar());
