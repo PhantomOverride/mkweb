@@ -18,7 +18,14 @@ Galleri
 @stop
 
 @section('content')
+    <section id="gallery">
     @foreach ($folders as $folder)
-        {{$folder}}
+        <div class="galleryImageContainer">
+            <a href="/gallery/{{$folder}}">
+                <img src="/img/gallery/{{$folder}}/thumbnail.jpg" alt="" />
+                <span>{{$folder}}</span>
+            </a>
+        </div>
     @endforeach
+    </section>
 @stop
