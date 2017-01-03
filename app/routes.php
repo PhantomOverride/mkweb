@@ -109,6 +109,7 @@ Route::get('liveposts/{id}/remove', 'LivepostController@remove')->before('crew')
  *  Gallery Controller
  */
 Route::get('gallery', 'GalleryController@index');
+Route::get('gallery/{directory}', 'GalleryController@show');
 
 Route::get('/sverok', function()
 {
