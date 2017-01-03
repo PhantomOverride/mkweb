@@ -478,6 +478,9 @@ hr.grey {display: block; height: 1px;
     display: inline-block;
     box-sizing: border-box;
 }
+.galleryImageContainer:hover{
+    cursor: pointer;
+}
 .galleryImageContainer img{
     width: 100%;
     border: 1px solid darkgrey;
