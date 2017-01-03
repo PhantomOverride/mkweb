@@ -12,11 +12,6 @@ Galleri
     Verklighetens ögonblick
 @stop
 
-@section('v1-custom-js')
-<script>
-</script>
-@stop
-
 @section('content')
     <section id="gallery">
     @foreach ($folders as $folder)
