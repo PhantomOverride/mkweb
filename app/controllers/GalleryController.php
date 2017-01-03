@@ -1,5 +1,6 @@
 <?php
 class GalleryController extends BaseController{
+    const PATH = "./img/gallery";
 
     public function index(){
         $folders = $this->get_folders();
@@ -7,8 +8,7 @@ class GalleryController extends BaseController{
     }
 
     private function get_folders(){
-        $path = "./img/gallery";
-        $directories = scandir($path);
+        $directories = scandir(self::PATH);
         $directories = array_diff($directories, array('..', '.'));
         return $directories;
     }
