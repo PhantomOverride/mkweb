@@ -493,7 +493,7 @@ hr.grey {display: block; height: 1px;
     left: 0px;
     top: 0px;
     position: fixed;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 10;
     display: none;
 }
