@@ -26,12 +26,6 @@ Galleri
 <table class="table table-striped">
     <tbody>
         <tr>
-            <td>Header:</td>
-            <td>
-                {{ Form::text('header') }}
-            </td>
-        </tr>
-        <tr>
             <td>Name:</td>
             <td>
                 {{ Form::text('name') }}
