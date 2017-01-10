@@ -10,6 +10,9 @@ class GalleryController extends BaseController{
         $files = $this->get_files($directory);
         return View::make('gallery.show',['directory' => $directory,'files' => $files])->with('nav', Page::navbar());
     }
+    public function edit(){
+        return View::make('gallery.edit')->with('nav', Page::navbar());
+    }
 
     private function get_folders(){
         $directories = scandir(self::PATH);
