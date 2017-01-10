@@ -13,6 +13,16 @@ class GalleryController extends BaseController{
     public function edit(){
         return View::make('gallery.edit')->with('nav', Page::navbar());
     }
+    public function create(){
+        $data = Input::only(['name']);
+        $success = mkdir("img/gallery/" . $data['name'], 0777);
+        if($success){
+            return Redirect::to('gallery/' . $data['name']);
+        }
+        else{
+            return Redirect::back()->withInput()->withErrors("Couldn't create folder");
+        }
+    }
 
     private function get_folders(){
         $directories = scandir(self::PATH);
