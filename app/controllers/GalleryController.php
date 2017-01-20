@@ -26,6 +26,52 @@ class GalleryController extends BaseController{
     public function upload($directory){
         return View::make('gallery.upload',['directory' => $directory])->with('nav', Page::navbar());
     }
+    public function images($directory){
+        $sucess = false;
+        $failed = 0;
+        $text = "";
+
+        if(Input::hasFile('files')){
+            $files = Input::file('files');
+            $rules = [
+                'file' => 'required|image'
+            ];
+            $destination = 'img/gallery/' . $directory;
+            foreach($files as $f){
+                $validator = Validator::make(['file'=>$f], $rules);
+                if($validator->passes()){
+                    $filename = $f->getClientOriginalName();
+                    if(!file_exists(public_path($destination . '/' . $filename))){
+                        if(!$f->move($destination, $filename)){
+                            $failed++;
+                            $text = $f->getClientOriginalName() . '<br />';
+                        }
+                        else{
+                            $sucess = true;
+                        }
+                    }
+                    else{
+                        $failed++;
+                        $text = $f->getClientOriginalName() . ' The image does already exists in this gallery<br />';
+                    }
+                }
+                else{
+                    $failed++;
+                    $text = $f->getClientOriginalName() . '<br />';
+                }
+            }
+        }
+
+        if($sucess && ($failed > 0) ){
+            return Redirect::to('gallery/' . $directory)->with('message',$text);
+        }
+        else if($sucess){
+            return Redirect::to('gallery/' . $directory);
+        }
+        else{
+            return Redirect::back()->withInput()->withErrors("Couldn't upload images<br/>" . $text);
+        }
+    }
 
     private function get_folders(){
         $directories = scandir(self::PATH);
