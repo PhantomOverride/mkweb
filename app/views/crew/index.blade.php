@@ -26,6 +26,7 @@
 <a class="btn btn-info" href="/kassa">Kassa</a>
 <a class="btn btn-info" href="/products">Products</a>
 <a class="btn btn-info" href="/liveposts/">Liveposts (add /1 to go to livepost 1, etc)</a>
+<a class="btn btn-info" href="/gallery/create">Create new gallery</a>
 
 <!-- Page edit section -->
 
