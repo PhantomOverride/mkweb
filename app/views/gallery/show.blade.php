@@ -55,6 +55,8 @@ $(document).ready(function(){
 @stop
 
 @section('content')
+    {{Session::get('message')}}
+
     <section id="viewer">
         <img src="/img/icons/close_128x128.png" alt="close" id="close" class="pointer" />
         <img src="/img/icons/arrow_right_128x128.png" alt="next" id="next" class="pointer"/>
