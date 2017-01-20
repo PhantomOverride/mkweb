@@ -112,7 +112,7 @@ Route::get('gallery', 'GalleryController@index');
 Route::get('gallery/create', 'GalleryController@edit')->before('crew');
 Route::post('gallery/create', 'GalleryController@create')->before('crew');
 Route::get('gallery/{directory}/upload', 'GalleryController@upload')->before('crew');
-Route::post('galler/{directory}/upload', 'GalleryController@images')->before('crew');
+Route::post('gallery/{directory}/upload', 'GalleryController@images')->before('crew');
 Route::get('gallery/{directory}', 'GalleryController@show');
 
 Route::get('/sverok', function()
