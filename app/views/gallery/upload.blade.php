@@ -18,17 +18,15 @@ Upload to {{$directory}}
         Se till så det du sparar är sådant som ska finnas på sidan.
     </p>
     <br />
+    @if ($errors->any())
+        {{ implode('', $errors->all('<div>:message</div>')) }}
+    @endif
+    {{Session::get('message')}}
 
-    {{ Form::open(['url' => '/gallery/$directory/upload', 'files' => true]) }}
+    {{ Form::open(['url' => '/gallery/' . $directory . '/upload', 'files' => true]) }}
 
     <table class="table table-striped">
         <tbody>
-            <tr>
-                <td>Name:</td>
-                <td>
-                    {{ Form::text('name') }}
-                </td>
-            </tr>
             <tr>
                 <td>Files:</td>
                 <td>{{ Form::file('files[]',['multiple'=>true])}}</td>
