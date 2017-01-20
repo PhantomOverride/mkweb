@@ -110,9 +110,10 @@ Route::get('liveposts/{id}/remove', 'LivepostController@remove')->before('crew')
  */
 Route::get('gallery', 'GalleryController@index');
 Route::get('gallery/create', 'GalleryController@edit')->before('crew');
+Route::post('gallery/create', 'GalleryController@create')->before('crew');
 Route::get('gallery/{directory}/upload', 'GalleryController@upload')->before('crew');
 Route::get('gallery/{directory}', 'GalleryController@show');
-Route::post('gallery/create', 'GalleryController@create')->before('crew');
+
 
 Route::get('/sverok', function()
 {
