@@ -57,6 +57,14 @@ $(document).ready(function(){
 @section('content')
     {{Session::get('message')}}
 
+    @if(Auth::check() && Auth::user()->crew())
+        <div class="box-rounded notis">
+            Eftersom att du är CREW kan du
+            [{{link_to('/gallery/'. $directory .'/upload','ladda upp')}}]
+            till den här sidan.
+        </div>
+    @endif
+
     <section id="viewer">
         <img src="/img/icons/close_128x128.png" alt="close" id="close" class="pointer" />
         <img src="/img/icons/arrow_right_128x128.png" alt="next" id="next" class="pointer"/>
