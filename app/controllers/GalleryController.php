@@ -23,6 +23,9 @@ class GalleryController extends BaseController{
             return Redirect::back()->withInput()->withErrors("Couldn't create folder");
         }
     }
+    public function upload($directory){
+        return View::make('gallery.upload',['directory' => $directory])->with('nav', Page::navbar());
+    }
 
     private function get_folders(){
         $directories = scandir(self::PATH);
