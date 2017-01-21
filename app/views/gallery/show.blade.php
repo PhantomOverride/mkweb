@@ -1,17 +1,35 @@
 @extends('v1-wrapper')
 
 @section('title')
-Galleri
+Galleri {{$directory}}
 @stop
 
 @section('contentname')
-Galleri
+Galleri {{$directory}}
 @stop
 
 @section('contenttitle')
-    Verkligheten för stunden
+Verkligheten i bilder
 @stop
+
+@section('meta-description')
+Se bilder i {{$directory}}
+@stop
+
+@section('meta-twitter-image')
+img/gallery/{{$directory}}/twitter.jpg
+@stop
+
+@section('meta-twitter-image-fail')
+{{$directory}}
+@stop
+
+@section('meta-og-image')
+img/gallery/{{$directory}}/og.jpg
+@stop
+
 @section('v1-custom-js')
+
 <script>
 $(document).ready(function(){
     var current;
