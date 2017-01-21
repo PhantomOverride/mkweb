@@ -37,4 +37,16 @@ Upload to {{$directory}}
     {{ Form::submit() }}
 
     {{ Form::close() }}
+
+    <br />
+
+    <h2>Hur skit funkar</h2>
+    <p>
+    <ul>Ladda upp bilderna som du vill visa :)</ul>
+    <ul>Bilder med följande namn har speciella egenskaper i galleriet
+        <li>thumbnail.jpg - Bilden som kommer att visas när man blädrar blan gallerier</li>
+        <li>twitter.jpg - Bilden som ska användas på twitter cards. Bilden bör vara större än 280px i bredd och 150px i höjd. Bilden måste vara mindre än 1MB i storlek</li>
+        <li>og.jpg - Bilden som visas på facebook. Rekomenderas att den är 1200 x 630. Minimum 600x315px. Bilden måste vara mindre än 8mb i storlek.</li>
+    </ul>
+    </p>
 @stop
