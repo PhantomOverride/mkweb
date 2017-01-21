@@ -15,7 +15,10 @@ class GalleryController extends BaseController{
     }
     public function create(){
         $data = Input::only(['name']);
-        $success = mkdir("img/gallery/" . $data['name'], 0777);
+        if(is_dir('img/gallery/' . $data['name'])){
+            return Redirect::back()->withInput()->withErrors("Foulder with name allready exists");
+        }
+        $success = mkdir('img/gallery/' . $data['name'], 0777);
         if($success){
             return Redirect::to('gallery/' . $data['name']);
         }
