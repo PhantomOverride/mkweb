@@ -83,7 +83,7 @@ class GalleryController extends BaseController{
     }
     private function get_files($subdirectory){
         $files = scandir(self::PATH . '/' . $subdirectory);
-        $files = array_diff($files, array('..', '.', 'thumbnail.jpg'));
+        $files = array_diff($files, array('..', '.', 'thumbnail.jpg', 'twitter.jpg', 'og.jpg'));
         return $files;
     }
 }
