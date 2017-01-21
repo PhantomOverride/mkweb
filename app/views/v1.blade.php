@@ -9,6 +9,23 @@
         <meta name="description" content="Websida för Mammas Källare">
         <meta name="author" content="Mammas Källare">
 
+        <!--Twitter cards -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@MammasKallare" />
+        <meta name="twitter:title" content="@yield('v1-title')" /> <!-- max 70 characters -->
+        <meta name="twitter:description" content="@yield('meta-description')" />
+        <meta name="twitter:image" content="@yield('meta-twitter-image')" />
+        <meta name="twitter:image:alt" content="@yield('meta-twitter-image-fail')" />
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="@yield('v1-title')" />
+        <meta property="og:url" content="@yield('meta-url')" />
+        <meta property="og:image" content="@yield('meta-og-image')" />
+        <meta property="og:description" content="@yield('meta-description')" />
+        <meta property="og:locale" content="sv_SE" />
+        <meta property="og:site_name" content="Mammas Källare" />
+
+
     <title>@yield('v1-title')</title>
 
     <!-- Bootstrap Core CSS -->
@@ -18,9 +35,9 @@
     <link href="/css/mk.css" rel="stylesheet">
 
     <link href="/css/resslides.css" rel="stylesheet">
-    
+
     @yield('v1-custom-css')
-    
+
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -38,7 +55,7 @@
     <div class="brand hidden-xs">
         <div class="row" >
             <div class="banner container">
-                <div class="box">   
+                <div class="box">
                     <div class="headline">
                         <div class="col-lg-2 col-md-2 col-sm-2 text-center">
                             <a href='/'><div class="logo"></div></a>
@@ -48,7 +65,7 @@
                         </div>
                                 <div class="col-lg-2 col-md-2 col-sm-2 text-center">
                         </div>
-                            
+
                     </div>
                 </div>
             </div>
@@ -87,7 +104,7 @@
         <div class="row">
                 <div class="col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="box-rounded bread col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs"> 
+                        <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
                             <ul class="breadcrumb_trans">
                                  @yield('v1-breadcrumbs')
                             </ul>
@@ -97,7 +114,7 @@
                         </div>
                     <div>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
         <div class="row">
