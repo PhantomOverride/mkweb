@@ -23,6 +23,8 @@ Route::get('page/wonderlan/subway', function()
 });
 */
 
+Route::get('feed', 'FeedController@index');
+
 /*
  *  Post Controller for Blog
  */
