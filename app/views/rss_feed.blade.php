@@ -13,6 +13,9 @@
     <entry>
         <title>{{ $post->title }}</title>
         <link href="{{ URL::to('/') . '/posts/' . $post->title }}"/>
+        @if(!empty($post->imageurl))
+        <media:thumbnail xmlns:media="{{ $post->imageurl }}" />
+        @endif
         <summary type="html">{{{ $post->content }}}</summary>
         <pubDate>{{ $post->posted }}</pubDate>
     </entry>
