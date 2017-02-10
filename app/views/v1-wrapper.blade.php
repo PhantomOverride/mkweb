@@ -179,7 +179,7 @@ Vårt största event är LAN:et och spelfesten WonderLAN som hålls terminsvis v
     if(isset($_SERVER['REDIRECT_URL'])){
         echo $_SERVER['REDIRECT_URL'];
     }
-    else{
+    else if(isset($_SERVER['SERVER_ADDR'])){
         echo $_SERVER['SERVER_ADDR'];
     }
 ?>
