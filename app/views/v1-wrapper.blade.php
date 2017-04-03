@@ -86,10 +86,10 @@ Hej {{ link_to_route('users.show',Auth::user()->nickname,Auth::user()->nickname)
     <p>
         WonderLAN
     </p>
+    <li> <a href="http://www.datoraffaren.se">Datoraffären</a></li>
+    <li> <a href="http://www.g4g.se">Gamer4Gamers</a></li>
     <li> <a href="http://www.bth.se">BTH</a> </li>
     <li> <a href="http://www.subway.se">Subway</a> </li>
-    <li> <a href="http://www.axis.se">AXIS</a> </li>
-    <li> <a href="http://www.citynetwork.se">City Network</a> </li>
 </div>
 
 
