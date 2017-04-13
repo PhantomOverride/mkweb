@@ -23,6 +23,8 @@ Route::get('page/wonderlan/subway', function()
 });
 */
 
+Route::get('feed', 'FeedController@index');
+
 /*
  *  Post Controller for Blog
  */
@@ -64,7 +66,10 @@ Route::post('crew/pageedit/{urlname?}/{suburlname?}', 'CrmController@update')->b
 /*
  *  Index controller
  */
-Route::get('/', 'IndexController@index');
+//Route::get('/', 'LivepostController@index'); // Use during WonderLAN
+Route::get('/', 'IndexController@index'); // Use on all the other dates
+
+Route::get('home', 'IndexController@index');
 
 /*
  * Tournament Controllers
@@ -101,6 +106,16 @@ Route::get('liveposts/{id}/edit', 'LivepostController@edit')->before('crew');
 Route::post('liveposts/{id}/update', 'LivepostController@update')->before('crew');
 Route::post('liveposts/update', 'LivepostController@update')->before('crew');
 Route::get('liveposts/{id}/remove', 'LivepostController@remove')->before('crew');
+
+/*
+ *  Gallery Controller
+ */
+Route::get('gallery', 'GalleryController@index');
+Route::get('gallery/create', 'GalleryController@edit')->before('crew');
+Route::post('gallery/create', 'GalleryController@create')->before('crew');
+Route::get('gallery/{directory}/upload', 'GalleryController@upload')->before('crew');
+Route::post('gallery/{directory}/upload', 'GalleryController@images')->before('crew');
+Route::get('gallery/{directory}', 'GalleryController@show');
 
 Route::get('/sverok', function()
 {

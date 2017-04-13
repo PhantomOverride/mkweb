@@ -26,6 +26,7 @@
 <a class="btn btn-info" href="/kassa">Kassa</a>
 <a class="btn btn-info" href="/products">Products</a>
 <a class="btn btn-info" href="/liveposts/">Liveposts (add /1 to go to livepost 1, etc)</a>
+<a class="btn btn-info" href="/gallery/create">Create new gallery</a>
 
 <!-- Page edit section -->
 
@@ -42,7 +43,7 @@
             <td>accounttype</td>
     </tr>
 </thead><tbody>
-    
+
     @foreach($users as $user)
         <tr>
             <td>{{$user->forename}}</td>
@@ -71,7 +72,7 @@
             <td>Edit</td>
     </tr>
 </thead><tbody>
-    
+
     @foreach($pages as $page)
         <tr>
             <td>{{$page->urlname}}</td>
@@ -176,13 +177,13 @@
             </thead>
             <tbody>
                 @foreach($tournament->teams as $team)
-                
+
                             <tr>
                                 <td>{{ link_to('/teams/'.$team->name,$team->name) }}</td>
                                 <td>{{ $team->leader }}</td>
                                 <td>
                                 @foreach($team->users as $member)
-                                {{{$member->nickname}}} 
+                                {{{$member->nickname}}}
                                 @endforeach
                                 </td>
                             </tr>
